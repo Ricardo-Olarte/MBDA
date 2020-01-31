@@ -1,0 +1,19 @@
+1. ¿Qué tipos de productos ofrece? ¿Qué subtipos?
+		SELECT Name
+		FROM ProductCategory 
+	¿Qué subtipos?
+		SELECT Name
+		FROM Product
+
+2. ¿Cuántos productos ofrece?¿En qué rango de precios?
+		SELECT COUNT(Name) AS TotalProducts,MIN(ListPrice) AS Min,MAX(ListPrice) AS Max
+		FROM Product
+
+3.¿?
+		SELECT COUNT(CustomerID) AS TotalCustomer
+		FROM Customer
+	¿?
+		SELECT DISTINCT(City)
+		FROM Address
+
+4.¿?
