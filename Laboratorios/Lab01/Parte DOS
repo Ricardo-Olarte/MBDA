@@ -68,11 +68,55 @@ Medium Questions
 			Address.City = 'London' AND ProductCategory.Name = 'Cranksets'
 	
 	11.For every customer with a 'Main Office' in Dallas show AddressLine1 of the 'Main Office' and AddressLine1 of the 'Shipping' address - if there is no shipping address leave it blank. Use one row per customer.
+		SELECT Customer.CompanyName, MAX(CASE WHEN AddressType = 'Main Office' THEN AddressLine1 ELSE '' END) AS 'Main Office',MAX(CASE WHEN AddressType = 'Shipping' THEN AddressLine1 ELSE '' END) AS 'Shipping'
+		FROM CustomerAddress,Address,Customer
+		WHERE Customer.CustomerID = CustomerAddress.CustomerID AND 
+			CustomerAddress.AddressID = Address.AddressID AND Address.City = 'Dallas'
+		GROUP By Customer.CompanyName
 	
+	12. For each order show the SalesOrderID and SubTotal calculated three ways: A)From the SalesOrderHeader, B)Sum of OrderQty*UnitPrice, C)Sum of OrderQty*ListPrice
+		SELECT SalesOrderDetail.SalesOrderID, SalesOrderHeader.SubTotal, SUM(SalesOrderDetail.OrderQty*SalesOrderDetail.UnitPrice) AS 'QTY*UnitPrice', SUM(SalesOrderDetail.OrderQty*Product.ListPrice) AS 'QTY*listPrice'
+		FROM Product,SalesOrderDetail,SalesOrderHeader
+		WHERE Product.ProductID = SalesOrderDetail.ProductID AND 
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
+		GROUP BY SalesOrderHeader.SalesOrderID
+			
+	13. Show the best selling item by value.
+		SELECT Product.Name, SUM(SalesOrderDetail.OrderQty*SalesOrderDetail.UnitPrice) AS Total
+		FROM Product, SalesOrderDetail
+		WHERE Product.ProductId = SalesOrderDetail.ProductID
+		GROUP BY Product.Name
 	
+	14. Show how many orders are in the following ranges (in $):
+	15. Identify the three most important cities. Show the break down of top level product category against city.
 	
+Resit Questions
+	1.List the SalesOrderNumber for the customer 'Good Toys' 'Bike World'
+		SELECT SalesOrderDetail.SalesOrderID, Customer.CompanyName
+		FROM SalesOrderHeader, Customer
+		WHERE SalesOrderHeader.CustomerID = Customer.CustomerID AND
+			(Customer.CompanyName = 'Good Toys' OR Customer.CompanyName = 'Bike World')
 	
+	2.List the ProductName and the quantity of what was ordered by 'Futuristic Bikes'
+		SELECT Product.Name, SalesOrderDetail.OrderQty AS 'Quantity'
+		FROM Product, SalesOrderDetail, SalesOrderHeader, Customer
+		WHERE Product.ProductID = SalesOrderDetail.ProductID AND
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND
+			SalesOrderHeader.CustomerID = Customer.CustomerID AND
+			Customer.CompanyName = 'Futuristic Bikes'
 	
+	3.List the name and addresses of companies containing the word 'Bike' (upper or lower case) and companies containing 'cycle' (upper or lower case). Ensure that the 'bike's are listed before the 'cycles's.
+	4.Show the total order value for each CountryRegion. List by value with the highest first.
+		SELECT Address.CountyRegion, SUM(SalesOrderDetail.OrderQty*SalesOrderDetail.UnitPrice) AS 'Total Order'
+		FROM Address, SalesOrderHeader, SalesOrderDetail
+		WHERE Address.AddressID = SalesOrderHeader.BillToAddressID AND
+			SalesOrderHeader.SalesOrderID = SalesOrderDetail.SalesOrderID
+		GROUP BY  Address.CountyRegion
 	
-	
-	
+	5. Find the best customer in each region.
+		SELECT Address.CountyRegion,Customer.CompanyName,COUNT(Customer.CompanyName)
+		FROM Product,SalesOrderDetail,SalesOrderHeader,Customer,Address
+		WHERE Product.ProductID = SalesOrderDetail.ProductID AND SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND SalesOrderHeader.CustomerID=Customer.CustomerID  AND Address.AddressID = SalesOrderHeader.BillToAddressID AND Address.AddressID = SalesOrderHeader.ShipToAddressID
+		GROUP BY Address.CountyRegion,Customer.CompanyName
+		HAVING COUNT(Customer.CompanyName)>1
+		ORDER BY COUNT(Customer.CompanyName) DESC
