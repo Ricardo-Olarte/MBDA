@@ -1,0 +1,42 @@
+PARTE B
+---
+1. ¿Qué tipos de productos ofrece? ¿Qué subtipos?
+		SELECT Name
+		FROM ProductCategory 
+	¿Qué subtipos?
+		SELECT Name
+		FROM Product
+
+2. ¿Cuántos productos ofrece?¿En qué rango de precios?
+		SELECT COUNT(Name) AS TotalProducts,MIN(ListPrice) AS Min,MAX(ListPrice) AS Max
+		FROM Product
+
+3.	¿Cuántos clientes tiene?
+		SELECT COUNT(CustomerID) AS TotalCustomer
+		FROM Customer
+	¿En qué ciudades?
+		SELECT DISTINCT(City)
+		FROM Address
+
+4.	¿Cuál es el valor de sus ventas?
+		SELECT Commnt
+		FROM SalesOrderHeader
+	¿Entre que años?
+		SELECT OrderDate
+		FROM SalesOrderHeader
+	
+5.	Proponga una pregunta y respóndala
+	¿A que paises están?
+		SELECT CountryRegion
+		FROM Address
+	¿Cuales son sus codigos postales?
+		SELECT PostalCode
+		FROM Address
+
+
+PARTE C
+---
+1. Misión. ¿Cuál creen que es la misión de la organización?
+	-Vender productos a clientes a diferentes paises
+2. Servicios. ¿Qué ofrece a sus clientes?
+	-Productos de distintas categorías

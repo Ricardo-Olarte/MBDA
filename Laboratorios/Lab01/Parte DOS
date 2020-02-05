@@ -1,0 +1,78 @@
+Easy Questions:
+	1.Show the first name and the email address of customer with CompanyName 'Bike World'
+		SELECT FirstName,EmailAddress
+		FROM Customer
+		WHERE CompanyName = 'Bike World'
+	
+	2.Show the CompanyName for all customers with an address in City 'Dallas'
+		SELECT CompanyName
+		FROM Customer,CustomerAddress,Address
+		WHERE Customer.CustomerID = CustomerAddress.CustomerID AND CustomerAddress.AddressID = Address.AddressID AND Address.City = 'Dallas'
+	
+	3.How many items with ListPrice more than $1000 have been sold?
+		SELECT COUNT(Name) AS NumberOfItems
+		FROM Product,SalesOrderDetail
+		WHERE  Product.ProductID = SalesOrderDetail.ProductID  AND Product.ListPrice > 1000
+	
+	4.Give the CompanyName of those customers with orders over $100000. Include the subtotal plus tax plus freight.
+		SELECT CompanyName
+		FROM Customer,SalesOrderHeader
+		WHERE Customer.CustomerID = SalesOrderHeader.CustomerID AND(SubTotal+TaxAmt+Freight)>100000
+	
+	5.Find the number of left racing socks ('Racing Socks, L') ordered by CompanyName 'Riding Cycles'
+		SELECT OrderQty
+		FROM Product,SalesOrderDetail,SalesOrderHeader,Customer
+		WHERE Product.ProductID = SalesOrderDetail.ProductID AND 
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND 
+			SalesOrderHeader.CustomerID = Customer.CustomerID AND 
+			Product.Name IN ('Racing Socks, L') AND Customer.CompanyName = 'Riding Cycles'
+
+Medium Questions
+	6.A "Single Item Order" is a customer order where only one item is ordered. Show the SalesOrderID and the UnitPrice for every Single Item Order.
+		SELECT SalesOrderID,UnitPrice
+		FROM SalesOrderDetail
+		WHERE OrderQty = 1
+	
+	7.Where did the racing socks go? List the product name and the CompanyName for all Customers who ordered ProductModel 'Racing Socks'.
+		SELECT Product.Name,Customer.CompanyName
+		FROM Product,SalesOrderDetail,SalesOrderHeader,Customer,ProductModel
+		WHERE ProductModel.ProductModelID = Product.ProductModelID AND 
+			Product.ProductID = SalesOrderDetail.ProductID AND 
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND 
+			SalesOrderHeader.CustomerID = Customer.CustomerID AND 
+			ProductModel.Name IN ('Racing Socks')
+	
+	8.Show the product description for culture 'fr' for product with ProductID 736.
+		SELECT ProductDescription.Description
+		FROM ProductDescription,ProductModelProductDescription,Product
+		WHERE ProductDescription.ProductDescriptionID = ProductModelProductDescription.ProductDescriptionID AND
+			ProductModelProductDescription.ProductModelID = Product.ProductModelID AND
+			ProductModelProductDescription.Culture = 'fr' AND Product.ProductID = 736
+	
+	9.Use the SubTotal value in SalesOrderHeader to list orders from the largest to the smallest. For each order show the CompanyName and the SubTotal and the total weight of the order.
+		SELECT Customer.CompanyName,SalesOrderHeader.SubTotal,SUM(SalesOrderDetail.OrderQty * Product.weight) AS Total
+		FROM Product,SalesOrderDetail,SalesOrderHeader,Customer
+		WHERE Product.ProductID = SalesOrderDetail.ProductID AND 
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND 
+			SalesOrderHeader.CustomerID = Customer.CustomerID
+		GROUP BY SalesOrderHeader.SubTotal
+		ORDER BY SalesOrderHeader.SubTotal DESC
+	
+	10.How many products in ProductCategory 'Cranksets' have been sold to an address in 'London'?
+		SELECT SUM(SalesOrderDetail.OrderQty) AS Cranksets
+		FROM Product,SalesOrderDetail,SalesOrderHeader,Address,ProductCategory
+		WHERE Product.ProductCategoryID = ProductCategory.ProductCategoryID AND
+			Product.ProductID = SalesOrderDetail.ProductID AND 
+			SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID AND
+			SalesOrderHeader.BillToAddressID = Address.AddressID AND
+			Address.City = 'London' AND ProductCategory.Name = 'Cranksets'
+	
+	11.For every customer with a 'Main Office' in Dallas show AddressLine1 of the 'Main Office' and AddressLine1 of the 'Shipping' address - if there is no shipping address leave it blank. Use one row per customer.
+	
+	
+	
+	
+	
+	
+	
+	
