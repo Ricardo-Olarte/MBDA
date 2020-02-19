@@ -15,17 +15,17 @@ PARTE TRES
 	CICLO UNO:
 		A)Astah
 			Atributos innecesarios:
-				
 				Customer:
 					-Customer.MiddleName
 					-Customer.Title
 					-Customer.Suffix
+					Es informacion de una persona que es necesaria conocer para poder llegar a un reporte mas limpio
 				
 				Address:
-					-
-				
-				SalesOrderHeader:
-					-SalesOrderHeader.CreditCardApprovalCode
+					- AddressLine1
+						Ya que es necesario conocer cual es la direccion de envio
+					- City
+						Es necesario conocer la cidudad a donde se va a realizar el envio debido a las diferentes restricciones que se puedan tener en cada ciudad
 		B)Astah
 		C)
 			2)Show OrdeQty, the Name and the ListPrice of the order made by CustomerID 635
@@ -76,4 +76,65 @@ PARTE TRES
 			*Los clientes que han recibido descuentos de más del 10% de sus compras. [compañía, ventas y descuentos,ordenado por descuentos]
 				
 CICLO DOS:
-??????????????????
+		A)Astah
+			Atributos innecesarios:
+				
+				Customer:
+					-Customer.MiddleName
+					-Customer.Title
+					-Customer.Suffix
+					Es informacion de una persona que es necesaria conocer para poder llegar a un reporte mas limpio
+				
+				Address:
+					- AddressLine1
+						Ya que es necesario conocer cual es la direccion de envio
+					- City
+						Es necesario conocer la cidudad a donde se va a realizar el envio debido a las diferentes restricciones que se puedan tener en cada ciudad
+
+				SalesOrderHeader:
+					-CreditCardApprovalCode
+						Se necesita tener siempre si la tarjeta fue aceptada
+					-PurchaseOrderNumber
+						Es necesario que siempre exista el orden de compra
+				
+				ProductCategory:
+					-No se hizo ningun cambio
+					
+		B)Astah
+		C)
+			*Total de ventas por cliente:
+				SELECT Customer.CustomerID, Customer.CompanyName, SUM(SalesOrderHeader.SubTotal) AS 'Total Ventas'
+				FROM SalesOrderHeader, Customer
+				WHERE SalesOrderHeader.CustomerID = Customer.CustomerID
+				GROUP BY Customer.CompanyName ASC
+				
+			*Total de ventas por categoría:
+				SELECT ProductCategory.Name, SUM(OrderQty) AS 'Total Unidades', COUNT(Commnt) AS 'Cantidad Ventas'
+				FROM SalesOrderHeader, SalesOrderDetail,Product,ProductCategory
+				WHERE    .ProductCategoryID = ProductCategory.ProductCategoryID AND Product.ProductID = SalesOrderDetail.ProductID AND SalesOrderHeader.SalesOrderID = SalesOrderDetail.SalesOrderID
+				GROUP BY ProductCategory.Name
+				
+			*	El producto más vendido a cada uno de los clientes.
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
