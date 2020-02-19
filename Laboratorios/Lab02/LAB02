@@ -8,4 +8,72 @@ PARTE UNO
 		2.Astah
 
 PARTE DOS
-	A)
+	-Definicion de los superconceptos
+
+PARTE TRES
+	
+	CICLO UNO:
+		A)Astah
+			Atributos innecesarios:
+				
+				Customer:
+					-Customer.MiddleName
+					-Customer.Title
+					-Customer.Suffix
+				
+				Address:
+					-
+				
+				SalesOrderHeader:
+					-SalesOrderHeader.CreditCardApprovalCode
+		B)Astah
+		C)
+			2)Show OrdeQty, the Name and the ListPrice of the order made by CustomerID 635
+				SELECT OrderQty,Name,ListPrice
+				FROM SalesOrderHeader JOIN SalesOrderDetail
+					ON SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
+						JOIN Product
+					ON SalesOrderDetail.ProductID=Product.ProductID
+				WHERE CustomerID=635
+			3)
+			*El número de clientes en cada una de las ciudades [ciudad, clientes] (Ordenado de menor a mayor por número de cliente) 
+				SELECT City,COUNT(Customer.CustomerID) AS Clientes
+				FROM Customer JOIN CustomerAddress 
+					ON Customer.CustomerID = CustomerAddress.CustomerID
+						JOIN Address 
+					ON CustomerAddress.AddressID = Address.AddressID
+				GROUP BY Address.City
+			
+			*Los clientes con más de dos direcciones registradas.[id, compañía, número direcciones] (Ordenados de mayor a menor por número de direcciones)
+				SELECT Customer.CustomerID,Customer.CompanyName,COUNT(CustomerAddress.AddressID) AS CantDirecciones
+				FROM Customer JOIN CustomerAddress 
+					ON Customer.CustomerID = CustomerAddress.CustomerID
+						JOIN Address 
+					ON CustomerAddress.AddressID = Address.AddressID
+				GROUP BY CustomerAddress.CustomerID
+		        HAVING COUNT(CustomerAddress.AddressID)>=2
+                ORDER BY COUNT(CustomerAddress.AddressID) ASC
+			
+			*Los clientes ubicados en más de una ciudad[id, compañía, tipo de dirección, ciudad] (Ordenados alfabéticamente por compañía)
+				SELECT Customer.CustomerID,Customer.CompanyName,CustomerAddress.AddressType,Address.City
+				FROM Customer JOIN CustomerAddress 
+					ON Customer.CustomerID = CustomerAddress.CustomerID
+						JOIN Address 
+					ON CustomerAddress.AddressID = Address.AddressID
+				GROUP BY CustomerAddress.CustomerID
+		        HAVING COUNT(Address.City)>=2
+                ORDER BY Customer.CompanyName ASC
+			
+			*Los clientes que no han modificado su dirección de cobro.[Identificación y ciudad, ordenado por ciudad]
+				SELECT Customer.CustomerID,Address.City
+				FROM Customer JOIN CustomerAddress 
+					ON Customer.CustomerID = CustomerAddress.CustomerID
+						JOIN Address 
+					ON CustomerAddress.AddressID = Address.AddressID
+                WHERE Address.AddressLine1!=Address.AddressLine2 AND Address.AddressLine2='NULL'
+                ORDER BY Address.City 
+			
+			*Los clientes que han recibido descuentos de más del 10% de sus compras. [compañía, ventas y descuentos,ordenado por descuentos]
+				
+CICLO DOS:
+??????????????????
