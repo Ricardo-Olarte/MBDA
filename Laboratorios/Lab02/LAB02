@@ -28,13 +28,22 @@ PARTE TRES
 						Es necesario conocer la cidudad a donde se va a realizar el envio debido a las diferentes restricciones que se puedan tener en cada ciudad
 		B)Astah
 		C)
-			2)Show OrdeQty, the Name and the ListPrice of the order made by CustomerID 635
+			2)
+			Show OrdeQty, the Name and the ListPrice of the order made by CustomerID 635
 				SELECT OrderQty,Name,ListPrice
 				FROM SalesOrderHeader JOIN SalesOrderDetail
 					ON SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
 						JOIN Product
 					ON SalesOrderDetail.ProductID=Product.ProductID
 				WHERE CustomerID=635
+			
+			Show all the addresses listed for 'Modular Cycle Systems'
+				SELECT CompanyName,AddressType,AddressLine1
+				FROM Customer JOIN CustomerAddress
+					ON (Customer.CustomerID=CustomerAddress.CustomerID)
+						JOIN Address
+					ON (CustomerAddress.AddressID=Address.AddressID)
+				WHERE CompanyName='Modular Cycle Systems'
 			3)
 			*El número de clientes en cada una de las ciudades [ciudad, clientes] (Ordenado de menor a mayor por número de cliente) 
 				SELECT City,COUNT(Customer.CustomerID) AS Clientes
@@ -74,6 +83,13 @@ PARTE TRES
                 ORDER BY Address.City 
 			
 			*Los clientes que han recibido descuentos de más del 10% de sus compras. [compañía, ventas y descuentos,ordenado por descuentos]
+				SELECT c.CompanyName, SUM(a.Commnt) AS'Ventas', SUM(b.UnitPriceDiscount) AS 'Descuento'
+				FROM SalesOrderHeader a, SalesOrderDetail b, Customer c
+				WHERE c.CustomerID=a.CustomerID AND a.SalesOrderID=b.SalesOrderID AND b.UnitPriceDiscount > 0.1
+				GROUP BY c.CompanyName
+
+		
+		4) Propongan la mejor consulta para el ciclo. Diséñenla e implémentenla.
 				
 CICLO DOS:
 		A)Astah
@@ -102,6 +118,8 @@ CICLO DOS:
 					
 		B)Astah
 		C)
+			2)
+			3)
 			*Total de ventas por cliente:
 				SELECT Customer.CustomerID, Customer.CompanyName, SUM(SalesOrderHeader.SubTotal) AS 'Total Ventas'
 				FROM SalesOrderHeader, Customer
@@ -114,7 +132,25 @@ CICLO DOS:
 				WHERE    .ProductCategoryID = ProductCategory.ProductCategoryID AND Product.ProductID = SalesOrderDetail.ProductID AND SalesOrderHeader.SalesOrderID = SalesOrderDetail.SalesOrderID
 				GROUP BY ProductCategory.Name
 				
-			*	El producto más vendido a cada uno de los clientes.
+			*El producto más vendido a cada uno de los clientes:
+				SELECT Customer.customerID, Customer.CompanyName, Product.Name, SUM(SalesOrderDetail.OrderQty) AS 'Ventas'
+				FROM Customer JOIN SalesOrderHeader
+					ON (Customer.CustomerID = SalesOrderHeader.CustomerID)
+							  JOIN SalesOrderDetail
+					ON (SalesOrderHeader.SalesOrderID = SalesOrderDetail.SalesOrderID)
+							  JOIN Product
+					ON (SalesOrderDetail.ProductID = Product.ProductID)
+				GROUP BY Customer.CustomerID
+				ORDER BY SUM(SalesOrderDetail.OrderQty) DESC
+				
+			*Los productos que más han cambiado su precio de venta unitario.
+				SELECT p.ProductID, p.Name
+				FROM SalesOrderDetail b, Product p
+				WHERE (SELECT COUNT(*) 
+					   FROM SalesOrderDetail c
+					   WHERE b.ProductID = p.ProductID AND b.SalesOrderDetailID<> 
+							 c.SalesOrderDetailID AND b.UnitPrice-c.UnitPrice > 0)
+			4)
 				
 				
 				
