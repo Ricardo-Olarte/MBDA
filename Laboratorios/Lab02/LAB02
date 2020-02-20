@@ -88,9 +88,12 @@ PARTE TRES
 				WHERE c.CustomerID=a.CustomerID AND a.SalesOrderID=b.SalesOrderID AND b.UnitPriceDiscount > 0.1
 				GROUP BY c.CompanyName
 
-		
 		4) Propongan la mejor consulta para el ciclo. Diséñenla e implémentenla.
-				
+				*Consultar la direccion de envio, el nombre de la persona que hizo la orden y la empresa a la cual va destinada
+				SELECT Customer.FirstName, Customer.CompanyName, Customer.Phone, Address.City, Address.AddressLine1
+				FROM Address, Customer, CustomerAddress
+				WHERE Address.AddressID=CustomerAddress.AddressID AND CustomerAddress.CustomerID = Customer.CustomerID
+				GROUP BY Customer.CustomerID
 CICLO DOS:
 		A)Astah
 			Atributos innecesarios:
@@ -119,6 +122,7 @@ CICLO DOS:
 		B)Astah
 		C)
 			2)
+			FALTA + astah
 			3)
 			*Total de ventas por cliente:
 				SELECT Customer.CustomerID, Customer.CompanyName, SUM(SalesOrderHeader.SubTotal) AS 'Total Ventas'
@@ -150,14 +154,37 @@ CICLO DOS:
 					   FROM SalesOrderDetail c
 					   WHERE b.ProductID = p.ProductID AND b.SalesOrderDetailID<> 
 							 c.SalesOrderDetailID AND b.UnitPrice-c.UnitPrice > 0)
-			4)
+			
+			*Los productos que más han cambiado su precio de venta unitario.
+				SELECT Product.ProductID, Product.Name, Product.ListPrice, MIN(UnitPrice) AS MIN, MAX(UnitPrice) AS MAX, (MAX(UnitPrice)-MIN(UnitPrice)) AS DIF
+				FROM Product JOIN SalesOrderDetail ON (Product.ProductID=SalesOrderDetail.ProductID)
+				GROUP BY ProductID
+				
+			4)Propongan la mejor consulta para el ciclo. Diséñenla e implémentenla.
+				Se desea conocer cuanto fue lo recibido por cada venta, cuanto costo hacer cada uno de los productos en la misma y cuanto fue la ganancia obtenida de esa venta
+				
+				SELECT SalesOrderDetail.SalesOrderID, Product.ProductID, ROUND(SalesOrderHeader.Commnt,0) AS 'Total Venta', 
+				       ROUND((SalesOrderDetail.OrderQty*SalesOrderDetail.UnitPrice),0) AS 'Costo', 
+					   ROUND((SalesOrderHeader.Commnt-(SalesOrderDetail.OrderQty*SalesOrderDetail.UnitPrice)),0) AS 'Ganancia'
+				FROM Product, SalesOrderDetail, SalesOrderHeader
+				WHERE SalesOrderDetail.ProductID=Product.ProductID AND SalesOrderDetail.SalesOrderID=SalesOrderHeader.SalesOrderID
+				GROUP BY SalesOrderDetail.SalesOrderID
 				
 				
 				
 				
 				
-				
-				
+RETROSPECTIVA
+1. ¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre)
+	(12h/12h)
+2. ¿Cuál es el estado actual del laboratorio? ¿Por qué?
+	Completo, Porque todo fue terminado
+3. ¿Cuál consideran fue el mayor logro? ¿Por qué?
+	Completar las consultas propuestas por el laboratorio
+4. ¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+	Las consultas propuestas por el laboratorio, Dedicarle tiempo para poder solucionarlas
+5. ¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados?
+	Utilizar la practica de programacion a pares
 				
 				
 				
