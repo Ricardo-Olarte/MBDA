@@ -600,6 +600,26 @@ INSERT INTO Fotos VALUES (1, 'ABCDEFGpng');
 /*-----ULTIMO POBLAR--------*/
 ---(1)---
 
+INSERT INTO Participantes(tid, nid, email, pais, fRegistro, fRetiro)
+VALUES('CC', '12345678-9', 'Usain@Bolt.com', 'Jamaica', TO_DATE('04/02/2018', 'dd/mm/yyyy'),null);
+
+INSERT INTO Atletas(tid, nid, rh, tSangre)
+VALUES('CC', '12345678-9', '+', 'A');
+
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(1, TO_DATE('3/11/2019', 'dd/mm/yyyy'), 800, 50, 94);
+
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(2, TO_DATE('5/11/2019', 'dd/mm/yyyy'), 1459, 92, 94);
+
+INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
+VALUES(1, TO_DATE('4/11/2019', 'dd/mm/yyyy'), 4, 'Muy Suave', 'muy importante', 'CC', '12345678-9',1);
+
+INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
+VALUES(2, TO_DATE('18/10/2019', 'dd/mm/yyyy'), 3, 'Muy fuerte', 'muy baja', 'CE', '018071734-0',49);
+
+INSERT INTO Similitudes VALUES ('CC', '12345678-9',1,'CC', '12345678-9',2,50);
+
 ---(2)---
 
 /*Participantes*/
