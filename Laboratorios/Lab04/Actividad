@@ -1,0 +1,15 @@
+ADICION
+El orden se debe generar automáticamente 1 …  Tg
+Si la duración es mayor a dos horas, se debe indicar las pulsaciones promedio. Tg
+Las pulsaciones no deben superar los 200.  check
+Las fotos nunca se deben repetir. Tg
+En caso que la actividad sea planeada, el dia y la duración deben corresponder a lo estipulado en la sesión. Tg
+Los números de los registros se generan automáticamente dentro de cada actividad Tg
+La fecha y hora de los registros deben ser posteriores a la actividad Tg
+No deben existir más de dos registros del mismo sensor por actividad. Tg
+
+MODIFICACION
+No se puede modificar la fechaInicio de una actividad
+
+ELIMINACION
+Las actividades planeadas no se puden eliminar
