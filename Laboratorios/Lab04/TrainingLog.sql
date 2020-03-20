@@ -482,7 +482,7 @@ ALTER TABLE Evaluaciones ADD CONSTRAINT PK_Evaluaciones PRIMARY KEY(entrenadorti
 ALTER TABLE Sesiones ADD CONSTRAINT PK_Sesiones PRIMARY KEY(dia, orden);
 ALTER TABLE Actividades ADD CONSTRAINT PK_Actividades PRIMARY KEY(numero);
 ALTER TABLE Fotos ADD CONSTRAINT PK_Fotos PRIMARY KEY(actividad,fotos);
-ALTER TABLE Registros ADD CONSTRAINT PK_Registros PRIMARY KEY(actividad, sensor);
+ALTER TABLE Registros ADD CONSTRAINT PK_Registros PRIMARY KEY(actividad, sensor, valor);
 ALTER TABLE Planeadas ADD CONSTRAINT PK_Planeadas PRIMARY KEY(numero);
 ALTER TABLE Libres ADD CONSTRAINT PK_Libres PRIMARY KEY(numero);
 
@@ -3063,7 +3063,8 @@ VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
 	FOR EACH ROW
 	BEGIN
 		IF (:old.fecha <> :new.fecha) OR  (:old.recomendaciones <> :new.recomendaciones) 
-            OR (:old.entrenadortid <> :new.entrenadortid) OR (:old.entrenadornid <> :new.entrenadornid) OR (:old.actividad <> :new.actividad)
+            OR (:old.entrenadortid <> :new.entrenadortid) OR (:old.entrenadornid <> :new.entrenadornid) 
+            OR (:old.actividad <> :new.actividad) OR (:new.numero <> :old.numero)
 		THEN
 			RAISE_APPLICATION_ERROR(-20004,'Actualizacion Invalida');
 	  END IF; 
@@ -3129,6 +3130,9 @@ VALUES('CC', '368740104-9', 13, 'CC', '368740104-9', 13, 70);
 --Tg_Mo_evaluaciones_comentarios
 UPDATE Evaluaciones SET numero=80 WHERE entrenadortid = 'CE' AND entrenadornid = '278104359-1' AND actividad=1;
 
+--Tg_El_Evaluaciones
+/*No puede fallar*/
+
 /*---xDisparadores---*/
 /*Adicion*/
     drop trigger Tg_Ad_evaluaciones_num_fecha;
@@ -3144,7 +3148,7 @@ UPDATE Evaluaciones SET numero=80 WHERE entrenadortid = 'CE' AND entrenadornid =
 ---
 /*CICLO 1: CRUD: REGISTRAR ACTIVIDAD*/
 /*Atributos*/
-ALTER TABLE Actividades ADD CONSTRAINT CHK_pulsacionesProm CHECK(pulsacionesProm < 200 );
+ALTER TABLE Actividades ADD CONSTRAINT CHK_pulsacionesPromMax CHECK(pulsacionesProm < 200 );
 /*AtributosOk*/
 INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
 VALUES(59, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 160);
@@ -3169,7 +3173,7 @@ VALUES(60, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 204);
     FOR EACH ROW
     BEGIN
         IF (:new.tiempoTotal > 120) AND (:new.pulsacionesProm is NULL)
-            THEN RAISE_APPLICATION_ERROR(-20076,'Cuando el tiempo total es mayor a 2hse debe indicar las pulsaciones');
+            THEN RAISE_APPLICATION_ERROR(-20076,'Cuando el tiempo total es mayor a 2h debe indicar las pulsaciones');
         END IF;
     END Tg_Ad_actvidades_prom;
     
@@ -3238,12 +3242,12 @@ VALUES(60, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 204);
     DECLARE
         cant_registros NUMBER;
     BEGIN
-        SELECT count(*) INTO cant_registros FROM Registros WHERE Registros.sensor = :new.sensor;
-        IF cant_registros > 2
+        SELECT count(*) INTO cant_registros FROM Registros WHERE Registros.sensor = :new.sensor AND Registros.actividad = :new.actividad;
+        IF cant_registros > 1
             THEN RAISE_APPLICATION_ERROR(-20076,'Maximo Dos Registros Por Actividad(mismo sensor)');
         END IF;
     END Tg_Ad_regitros_sensor;
-    
+
     --drop trigger Tg_Ad_regitros_sensor
 
 /*Modificacion*/
@@ -3262,9 +3266,8 @@ VALUES(60, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 204);
     
 /*Elimicacion*/
 ---Las Actividades no se pueden eliminar.
-
     CREATE OR REPLACE TRIGGER Tg_El_Actividades
-	INSTANCE OF DELETE ON Actividades
+	BEFORE DELETE ON Actividades
 	FOR EACH ROW
 	BEGIN
 		RAISE_APPLICATION_ERROR(-20004,'No se puede eliminar');
@@ -3284,6 +3287,10 @@ VALUES(53, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 94);
 ---Tg_Ad_Fotos_rep
 INSERT INTO Fotos VALUES (2, 'fgh.jepg');
 
+---Tg_Ad_Planeadas_dia_dur_sesion
+INSERT INTO Planeadas(numero, sesiondia, sesionorden)
+VALUES(6, 10, 69);
+
 ---Tg_Ad_regitros_num;
 INSERT INTO Registros(fecha, hora, sensor, valor, actividad)
 VALUES(TO_DATE('26/11/2019', 'dd/mm/yyyy'), 1000, 'P', 374412, 2);
@@ -3294,13 +3301,13 @@ VALUES(50, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'C', 306474, 1);
 
 ---Tg_Ad_regitros_sensor
 INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
-VALUES(53, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'P', 306474, 1);
+VALUES(53, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'C', 23124, 1);
 
 ---Tg_Mo_actividad_fecha
 UPDATE Actividades SET pulsacionesProm=120 WHERE numero=5;
 
 ---Tg_El_Actividades
-DELETE FROM Activivdades WHERE numero=5;
+DELETE FROM Actividades WHERE numero=5;
 
 /*---DisparadoresNoOk---*/
 ---Tg_Ad_actvidades_num /*No puede existir un error*/
@@ -3311,13 +3318,19 @@ VALUES(55, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, null);
 ---Tg_Ad_Fotos_rep
 INSERT INTO Fotos VALUES (3, 'fgh.jepg');
 
+---Tg_Ad_Planeadas_dia_dur_sesion
+INSERT INTO Planeadas(numero, sesiondia, sesionorden)
+VALUES(7, 1, 50);
+
 ---Tg_Ad_regitros_num /*No puede existir un error*/
 
 ---Tg_Ad_regitros_fecha
 INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
 VALUES(50, TO_DATE('02/10/2018', 'dd/mm/yyyy'), 700, 'C', 306474, 1);
 
----Tg_Ad_regitros_sensor /*No puede existir un error*/
+---Tg_Ad_regitros_sensor
+INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
+VALUES(54, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'C', 123124, 1);
 
 ---Tg_Mo_actividad_fecha
 UPDATE Actividades SET fechaInicio=TO_DATE('02/10/2018', 'dd/mm/yyyy') WHERE numero=5;
@@ -3329,6 +3342,7 @@ UPDATE Actividades SET fechaInicio=TO_DATE('02/10/2018', 'dd/mm/yyyy') WHERE num
 drop trigger Tg_Ad_actvidades_num;
 drop trigger Tg_Ad_actvidades_prom;
 drop trigger Tg_Ad_Fotos_rep;
+drop trigger Tg_Ad_Planeadas_dia_dur_sesion;
 drop trigger Tg_Ad_regitros_num;
 drop trigger Tg_Ad_regitros_fecha;
 drop trigger Tg_Ad_regitros_sensor;
@@ -3353,7 +3367,9 @@ drop trigger Tg_El_Actividades;
 /*Elimicacion*/
 
 ----------PUNTO 3----------
-    /*Se Eliminaron conceptos deribados que no van en el concepto y se corrigieron cardinalidades*/
+    /*Se Eliminaron conceptos deribados que no van en el concepto y se corrigieron cardinalidades,
+      y se modifico la pk de Registros
+    */
     
 ----------RETROSPECTIVA----------
 /*
