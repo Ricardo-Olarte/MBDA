@@ -1,14 +1,4 @@
-ADICION
-Una sesion no puede durar mas de 5 horas
-La fecha de la sesion debe ser mayor a la fecha actual
-
-
-MODIFICACION
-La descripcion de una sesion no se puede modificar
-El dia de la orden solo se modifica si es por un dia mayor al mismo
-
-ELIMINACION
-Si se elimina un atleta el atleta que pertenecia a la sesion debe ser eliminada
-
-
 FALTA PROBAR:
+	chk_dia_sesn
+	Tg_Mo_sesion_dia
+	FK_sesiones_atletas

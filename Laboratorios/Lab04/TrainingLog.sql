@@ -2963,10 +2963,7 @@ VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
     
 ----------PUNTO 2----------
 
-/*CICLO UNO*/
----
-
-/*CICLO 1: CRUD: REGISTRAR EVALUACION*/
+/*----------CICLO 1: CRUD: REGISTRAR EVALUACION----------*/
 /*---Disparadores---*/
 /*Adicion*/
 ---El número y la fecha se asignan automáticamente
@@ -3145,8 +3142,9 @@ UPDATE Evaluaciones SET numero=80 WHERE entrenadortid = 'CE' AND entrenadornid =
     
 /*Elimicacion*/
     drop trigger Tg_El_Evaluaciones;
----
-/*CICLO 1: CRUD: REGISTRAR ACTIVIDAD*/
+
+
+/*----------CICLO 1: CRUD: REGISTRAR ACTIVIDAD----------*/
 /*Atributos*/
 ALTER TABLE Actividades ADD CONSTRAINT CHK_pulsacionesPromMax CHECK(pulsacionesProm < 200 );
 /*AtributosOk*/
@@ -3351,20 +3349,121 @@ drop trigger Tg_Mo_actividad_fecha;
 /*Elimicacion*/
 drop trigger Tg_El_Actividades;
 
----
-/*CICLO 1: CRUD: REGISTRAR SESION*/
+
+
+/*----------CICLO 1: CRUD: REGISTRAR SESION----------*/
+/*---Atributos---*/
+--Una sesion no puede durar mas de 6 horas
+ALTER TABLE Sesiones ADD CONSTRAINT CHK_duracion_sesn CHECK(duracion < 361 );
+
+--El dia de la sesion no debe ser superior a 31
+ALTER TABLE Sesiones ADD CONSTRAINT CHK_dia_sesn CHECK(dia < 31 );
+
+/*AtributosOk*/
+--Una sesion no puede durar mas de 6 horas
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(31, 69, 355, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+--El dia de la sesion no debe ser superior a 31
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(24, 123, 355, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+/*AtributosNoOK*/
+--Una sesion no puede durar mas de 6 horas
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(31, 70, 400, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+--El dia de la sesion no debe ser superior a 31
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(42, 123, 355, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+
+/*---Atributos---*/
+---Si se elimina un atleta el atleta que pertenecia a la sesion debe ser eliminada
+ALTER TABLE Sesiones DROP CONSTRAINT FK_sesiones_atletas;
+ALTER TABLE Sesiones ADD CONSTRAINT FK_sesiones_atletas FOREIGN KEY (atletatid, atletanid) REFERENCES Atletas(tid,nid) ON DELETE SET NULL;
+
+/*AtributosOk*/
+---FK_sesiones_atletas
+DELETE FROM ATLETAS WHERE ATLETAS.nid='601910156-8';
+
 /*---Disparadores---*/
+/*Adicion*/
+---La fecha de la sesion debe ser mayor a la fecha actual
+    CREATE TRIGGER Tg_Ad_Sesiones_fecha
+    BEFORE INSERT ON Sesiones
+    FOR EACH ROW
+    DECLARE
+        dia_actv VARCHAR(10);
+        dia_act VARCHAR(10);
+    BEGIN
+         SELECT TO_CHAR(sysdate, 'DD') INTO dia_actv FROM DUAL;
+         SELECT TO_NUMBER(dia_actv) INTO dia_act FROM DUAL;
+        IF :new.dia < dia_act
+            THEN RAISE_APPLICATION_ERROR(-20076,'EL DIA NO PUEDE SER MENOR AL DIA ACTUAL');
+        END IF;
+    END Tg_Ad_Sesiones_fecha;
+    
+    --drop trigger Tg_Ad_Sesiones_fecha;
+    
+   
 /*Modificacion*/
-/*Elimicacion*/
+---La descripcion de una sesion no se puede modificar
+    CREATE OR REPLACE TRIGGER Tg_Mo_sesion_descripcion
+	BEFORE UPDATE ON Sesiones
+	FOR EACH ROW
+	BEGIN
+		IF :old.descripcion <> :new.descripcion
+		THEN
+			RAISE_APPLICATION_ERROR(-20004,'Actualizacion Invalida');
+	  END IF; 
+	END Tg_Mo_sesion_descripcion;
+    
+    --drop trigger Tg_Mo_sesion_descripcion
+    
+---El dia de la orden solo se modifica si es por un dia mayor al mismo
+    CREATE OR REPLACE TRIGGER Tg_Mo_sesion_dia
+	BEFORE UPDATE ON Sesiones
+	FOR EACH ROW
+	BEGIN
+		IF :old.dia <> :new.dia AND :old.dia > :new.dia
+		THEN
+			RAISE_APPLICATION_ERROR(-20004,'Actualizacion Invalida');
+	  END IF; 
+	END Tg_Mo_sesion_dia;
+    
+    --drop trigger Tg_Mo_sesion_dia
+
 
 /*---DisparadoresOk---*/
+--Tg_Ad_Sesiones_fecha
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(20, 70, 210, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+--Tg_Mo_sesion_descripcion
+UPDATE Sesiones SET duracion=40 WHERE dia=20 AND orden=70;
+
+--Tg_Mo_sesion_dia
+UPDATE Sesiones SET dia=22 WHERE dia=20 AND orden=70;
+
 
 /*---DisparadoresNoOk---*/
+--Tg_Ad_Sesiones_fecha
+INSERT INTO Sesiones(dia, orden, duracion, descripcion, atletatid, atletanid)
+VALUES(18, 70, 210, 'Chronic lymphocytic leukemia of B-cell type in remission', 'TI', '296046449-4');
+
+--Tg_Mo_sesion_descripcion
+UPDATE Sesiones SET descripcion='Trigger NoOK' WHERE dia=20 AND orden=70;
+
+--Tg_Mo_sesion_dia
+UPDATE Sesiones SET dia=2 WHERE dia=20 AND orden=70;
 
 /*---xDisparadores---*/
 /*Adicion*/
+drop trigger Tg_Ad_Sesiones_fecha;
 /*Modificacion*/
-/*Elimicacion*/
+drop trigger Tg_Mo_sesion_descripcion;
+drop trigger Tg_Mo_sesion_dia;
 
 ----------PUNTO 3----------
     /*Se Eliminaron conceptos deribados que no van en el concepto y se corrigieron cardinalidades,
