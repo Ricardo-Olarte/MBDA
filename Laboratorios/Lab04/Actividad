@@ -1,15 +1,17 @@
 ADICION
-El orden se debe generar automáticamente 1 …  Tg
-Si la duración es mayor a dos horas, se debe indicar las pulsaciones promedio. Tg
-Las pulsaciones no deben superar los 200.  check
-Las fotos nunca se deben repetir. Tg
-En caso que la actividad sea planeada, el dia y la duración deben corresponder a lo estipulado en la sesión. Tg
-Los números de los registros se generan automáticamente dentro de cada actividad Tg
-La fecha y hora de los registros deben ser posteriores a la actividad Tg
-No deben existir más de dos registros del mismo sensor por actividad. Tg
+Una sesion no puede durar mas de 5 horas
+La fecha de la sesion debe ser mayor a la fecha actual
+
 
 MODIFICACION
-No se puede modificar la fechaInicio de una actividad
+La descripcion de una sesion no se puede modificar
+El dia de la orden solo se modifica si es por un dia mayor al mismo
 
 ELIMINACION
-Las actividades planeadas no se puden eliminar
+Si se elimina un atleta el atleta que pertenecia a la sesion debe ser eliminada
+
+
+FALTA PROBAR:
+	actualizacion -- registrar evaluacion
+	registrarsensor -- registrar actividad
+	actualizar -- actividad
