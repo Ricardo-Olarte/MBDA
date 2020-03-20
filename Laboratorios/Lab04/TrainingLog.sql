@@ -3325,3 +3325,15 @@ drop trigger Tg_Ad_regitros_sensor;
 drop trigger Tg_Mo_actividad_fecha;
 /*Elimicacion*/
 drop trigger Tg_El_Actividades;
+
+---
+/*CICLO 1: CRUD: REGISTRAR SESION*/
+/*---Disparadores---*/
+/*Modificacion*/
+/*Elimicacion*/
+/*---DisparadoresOk---*/
+/*---DisparadoresNoOk---*/
+/*---xDisparadores---*/
+/*Adicion*/
+/*Modificacion*/
+/*Elimicacion*/
