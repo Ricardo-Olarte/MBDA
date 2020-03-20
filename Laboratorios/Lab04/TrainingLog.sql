@@ -143,7 +143,6 @@ DROP TABLE Fotos;
 DROP TABLE Registros;
 DROP TABLE Planeadas;
 DROP TABLE Libres;
-
 ---------------------------------------------------------------
 
 /*CICLO 1 PoblarOK (1) */
@@ -2952,6 +2951,18 @@ VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* LAB 04 */
 
+----------PUNTO 1----------
+--A. Modelo Conceptual
+    /*Cambiamos la aparicion de conceptos derivados ya que no forman parte del Modelo Conceptual*/
+--B. Modelo Logico
+    /*Agregamos nulidades faltantes que estaban en el modelo extendido*/
+--C. Construccion
+    /*(1) Todo ya se encontraba en un mismo archivo*/
+    /*(2) Se corrigio sangrado en los primeros inserts que se encuentran*/
+    /*(3) Ya se tenia el estanadar para las restricciones*/
+    
+----------PUNTO 2----------
+
 /*CICLO UNO*/
 ---
 
@@ -3331,9 +3342,29 @@ drop trigger Tg_El_Actividades;
 /*---Disparadores---*/
 /*Modificacion*/
 /*Elimicacion*/
+
 /*---DisparadoresOk---*/
+
 /*---DisparadoresNoOk---*/
+
 /*---xDisparadores---*/
 /*Adicion*/
 /*Modificacion*/
 /*Elimicacion*/
+
+----------PUNTO 3----------
+    /*Se Eliminaron conceptos deribados que no van en el concepto y se corrigieron cardinalidades*/
+    
+----------RETROSPECTIVA----------
+/*
+    1.	¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre) 
+        20h/20h
+    2.	¿Cuál es el estado actual del laboratorio? ¿Por qué?
+        Completo
+    3.	¿Cuál consideran fue el mayor logro? ¿Por qué? 
+        Lograr la realizacion del laboratorio de manera totalmente remota
+    4.	¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+        El uso de SQLDEVELOPER de manera remota, no se pudo solucionarP
+    5.	¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados? 
+        Utilizar la programacion a pares
+*/
