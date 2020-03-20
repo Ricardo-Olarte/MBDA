@@ -483,7 +483,7 @@ ALTER TABLE Evaluaciones ADD CONSTRAINT PK_Evaluaciones PRIMARY KEY(entrenadorti
 ALTER TABLE Sesiones ADD CONSTRAINT PK_Sesiones PRIMARY KEY(dia, orden);
 ALTER TABLE Actividades ADD CONSTRAINT PK_Actividades PRIMARY KEY(numero);
 ALTER TABLE Fotos ADD CONSTRAINT PK_Fotos PRIMARY KEY(actividad,fotos);
-ALTER TABLE Registros ADD CONSTRAINT PK_Registros PRIMARY KEY(actividad);
+ALTER TABLE Registros ADD CONSTRAINT PK_Registros PRIMARY KEY(actividad, sensor);
 ALTER TABLE Planeadas ADD CONSTRAINT PK_Planeadas PRIMARY KEY(numero);
 ALTER TABLE Libres ADD CONSTRAINT PK_Libres PRIMARY KEY(numero);
 
@@ -2598,14 +2598,6 @@ VALUES(4, TO_DATE('27/01/2020', 'dd/mm/yyyy'), 2000, 'C', 138832, 47);
 INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
 VALUES(3, TO_DATE('16/12/2019', 'dd/mm/yyyy'), 2000, 'C', 204821, 48);
 
-/* INSERT QUERY NO: 49 */
-INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
-VALUES(2, TO_DATE('26/11/2019', 'dd/mm/yyyy'), 1000, 'P', 374412, 49);
-
-/* INSERT QUERY NO: 50 */
-INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
-VALUES(1, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'C', 306474, 50);
-
 
 /*Evaluaciones*/
 /* INSERT QUERY NO: 1 */
@@ -2929,32 +2921,6 @@ VALUES
 (
 46, TO_DATE('09/11/2019', 'dd/mm/yyyy'), 2, 'Other chorioretinal inflammations left eye', 'muy importante', 'CE', '725641380-7',46
 );
-
-/* INSERT QUERY NO: 47 */
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES
-(
-47, TO_DATE('11/03/2019', 'dd/mm/yyyy'), 2, 'Pathological fracture unspecified ulna and radius initial encounter for fracture', 'muy importante', 'CC', '074127804-9',47
-);
-
-/* INSERT QUERY NO: 48 */
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES
-(
-48, TO_DATE('13/12/2019', 'dd/mm/yyyy'), 5, 'Unspecified open wound left thigh initial encounter', 'muy baja', 'CE', '197026365-2',48
-);
-
-/* INSERT QUERY NO: 49 */
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES
-(
-49, TO_DATE('18/10/2019', 'dd/mm/yyyy'), 5, 'Gestational diabetes mellitus in childbirth diet controlled', 'muy baja', 'CE', '018071734-0',49
-);
-
-/* INSERT QUERY NO: 50 */
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(50, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',50);
-
 /*Planeadas*/
 INSERT INTO Planeadas(numero, sesiondia, sesionorden)
 VALUES(1, 0, 6);
@@ -2980,6 +2946,9 @@ VALUES ('TI', '980845648-0', 'CC', '569423977-6');
 INSERT INTO Entrenamientos(atletatid,atletanid,entrenadortid,entrenadornid)
 VALUES ('CE', '298997851-8', 'CC', '423029084-5');
 
+INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
+VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* LAB 04 */
 
@@ -2999,10 +2968,7 @@ VALUES ('CE', '298997851-8', 'CC', '423029084-5');
         :new.fecha := SYSDATE();
     END Tg_Ad_evaluaciones_num_fecha;
     
-    INSERT INTO Evaluaciones(puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-    VALUES(2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',50);
-    
-    drop trigger Tg_Ad_evaluaciones_num_fecha;
+    --drop trigger Tg_Ad_evaluaciones_num_fecha;
     
 ---Solo registra evaluaciones sobre actividades de atletas que esté entrenando
     CREATE TRIGGER Tg_Ad_evaluacion_actividad
@@ -3035,9 +3001,9 @@ VALUES ('CE', '298997851-8', 'CC', '423029084-5');
         
     END Tg_Ad_evaluacion_actividad;
     
-    drop trigger Tg_Ad_evaluacion_actividad;
+    --drop trigger Tg_Ad_evaluacion_actividad;
 	
----Solo puede realizar una evaluación sobre una misma actividad.(REVISAR)
+---Solo puede realizar una evaluación sobre una misma actividad.
     CREATE TRIGGER Tg_Ad_evaluacion_misma_Act
     BEFORE INSERT ON Evaluaciones
     FOR EACH ROW
@@ -3045,20 +3011,20 @@ VALUES ('CE', '298997851-8', 'CC', '423029084-5');
         ent_total NUMBER(10);
     BEGIN
         SELECT COUNT(*) INTO ent_total 
-        FROM Evaluaciones,
+        FROM Evaluaciones
         WHERE Evaluaciones.numero = :new.numero AND Evaluaciones.actividad = :new.actividad;
         
-        IF ent_total > 1 
+        IF ent_total > 0
             THEN RAISE_APPLICATION_ERROR(-20201,'CANT_INSERT_ROW');
         END IF; 
         
     END Tg_Ad_evaluacion_misma_Act;
     
-    drop trigger Tg_Ad_evaluacion_misma_Act;
+   --drop trigger Tg_Ad_evaluacion_misma_Act;
     
 
 ---Sólo puede indicar 3 evaluaciones similares. Dichas evaluaciones deben corresponder al atleta evaluado.
-CREATE TRIGGER Tg_Ad_similitudes_max3
+    CREATE TRIGGER Tg_Ad_similitudes_max3
     BEFORE INSERT ON Similitudes
     FOR EACH ROW
     DECLARE 
@@ -3072,37 +3038,27 @@ CREATE TRIGGER Tg_Ad_similitudes_max3
               AND Similitudes.evaluacion2actividad = :new.evaluacion1actividad)
         GROUP BY Similitudes.evaluacion1nid;
         
-        IF ent_total > 3 
+        IF ent_total > 2 
             THEN RAISE_APPLICATION_ERROR(-20201,'Number_Maximum_Of_Similitudes_Reached');
         END IF; 
     END Tg_Ad_similitudes_max3;
     
-    drop trigger Tg_Ad_similitudes_max3;
+    --drop trigger Tg_Ad_similitudes_max3;
 
 /*Modificacion*/
 ---Solo se puede actualizar el puntaje y los comentarios.
 	CREATE OR REPLACE TRIGGER Tg_Mo_evaluaciones_comentarios
 	BEFORE UPDATE ON Evaluaciones
 	FOR EACH ROW
-	DECLARE
-		fecha_o DATE,
-		recomendaciones_o VARCHAR;
-		entrenadortid_o VARCHAR;
-		entrenadornid_o VARCHAR;
-		actividad_o NUMBER;
 	BEGIN
-		SELECT fecha INTO fecha_o FROM Evaluaciones WHERE numero = :new.numero;
-		SELECT recomendaciones INTO recomendaciones_o FROM Evaluaciones WHERE numero = :new.numero;
-		SELECT entrenadortid INTO entrenadortid_o FROM Evaluaciones WHERE numero = :new.numero;
-		SELECT entrenadornid INTO entrenadornid_o FROM Evaluaciones WHERE numero = :new.numero;
-		SELECT actividad INTO actividad_o FROM Evaluaciones WHERE numero = :new.numero;
-		IF :new.fecha <> fecha_o OR  :new.recomendaciones <> recomendaciones_o OR :new.entrenadortid <> entrenadortid_o OR :new.entrenadornid <> entrenadornid_o OR :new.actividad <> actividad_o :
+		IF (:old.fecha <> :new.fecha) OR  (:old.recomendaciones <> :new.recomendaciones) 
+            OR (:old.entrenadortid <> :new.entrenadortid) OR (:old.entrenadornid <> :new.entrenadornid) OR (:old.actividad <> :new.actividad)
 		THEN
 			RAISE_APPLICATION_ERROR(-20004,'Actualizacion Invalida');
 	  END IF; 
 	END Tg_Mo_evaluaciones_comentarios;
     
-	drop trigger Tg_Mo_evaluaciones_comentarios;
+	--drop trigger Tg_Mo_evaluaciones_comentarios;
     
 /*Elimicacion*/
 ---Las evaluaciones no se pueden eliminar.
@@ -3113,7 +3069,7 @@ CREATE TRIGGER Tg_Ad_similitudes_max3
 		RAISE_APPLICATION_ERROR(-20004,'No se puede eliminar');
 	END Tg_El_Evaluaciones;
     
-    drop trigger Tg_El_Evaluaciones;
+    --drop trigger Tg_El_Evaluaciones;
 	
 /*---DisparadoresOk---*/
 --Tg_Ad_evaluaciones_num_fecha
@@ -3122,17 +3078,15 @@ VALUES(2, 'Nondisplaced fracture of left ulna styloid process subsequent encount
 
 --Tg_Ad_evaluacion_actividad
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(52, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',1);
+VALUES(52, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Trigger Ok', 'muy importante', 'CE', '545671317-9',1);
 
 --Tg_Ad_evaluacion_misma_Act
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(54, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',1);
+VALUES(54, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Triger test 1', 'muy importante', 'CE', '545671317-9',3);
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(54, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',2);
+VALUES(54, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Triger test 2', 'muy importante', 'CE', '545671317-9',2);
 
 --Tg_Ad_similitudes_max3
-INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
-VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
 INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
 VALUES('CC', '368740104-9', 13, 'CC', '459345336-4', 21, 50);
 INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
@@ -3149,21 +3103,15 @@ delete from Evaluaciones where numero=1;
 
 --Tg_Ad_evaluacion_actividad
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(52, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',0);
+VALUES(52, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Trigger no OK', 'muy importante', 'CE', '545671317-9',6);
 
 --Tg_Ad_evaluacion_misma_Act
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(70, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '545671317-9',1);
+VALUES(70, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Trigger test fail 1', 'muy importante', 'CE', '545671317-9',4);
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES(70, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Nondisplaced fracture of left ulna styloid process subsequent encounter for open fracture', 'muy importante', 'CE', '940525951-2',1);
+VALUES(70, TO_DATE('14/04/2019', 'dd/mm/yyyy'), 2, 'Trigger test fail 2', 'muy importante', 'CE', '940525951-2',4);
 
 --Tg_Ad_similitudes_max3
-INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
-VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
-INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
-VALUES('CC', '368740104-9', 13, 'CC', '459345336-4', 21, 50);
-INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
-VALUES('CC', '368740104-9', 13, 'CC', '740756795-6', 24, 70);
 INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
 VALUES('CC', '368740104-9', 13, 'CC', '368740104-9', 13, 70);
 
@@ -3184,3 +3132,196 @@ UPDATE Evaluaciones SET numero=80 WHERE entrenadortid = 'CE' AND entrenadornid =
     drop trigger Tg_El_Evaluaciones;
 ---
 /*CICLO 1: CRUD: REGISTRAR ACTIVIDAD*/
+/*Atributos*/
+ALTER TABLE Actividades ADD CONSTRAINT CHK_pulsacionesProm CHECK(pulsacionesProm < 200 );
+/*AtributosOk*/
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(59, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 160);
+/*AtributosNoOK*/
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(60, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 204);
+
+/*---Disparadores---*/
+/*Adicion*/
+---El orden se debe generar automáticamente 1 …  
+    CREATE TRIGGER Tg_Ad_actvidades_num
+    BEFORE INSERT ON Actividades
+    FOR EACH ROW
+    BEGIN
+        SELECT COUNT(*)+1 INTO :new.numero FROM Actividades;
+    END Tg_Ad_actvidades_num;
+    
+    --drop trigger Tg_Ad_actvidades_num
+---Si la duración es mayor a dos horas, se debe indicar las pulsaciones promedio.
+    CREATE TRIGGER Tg_Ad_actvidades_prom
+    BEFORE INSERT ON Actividades
+    FOR EACH ROW
+    BEGIN
+        IF (:new.tiempoTotal > 120) AND (:new.pulsacionesProm is NULL)
+            THEN RAISE_APPLICATION_ERROR(-20076,'Cuando el tiempo total es mayor a 2hse debe indicar las pulsaciones');
+        END IF;
+    END Tg_Ad_actvidades_prom;
+    
+    --drop trigger Tg_Ad_actvidades_prom
+
+---Las fotos nunca se deben repetir.
+    CREATE TRIGGER Tg_Ad_Fotos_rep
+    BEFORE INSERT ON Fotos
+    FOR EACH ROW
+    DECLARE
+        foto_ch NUMBER;
+    BEGIN
+        SELECT count(*) INTO foto_ch FROM Fotos WHERE Fotos.fotos = :new.fotos;
+        IF foto_ch > 0
+            THEN RAISE_APPLICATION_ERROR(-20076,'No se pueden repetir fotos');
+        END IF;
+    END Tg_Ad_Fotos_rep;
+    
+    --drop trigger Tg_Ad_Fotos_rep
+    
+---En caso que la actividad sea planeada, el dia y la duración deben corresponder a lo estipulado en la sesión. 
+    CREATE TRIGGER Tg_Ad_Planeadas_dia_dur_sesion
+    BEFORE INSERT ON Planeadas
+    FOR EACH ROW
+    DECLARE
+        sesion_ord NUMBER;
+        sesion_dia NUMBER;
+    BEGIN
+        SELECT count(*) INTO sesion_ord FROM Sesiones WHERE Sesiones.orden = :new.sesionorden;
+        SELECT count(*) INTO sesion_dia FROM Sesiones WHERE Sesiones.dia = :new.sesiondia;
+        IF (sesion_ord <= 0) AND (sesion_dia <= 0)
+            THEN RAISE_APPLICATION_ERROR(-20076,'Los valores no corresponden a lo estipulado en la sesión.');
+        END IF;
+    END Tg_Ad_Planeadas_dia_dur_sesion;
+    --drop trigger Tg_Ad_Planeadas_dia_dur_sesion
+    
+---Los números de los registros se generan automáticamente dentro de cada actividad 
+    CREATE TRIGGER Tg_Ad_regitros_num
+    BEFORE INSERT ON Registros
+    FOR EACH ROW
+    BEGIN
+        SELECT COUNT(*)+1 INTO :new.numero FROM Registros;
+    END Tg_Ad_regitros_num;
+    
+    --drop trigger Tg_Ad_regitros_num;
+    
+---La fecha y hora de los registros deben ser posteriores a la actividad
+    CREATE TRIGGER Tg_Ad_regitros_fecha
+    BEFORE INSERT ON Registros
+    FOR EACH ROW
+    DECLARE
+        fecha_act DATE;
+    BEGIN
+        SELECT fechaInicio INTO fecha_act FROM Actividades WHERE Actividades.numero = :new.actividad;
+        IF :new.fecha < fecha_act
+            THEN RAISE_APPLICATION_ERROR(-20076,'lA FECHA DE REGISTRO DEBE SER SUPERIOR A LA FECHA DE LA ACTIVIDAD');
+        END IF;
+    END Tg_Ad_regitros_fecha;
+
+    --drop trigger Tg_Ad_regitros_fecha
+
+---No deben existir más de dos registros del mismo sensor por actividad.
+    CREATE TRIGGER Tg_Ad_regitros_sensor
+    BEFORE INSERT ON Registros
+    FOR EACH ROW
+    DECLARE
+        cant_registros NUMBER;
+    BEGIN
+        SELECT count(*) INTO cant_registros FROM Registros WHERE Registros.sensor = :new.sensor;
+        IF cant_registros > 2
+            THEN RAISE_APPLICATION_ERROR(-20076,'Maximo Dos Registros Por Actividad(mismo sensor)');
+        END IF;
+    END Tg_Ad_regitros_sensor;
+    
+    --drop trigger Tg_Ad_regitros_sensor
+
+/*Modificacion*/
+---No se puede modificar la fechaInicio de una actividad
+    CREATE OR REPLACE TRIGGER Tg_Mo_actividad_fecha
+	BEFORE UPDATE ON Actividades
+	FOR EACH ROW
+	BEGIN
+		IF :old.fechaInicio <> :new.fechaInicio
+		THEN
+			RAISE_APPLICATION_ERROR(-20004,'Actualizacion Invalida');
+	  END IF; 
+	END Tg_Mo_actividad_fecha;
+    
+    --drop trigger Tg_Mo_actividad_fecha;
+    
+/*Elimicacion*/
+---Las Actividades no se pueden eliminar.
+
+    CREATE OR REPLACE TRIGGER Tg_El_Actividades
+	INSTANCE OF DELETE ON Actividades
+	FOR EACH ROW
+	BEGIN
+		RAISE_APPLICATION_ERROR(-20004,'No se puede eliminar');
+	END Tg_El_Evaluaciones;
+    
+    --drop trigger Tg_El_Actividades;
+    
+/*---DisparadoresOk---*/
+---Tg_Ad_actvidades_num
+INSERT INTO Actividades(fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 93, 94);
+
+---Tg_Ad_actvidades_prom
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(53, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, 94);
+
+---Tg_Ad_Fotos_rep
+INSERT INTO Fotos VALUES (2, 'fgh.jepg');
+
+---Tg_Ad_regitros_num;
+INSERT INTO Registros(fecha, hora, sensor, valor, actividad)
+VALUES(TO_DATE('26/11/2019', 'dd/mm/yyyy'), 1000, 'P', 374412, 2);
+
+---Tg_Ad_regitros_fecha
+INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
+VALUES(50, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'C', 306474, 1);
+
+---Tg_Ad_regitros_sensor
+INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
+VALUES(53, TO_DATE('02/10/2019', 'dd/mm/yyyy'), 700, 'P', 306474, 1);
+
+---Tg_Mo_actividad_fecha
+UPDATE Actividades SET pulsacionesProm=120 WHERE numero=5;
+
+---Tg_El_Actividades
+DELETE FROM Activivdades WHERE numero=5;
+
+/*---DisparadoresNoOk---*/
+---Tg_Ad_actvidades_num /*No puede existir un error*/
+---Tg_Ad_actvidades_prom
+INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm)
+VALUES(55, TO_DATE('20/09/2019', 'dd/mm/yyyy'), 1000, 140, null);
+
+---Tg_Ad_Fotos_rep
+INSERT INTO Fotos VALUES (3, 'fgh.jepg');
+
+---Tg_Ad_regitros_num /*No puede existir un error*/
+
+---Tg_Ad_regitros_fecha
+INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
+VALUES(50, TO_DATE('02/10/2018', 'dd/mm/yyyy'), 700, 'C', 306474, 1);
+
+---Tg_Ad_regitros_sensor /*No puede existir un error*/
+
+---Tg_Mo_actividad_fecha
+UPDATE Actividades SET fechaInicio=TO_DATE('02/10/2018', 'dd/mm/yyyy') WHERE numero=5;
+
+---Tg_El_Actividades /*No puede existir un error*/
+
+/*---xDisparadores---*/
+/*Adicion*/
+drop trigger Tg_Ad_actvidades_num;
+drop trigger Tg_Ad_actvidades_prom;
+drop trigger Tg_Ad_Fotos_rep;
+drop trigger Tg_Ad_regitros_num;
+drop trigger Tg_Ad_regitros_fecha;
+drop trigger Tg_Ad_regitros_sensor;
+/*Modificacion*/
+drop trigger Tg_Mo_actividad_fecha;
+/*Elimicacion*/
+drop trigger Tg_El_Actividades;
