@@ -1,2 +1,3 @@
 /*Unicas*/
-ALTER TABLE PersonasNaturales ADD CONSTRAINT UK_PersonasNaturales UNIQUE (correo);
+ALTER TABLE PersonasNaturales ADD CONSTRAINT UK_PersonasNaturales 
+UNIQUE (correo);

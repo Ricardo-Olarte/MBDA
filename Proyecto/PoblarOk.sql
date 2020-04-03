@@ -730,9 +730,6 @@ INSERT INTO Plantillas(titular, formacion, posicion, equipo, jugador, partido)
 VALUES (0, '3-1-4-2', 'MCD', 'Atletico Nacional', 9453082666,TO_DATE('24-01-2020 20:00','DD-MM-YYYY HH24:MI'));
 
 INSERT INTO Plantillas(titular, formacion, posicion, equipo, jugador, partido)
-VALUES (0, '3-1-4-2', 'MCD', 'Atletico Nacional', 4797896034,TO_DATE('24-01-2020 20:00','DD-MM-YYYY HH24:MI'));
-
-INSERT INTO Plantillas(titular, formacion, posicion, equipo, jugador, partido)
 VALUES (0, '3-1-4-2', 'POR', 'Atletico Nacional', 4017598396,TO_DATE('24-01-2020 20:00','DD-MM-YYYY HH24:MI'));
 
 INSERT INTO Plantillas(titular, formacion, posicion, equipo, jugador, partido)

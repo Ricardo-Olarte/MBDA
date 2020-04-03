@@ -33,8 +33,8 @@ VALUES (5037595516, TO_DATE('24-01-2020 21:34','DD-MM-YYYY HH24:MI'), 'T', 'Falt
 
 --Se Prueba con CHK_Ttiempo--
 INSERT INTO Atajadas(jugador, partido, tiempo, paradas)
-VALUES (5037595516, TO_DATE('24-01-2020 20:00','DD-MM-YYYY HH24:MI'), 94, -40);
-
+VALUES (5037595516, TO_DATE('24-01-2020 20:00','DD-MM-YYYY HH24:MI'), -94, 40);
+select * from atajadas
 --Se Prueba con CHK_Trh--
 INSERT INTO PersonasNaturales(primerNombre, primerApellido, cedula, correo, eps, nacionalidad, fechaNacimiento, rh, sangre)
 VALUES ('Cristiano', 'Ronaldo', 123456789, null, 'famisanar', 'Colombiana', TO_DATE('17-May-1987','DD-MM-YYYY'), '?', 'A');
