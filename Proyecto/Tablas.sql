@@ -4,8 +4,8 @@ CREATE TABLE PersonasNaturales(
 primerNombre VARCHAR(20) NOT NULL,
 primerApellido VARCHAR(20) NOT NULL,
 cedula NUMBER(10) NOT NULL,
-correo VARCHAR(10),
-eps VARCHAR(10) NOT NULL,
+correo VARCHAR(60),
+eps VARCHAR(50) NOT NULL,
 nacionalidad VARCHAR(20),
 fechaNacimiento DATE NOT NULL,
 rh CHAR(1)NOT NULL,
@@ -15,7 +15,7 @@ sangre VARCHAR(2) NOT NULL
 --Celulares--
 CREATE TABLE Celulares(
 personaNatural NUMBER(10) NOT NULL,
-celulares VARCHAR(10) NOT NULL
+celular VARCHAR(10) NOT NULL
 );
 
 --Jugadores--
@@ -34,14 +34,19 @@ cedula NUMBER(10) NOT NULL,
 posicion VARCHAR(3) NOT NULL,
 fechaInicio DATE NOT NULL,
 fechaFinal DATE,
-puntuacionArbitraje NUMBER(1) NOT NULL,
-partido DATE
+puntuacionArbitraje NUMBER(1) NOT NULL
+);
+
+--PitadosPor--
+CREATE TABLE PitadosPor(
+arbitro NUMBER(10) NOT NULL,
+partido DATE NOT NULL
 );
 
 --Partidos--
 CREATE TABLE Partidos(
 partidoFecha DATE NOT NULL,
-marcadorFinal VARCHAR(3) NOT NULL,
+marcadorFinal VARCHAR(10),
 estadio VARCHAR(50) NOT NULL
 );
 
@@ -82,47 +87,59 @@ nombre VARCHAR(50) NOT NULL
 
 --Plantillas--
 CREATE TABLE Plantillas(
-titular NUMBER(1) NOT NULL,
 formacion VARCHAR(10) NOT NULL,
-posicion VARCHAR(10) NOT NULL,
 equipo VARCHAR(50) NOT NULL,
+partido DATE NOT NULL
+);
+
+--Convocados--
+CREATE TABLE Convocados(
+plantillaEquipo VARCHAR(50) NOT NULL,
+plantillaPartido DATE NOT NULL,
+jugador NUMBER(10) NOT NULL,
+titular NUMBER(1) NOT NULL,
+posicion VARCHAR(10) NOT NULL
+);
+
+--Eventos--
+CREATE TABLE Eventos(
+fecha DATE NOT NULL,
+tiempo NUMBER(3) NOT NULL,
 jugador NUMBER(10) NOT NULL,
 partido DATE NOT NULL
 );
 
 --Amonestaciones--
 CREATE TABLE Amonestaciones(
-jugador NUMBER(10) NOT NULL,
 fecha DATE NOT NULL,
+tiempo NUMBER(3) NOT NULL,
 tarjeta CHAR(1) NOT NULL,
 comentarios VARCHAR(20) NOT NULL,
-arbitro NUMBER(10) NOT NULL,
-partido DATE NOT NULL
+arbitro NUMBER(10) NOT NULL
 );
 
 --Atajadas--
 CREATE TABLE Atajadas(
-jugador NUMBER(10) NOT NULL,
-partido DATE NOT NULL,
+fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
+porteriaEnCero NUMBER(3) NOT NULL,
 paradas NUMBER(2) NOT NULL
 );
 
 --Pases--
 CREATE TABLE Pases(
-jugador NUMBER(10) NOT NULL,
-partido DATE NOT NULL,
 totalPartido NUMBER(3) NOT NULL,
 efectividadAcierto NUMBER(3) NOT NULL,
-gol NUMBER(1) NOT NULL
+gol NUMBER(1) NOT NULL,
+fecha DATE NOT NULL,
+tiempo NUMBER(3) NOT NULL
 );
 
 --Disparos--
 CREATE TABLE Disparos(
-jugador NUMBER(10) NOT NULL,
-partido DATE NOT NULL,
-tiempo NUMBER(3) NOT NULL,
 acertadoGol NUMBER(1) NOT NULL,
 distancia NUMBER(2) NOT NULL,
-velocidad NUMBER(3) NOT NULL
+velocidad NUMBER(3) NOT NULL,
+fecha DATE NOT NULL,
+tiempo NUMBER(3) NOT NULL
 );
