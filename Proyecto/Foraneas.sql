@@ -8,12 +8,6 @@ FOREIGN KEY (cedula) REFERENCES PersonasNaturales(cedula);
 ALTER TABLE Arbitros ADD CONSTRAINT FK_Arbitros_PersonasNaturales 
 FOREIGN KEY (cedula) REFERENCES PersonasNaturales(cedula);
 
-ALTER TABLE Eventos ADD CONSTRAINT FK_Eventos_Jugador 
-FOREIGN KEY (jugador) REFERENCES Jugadores(cedula);
-
-ALTER TABLE Eventos ADD CONSTRAINT FK_Eventos_Partido 
-FOREIGN KEY (partido) REFERENCES Partidos(partidoFecha);
-
 ALTER TABLE Equipos ADD CONSTRAINT FK_Equipos_Estadios 
 FOREIGN KEY (estadio) REFERENCES Estadios(nombre);
 
@@ -53,17 +47,23 @@ FOREIGN KEY (plantillaEquipo, plantillaPartido) REFERENCES Plantillas(equipo, pa
 ALTER TABLE Convocados ADD CONSTRAINT FK_Convocados_Partido 
 FOREIGN KEY (jugador) REFERENCES Jugadores(cedula);
 
+ALTER TABLE Eventos ADD CONSTRAINT FK_Eventos_Jugador 
+FOREIGN KEY (jugador) REFERENCES Jugadores(cedula);
+
+ALTER TABLE Eventos ADD CONSTRAINT FK_Eventos_Partido 
+FOREIGN KEY (partido) REFERENCES Partidos(partidoFecha);
+
 ALTER TABLE Atajadas ADD CONSTRAINT FK_Atajadas_Eventos 
-FOREIGN KEY (fecha, tiempo) REFERENCES Eventos(fecha, tiempo);
+FOREIGN KEY (fecha, tiempo, jugador) REFERENCES Eventos(fecha, tiempo, jugador);
 
 ALTER TABLE Pases ADD CONSTRAINT FK_Pases_Eventos 
-FOREIGN KEY (fecha, tiempo) REFERENCES Eventos(fecha, tiempo);
+FOREIGN KEY (fecha, tiempo, jugador) REFERENCES Eventos(fecha, tiempo, jugador);
 
 ALTER TABLE Disparos ADD CONSTRAINT FK_Disparos_Eventos 
-FOREIGN KEY (fecha, tiempo) REFERENCES Eventos(fecha, tiempo);
+FOREIGN KEY (fecha, tiempo, jugador) REFERENCES Eventos(fecha, tiempo, jugador);
 
 ALTER TABLE Amonestaciones ADD CONSTRAINT FK_Amonestaciones_Eventos 
-FOREIGN KEY (fecha, tiempo) REFERENCES Eventos(fecha, tiempo);
+FOREIGN KEY (fecha, tiempo, jugador) REFERENCES Eventos(fecha, tiempo, jugador);
 
 ALTER TABLE Amonestaciones ADD CONSTRAINT FK_Amonestaciones_Arbitro 
 FOREIGN KEY (arbitro) REFERENCES Arbitros(cedula);

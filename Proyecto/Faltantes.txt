@@ -1,0 +1,26 @@
+SQL - Corregir con lo Anterior y poblar 1000 datos
+	Corregir consulta 1 y 2
+	
+POBLADA:
+	Faltan agregar todos los partidos(10-20)
+	Faltan  los encuentros de las fehcas (5-20)
+	Faltan agregar jugadores con pasado en los equipos (JugadoEn fechaFinal - NoNULL) MENOR a 5/8/1990
+	Falta agregar PitadosPor de los partido 10-20
+	Faltan plantillas para partidos (4-8)
+	Faltan Convocados(2-8)
+	Eventos F1(Menos primer partido)-F8
+	Todos Eventos
+	
+POBLADA NO OK:
+	--Se Prueba con CK_Eventos_tiempo-- 
+	--Se Prueba con CK_Amonestaciones_Tcomentarios-- 
+	--Se Prueba con CK_Amonestaciones_Ttarjeta-- 
+	--Se Prueba con CK_Amonestaciones_tiempo-- 
+	--Se Prueba con CK_Pases_Tacertado-- 
+	--Se Prueba con CK_Pases_gol-- 
+	--Se Prueba con CK_Pases_tiempo-- 
+	--Se Prueba con CK_Atajadas_Timbatibilidad-- 
+	--Se Prueba con CK_Atajadas_tiempo-- 
+	--Se Prueba con CK_Disparos_acertadoGol-- 
+	--Se Prueba con CK_Disparos_distancia-- 
+	--Se Prueba con CK_Disparos_tiempo-- 

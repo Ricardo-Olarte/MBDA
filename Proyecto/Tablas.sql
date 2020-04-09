@@ -15,7 +15,7 @@ sangre VARCHAR(2) NOT NULL
 --Celulares--
 CREATE TABLE Celulares(
 personaNatural NUMBER(10) NOT NULL,
-celular VARCHAR(10) NOT NULL
+celular NUMBER(10) NOT NULL
 );
 
 --Jugadores--
@@ -70,7 +70,7 @@ estadio VARCHAR(50) NOT NULL
 
 --JugadoEn--
 CREATE TABLE JugadoEn(
-equipo VARCHAR(20) NOT NULL,
+equipo VARCHAR(50) NOT NULL,
 jugador NUMBER(10) NOT NULL,
 fechaInicial DATE NOT NULL,
 fechaFinal DATE
@@ -113,6 +113,7 @@ partido DATE NOT NULL
 CREATE TABLE Amonestaciones(
 fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
+jugador NUMBER(10) NOT NULL,
 tarjeta CHAR(1) NOT NULL,
 comentarios VARCHAR(20) NOT NULL,
 arbitro NUMBER(10) NOT NULL
@@ -122,6 +123,7 @@ arbitro NUMBER(10) NOT NULL
 CREATE TABLE Atajadas(
 fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
+jugador NUMBER(10) NOT NULL,
 porteriaEnCero NUMBER(3) NOT NULL,
 paradas NUMBER(2) NOT NULL
 );
@@ -132,7 +134,8 @@ totalPartido NUMBER(3) NOT NULL,
 efectividadAcierto NUMBER(3) NOT NULL,
 gol NUMBER(1) NOT NULL,
 fecha DATE NOT NULL,
-tiempo NUMBER(3) NOT NULL
+tiempo NUMBER(3) NOT NULL,
+jugador NUMBER(10) NOT NULL
 );
 
 --Disparos--
@@ -141,5 +144,6 @@ acertadoGol NUMBER(1) NOT NULL,
 distancia NUMBER(2) NOT NULL,
 velocidad NUMBER(3) NOT NULL,
 fecha DATE NOT NULL,
-tiempo NUMBER(3) NOT NULL
+tiempo NUMBER(3) NOT NULL,
+jugador NUMBER(10) NOT NULL
 );
