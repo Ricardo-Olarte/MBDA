@@ -54,7 +54,7 @@ ALTER TABLE Pases ADD CONSTRAINT CK_Pases_tiempo
 CHECK (tiempo>=0 AND tiempo<=120);
 
 ALTER TABLE Atajadas ADD CONSTRAINT CK_Atajadas_Timbatibilidad 
-CHECK (tiempo >= 0);
+CHECK (porteriaEnCero >= 0);
 
 ALTER TABLE Atajadas ADD CONSTRAINT CK_Atajadas_tiempo 
 CHECK (tiempo>=0 AND tiempo<=120);
