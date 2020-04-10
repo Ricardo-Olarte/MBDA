@@ -167,3 +167,11 @@ Millonarios Fútbol Club,
 Once Caldas,
 Patriotas Boyaca,
 Rionegro
+
+--Coments--
+
+Falta no intencional
+Falta Intencional
+- 'Agresion Verbal'
+- 'Agresion Fisica'
+- 'Agesion Grave'

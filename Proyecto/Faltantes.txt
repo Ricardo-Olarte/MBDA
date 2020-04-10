@@ -1,6 +1,3 @@
-SQL - Corregir con lo Anterior y poblar 1000 datos
-	Corregir consulta 1 y 2
-	
 POBLADA:
 	Faltan agregar todos los partidos(10-20)
 	Faltan  los encuentros de las fehcas (5-20)
@@ -10,17 +7,12 @@ POBLADA:
 	Faltan Convocados(2-8)
 	Eventos F1(Menos primer partido)-F8
 	Todos Eventos
-	
-POBLADA NO OK:
-	--Se Prueba con CK_Eventos_tiempo-- 
-	--Se Prueba con CK_Amonestaciones_Tcomentarios-- 
-	--Se Prueba con CK_Amonestaciones_Ttarjeta-- 
-	--Se Prueba con CK_Amonestaciones_tiempo-- 
-	--Se Prueba con CK_Pases_Tacertado-- 
-	--Se Prueba con CK_Pases_gol-- 
-	--Se Prueba con CK_Pases_tiempo-- 
-	--Se Prueba con CK_Atajadas_Timbatibilidad-- 
-	--Se Prueba con CK_Atajadas_tiempo-- 
-	--Se Prueba con CK_Disparos_acertadoGol-- 
-	--Se Prueba con CK_Disparos_distancia-- 
-	--Se Prueba con CK_Disparos_tiempo-- 
+
+Integridad Procedimental
+	Mantener Jugador(ADICIONAR, MODIFICAR, ELIMINAR)
+	Mantener Plantilla(ADICIONAR, MODIFICAR, ELIMINAR)
+	Mantener Equipo(ADICIONAR, MODIFICAR, ELIMINAR)
+	Mantener Estadio(ADICIONAR, MODIFICAR, ELIMINAR)
+	Registrar Partido(ADICIONAR, MODIFICAR, ELIMINAR)
+	Mantener Arbitro(ADICIONAR, MODIFICAR, ELIMINAR)
+	Registrar Evento(ADICIONAR, MODIFICAR, ELIMINAR)
