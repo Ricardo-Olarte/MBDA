@@ -585,3 +585,31 @@ VALUES
 (
 TO_DATE('24-01-2020', 'DD-MM-YYYY'), 93, 7582069659, TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI')
 );
+
+/* INSERT QUERY NO: 85 */
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES
+(
+TO_DATE('24-01-2020', 'DD-MM-YYYY'), 14, 6540172698, TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI')
+);
+
+/* INSERT QUERY NO: 86 */
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES
+(
+TO_DATE('24-01-2020', 'DD-MM-YYYY'), 38, 7582069659, TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI')
+);
+
+/* INSERT QUERY NO: 87 */
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES
+(
+TO_DATE('24-01-2020', 'DD-MM-YYYY'), 52, 6540172698, TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI')
+);
+
+/* INSERT QUERY NO: 88 */
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES
+(
+TO_DATE('24-01-2020', 'DD-MM-YYYY'), 90, 7582069659, TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI')
+);
