@@ -9,20 +9,4 @@ POBLADA:
 	Todos Eventos
 
 Implementar:
-	Mantener Equipo(ADICIONAR, MODIFICAR, ELIMINAR)
-	Mantener Estadio(ADICIONAR, MODIFICAR, ELIMINAR)
-	Registrar Partido(ADICIONAR, MODIFICAR, ELIMINAR)
-	Mantener Arbitro(ADICIONAR, MODIFICAR, ELIMINAR)
 	Registrar Evento(ADICIONAR, MODIFICAR, ELIMINAR)
-
----------------
-ADICIONAR
-.Si no se indica el apodo de un equipo se debe poner como este el nombre del equipo junto con el nombre del pais
-
-.Si no se indica el pais se asume que el equipo es de Colombia
----
-MODIFICAR
-.Solo se puede actualizar el presupuesto, el apodo y el estadio.
----
-ELIMINAR
-.No se puede eliminar un equipo

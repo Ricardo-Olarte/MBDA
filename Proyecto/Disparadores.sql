@@ -187,3 +187,39 @@ CREATE OR REPLACE TRIGGER Tg_El_Partido
         	THEN RAISE_APPLICATION_ERROR(-20211,'ELIMINACION NO PERMITIDA');
 	    END IF; 
 END Tg_El_Partido;
+
+
+/*---------------------------------Registrar Partido---------------------------------*/
+/*Disparadores*/
+--Adicionar
+CREATE OR REPLACE TRIGGER Tg_Ad_Arbitro
+    BEFORE INSERT ON Arbitros
+    FOR EACH ROW
+    DECLARE
+        Cedula_C NUMBER(10);
+    BEGIN
+        SELECT Count(*)  INTO Cedula_C FROM Jugadores WHERE cedula = :new.cedula;
+        IF (Cedula_C > 0)
+            THEN RAISE_APPLICATION_ERROR(-20212,'LA CEDULA INGRESADA ESTA ASOCIADA A UN JUGADOR');
+        END IF;
+        IF (:new.puntuacionArbitraje is NULL)
+            THEN :new.puntuacionArbitraje := 3;
+        END IF;
+        IF (:new.posicion is NULL)
+            THEN :new.posicion := 'ARC';
+        END IF;
+END Tg_Ad_Arbitro;
+
+--Modificar
+CREATE OR REPLACE TRIGGER Tg_Mo_Arbitro
+    BEFORE UPDATE ON Arbitros
+    FOR EACH ROW
+    BEGIN
+        IF (:old.cedula <> :new.cedula) OR (:old.fechaInicio <> :new.fechaInicio)
+            THEN RAISE_APPLICATION_ERROR(-20213,'ACTUALIZACION NO PERMITIDA');
+        END IF;
+        IF (:old.fechaFinal is NOT NULL AND :old.fechaFinal <> :new.fechaFinal)
+    		THEN RAISE_APPLICATION_ERROR(-20214,'ACTUALIZACION NO PERMITIDA');
+	    END IF;
+        :new.puntuacionArbitraje := FLOOR((:new.puntuacionArbitraje + :old.puntuacionArbitraje)/2);
+END Tg_Mo_Arbitro;

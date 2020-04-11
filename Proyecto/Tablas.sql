@@ -39,7 +39,7 @@ puntuacionArbitraje NUMBER(1) NOT NULL
 
 --PitadosPor--
 CREATE TABLE PitadosPor(
-arbitro NUMBER(10) NOT NULL,
+arbitro NUMBER(10),
 partido DATE NOT NULL
 );
 
@@ -47,7 +47,7 @@ partido DATE NOT NULL
 CREATE TABLE Partidos(
 partidoFecha DATE NOT NULL,
 marcadorFinal VARCHAR(10),
-estadio VARCHAR(50) NOT NULL
+estadio VARCHAR(50)
 );
 
 --Encuentros--
@@ -65,7 +65,7 @@ presupuesto NUMBER(20) NOT NULL,
 fechaFundacion DATE NOT NULL,
 ciudad VARCHAR(30) NOT NULL,
 apodo VARCHAR(30) NOT NULL,
-estadio VARCHAR(50) NOT NULL
+estadio VARCHAR(50)
 );
 
 --JugadoEn--
@@ -116,7 +116,7 @@ tiempo NUMBER(3) NOT NULL,
 jugador NUMBER(10) NOT NULL,
 tarjeta CHAR(1) NOT NULL,
 comentarios VARCHAR(20) NOT NULL,
-arbitro NUMBER(10) NOT NULL
+arbitro NUMBER(10)
 );
 
 --Atajadas--
