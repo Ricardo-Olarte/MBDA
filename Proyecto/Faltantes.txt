@@ -8,7 +8,7 @@ POBLADA:
 	Eventos F1(Menos primer partido)-F8
 	Todos Eventos
 
-Integridad Procedimental
+Implementar:
 	Mantener Jugador(ADICIONAR, MODIFICAR, ELIMINAR)
 	Mantener Plantilla(ADICIONAR, MODIFICAR, ELIMINAR)
 	Mantener Equipo(ADICIONAR, MODIFICAR, ELIMINAR)
