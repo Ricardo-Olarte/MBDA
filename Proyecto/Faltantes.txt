@@ -9,19 +9,4 @@ POBLADA:
 	Todos Eventos
 
 Implementar:
-	Registrar Evento(ADICIONAR, MODIFICAR, ELIMINAR)
-
-
----------------
-ADICIONAR
-.No pueden existir mas disparos que sean gol en un partido que la cantidad de goles que se marcaron
-.No pueden existir eventos en partidos sin marcador
-.El arbitro de una amonestacion debe ser el mismo que el arbitro que pito el partido
-.No pueden haber mas pases gol que cantidad de disparos que sean gol
-.Las atajados solo pueden referenciar a un jugador que sea portero
----
-MODIFICAR
-.No se puede modificar ningun evento
----
-ELIMINAR
-.No se pueden eliminar los eventos
+	AccionesOK, DisparadoresOK, DisparadoresNoOK

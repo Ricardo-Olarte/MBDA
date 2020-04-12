@@ -164,10 +164,6 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Partido
         END IF;
 END Tg_Ad_Partido;
 
-
-INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
-VALUES (TO_DATE('25-01-2022 22:00','DD-MM-YYYY HH24:MI'), '1-2', 'Estadio Nemesio Camacho El Campin');
-
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Partido
     BEFORE UPDATE ON Partidos
@@ -189,7 +185,7 @@ CREATE OR REPLACE TRIGGER Tg_El_Partido
 END Tg_El_Partido;
 
 
-/*---------------------------------Registrar Partido---------------------------------*/
+/*---------------------------------Registrar Arbitro---------------------------------*/
 /*Disparadores*/
 --Adicionar
 CREATE OR REPLACE TRIGGER Tg_Ad_Arbitro
@@ -223,3 +219,191 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Arbitro
 	    END IF;
         :new.puntuacionArbitraje := FLOOR((:new.puntuacionArbitraje + :old.puntuacionArbitraje)/2);
 END Tg_Mo_Arbitro;
+
+
+/*---------------------------------Registrar Evento---------------------------------*/
+--Adicionar
+CREATE OR REPLACE TRIGGER Tg_Ad_Disparos
+    BEFORE INSERT ON Disparos
+    FOR EACH ROW
+    DECLARE
+        FechaP DATE;
+        Resultado VARCHAR(10);
+        RLocal VARCHAR(10);
+        RVis VARCHAR(10);
+        TotalL NUMBER(10);
+        TotalV NUMBER(10);
+        TotalD NUMBER(10);
+    BEGIN
+        SELECT partido INTO FechaP 
+        FROM Eventos 
+        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        
+        SELECT marcadorFinal INTO Resultado 
+        FROM Partidos 
+        WHERE partidoFecha = FechaP;
+        
+        RLocal := SUBSTR(Resultado,1,2);
+        RLocal := SUBSTR(Resultado,1,2);
+        RVis := SUBSTR(Resultado,4,2);
+        TotalL := TO_NUMBER(RLocal, '99');
+        TotalV := TO_NUMBER(RVis, '99');
+        
+        
+        SELECT Count(*) INTO TotalD 
+        FROM Disparos, Eventos
+        WHERE Eventos.partido = FechaP AND Disparos.fecha = Eventos.fecha AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
+            AND Disparos.acertadoGol = 1;
+        
+        IF (TotalL + TotalV)  = TotalD
+            THEN RAISE_APPLICATION_ERROR(-20215,'YA SE HAN REGISTRADO TODOS LOS GOLES');
+        END IF;
+        
+END Tg_Ad_Disparos;
+
+
+CREATE OR REPLACE TRIGGER Tg_Ad_Eventos
+    BEFORE INSERT ON Eventos
+    FOR EACH ROW
+    DECLARE
+        Val NUMBER;
+    BEGIN
+        SELECT count(*) INTO Val FROM Partidos WHERE partidoFecha = :new.partido AND marcadorFinal is null;
+        IF  Val >= 1
+            THEN RAISE_APPLICATION_ERROR(-20216,'EL PARTIDO AUN NO HA PASADO');
+        END IF;
+END Tg_Ad_Eventos;
+
+
+CREATE OR REPLACE TRIGGER Tg_Ad_Amonestacion
+    BEFORE INSERT ON Amonestaciones
+    FOR EACH ROW
+    DECLARE
+        Val NUMBER;
+        Fec DATE;
+    BEGIN
+        SELECT partido INTO Fec FROM Eventos WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        SELECT count(*) INTO Val FROM PitadosPor WHERE partido = Fec AND arbitro = :new.arbitro;
+        IF  Val = 0
+            THEN RAISE_APPLICATION_ERROR(-20217,'EL ARBITRO NO ES EL CORRESPONDIENTE');
+        END IF;
+END Tg_Ad_Amonestacion;
+
+
+CREATE OR REPLACE TRIGGER Tg_Ad_Pase
+    BEFORE INSERT ON Pases
+    FOR EACH ROW
+    DECLARE
+        Pas NUMBER;
+        Dis NUMBER;
+        FechaP DATE;
+    BEGIN
+        SELECT partido INTO FechaP 
+        FROM Eventos 
+        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        
+        SELECT Count(*) INTO Dis 
+        FROM Disparos, Eventos
+        WHERE Eventos.partido = FechaP AND Disparos.fecha = Eventos.fecha AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
+            AND Disparos.acertadoGol = 1;
+        
+        SELECT Count(*) INTO Pas 
+        FROM Pases, Eventos
+        WHERE Eventos.partido = FechaP AND Pases.fecha = Eventos.fecha AND Pases.tiempo = Eventos.tiempo AND Pases.Jugador = Eventos.Jugador
+            AND Pases.gol = 1;
+            
+        IF  Dis = Pas AND :new.gol = 1
+            THEN RAISE_APPLICATION_ERROR(-20218,'EL TOTAL MAXIMO ASISTENCIAS YA HA SIDO REGISTRADO');
+        END IF;
+END Tg_Ad_Pase;
+
+
+CREATE OR REPLACE TRIGGER Tg_Ad_Atajada
+    BEFORE INSERT ON Atajadas
+    FOR EACH ROW
+    DECLARE
+        Pos NUMBER;
+        FechaP DATE;
+    BEGIN
+        SELECT partido INTO FechaP 
+        FROM Eventos 
+        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        
+        SELECT Count(*) INTO Pos FROM Convocados WHERE jugador = :new.jugador AND plantillaPartido = FechaP AND posicion = 'POR';
+    
+        IF  Pos = 0
+            THEN RAISE_APPLICATION_ERROR(-20219,'UNA ATAJADA NO PUEDE SER DE ALGUIEN QUE NO SEA PORTERO');
+        END IF;
+END Tg_Ad_Atajada;
+
+--Modificar
+CREATE OR REPLACE TRIGGER Tg_Mo_Evento
+    BEFORE UPDATE ON Eventos
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20220,'ACTUALIZACION NO PERMITIDA');
+END Tg_Mo_Evento;
+
+CREATE OR REPLACE TRIGGER Tg_Mo_Amonestacion
+    BEFORE UPDATE ON Amonestaciones
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20221,'ACTUALIZACION NO PERMITIDA');
+END Tg_Mo_Amonestacion;
+
+CREATE OR REPLACE TRIGGER Tg_Mo_Atajada
+    BEFORE UPDATE ON Atajadas
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
+END Tg_Mo_Atajada;
+
+CREATE OR REPLACE TRIGGER Tg_Mo_Pase
+    BEFORE UPDATE ON Pases
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
+END Tg_Mo_Pase;
+
+CREATE OR REPLACE TRIGGER Tg_Mo_Disparo
+    BEFORE UPDATE ON Disparos
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
+END Tg_Mo_Disparo;
+
+--Eliminar
+CREATE OR REPLACE TRIGGER Tg_El_Evento
+    BEFORE DELETE ON Eventos
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20223,'NO SE PERMITE BORRAR');
+END Tg_El_Evento;
+
+CREATE OR REPLACE TRIGGER Tg_El_Amonestacion
+    BEFORE DELETE ON Amonestaciones
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20224,'NO SE PERMITE BORRAR');
+END Tg_El_Amonestacion;
+
+CREATE OR REPLACE TRIGGER Tg_El_Atajada
+    BEFORE DELETE ON Atajadas
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20225,'NO SE PERMITE BORRAR');
+END Tg_El_Atajada;
+
+CREATE OR REPLACE TRIGGER Tg_El_Pase
+    BEFORE DELETE ON Pases
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20226,'NO SE PERMITE BORRAR');
+END Tg_El_Pase;
+
+CREATE OR REPLACE TRIGGER Tg_El_Disparo
+    BEFORE DELETE ON Disparos
+    FOR EACH ROW
+    BEGIN
+        RAISE_APPLICATION_ERROR(-20227,'NO SE PERMITE BORRAR');
+END Tg_El_Disparo;

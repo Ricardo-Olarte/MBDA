@@ -387,26 +387,26 @@ VALUES
 INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
 VALUES
 (
-8, 88, 0, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 85, 7582069659
+8, 88, 1, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 85, 7582069659
 );
 
 /* INSERT QUERY NO: 57 */
 INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
 VALUES
 (
-6, 31, 0, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 81, 103955891
+6, 31, 1, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 81, 103955891
 );
 
 /* INSERT QUERY NO: 58 */
 INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
 VALUES
 (
-19, 87, 0, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 86, 3848434383
+19, 87, 1, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 86, 3848434383
 );
 
 /* INSERT QUERY NO: 59 */
 INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
 VALUES
 (
-0, 0, 0, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 91, 5105300751
+0, 0, 1, TO_DATE('24-01-2020', 'DD-MM-YYYY'), 91, 5105300751
 );
