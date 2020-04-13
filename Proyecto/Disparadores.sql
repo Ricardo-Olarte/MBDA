@@ -72,7 +72,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Convocado
             THEN RAISE_APPLICATION_ERROR(-20205,'CAPACIDAD DE JUGADORES SUPLENTES ALCANZADA');
         END IF;
         
-        IF (Convocados_PO >= 1 AND :new.posicion = 'POR')
+        IF (Convocados_PO >=1 AND :new.posicion = 'POR' AND :new.titular = 1)
             THEN RAISE_APPLICATION_ERROR(-20206,'CAPACIDAD DE PORTEROS TITULARES ALCANZADA');
         END IF;
 END Tg_Ad_Convocado;
@@ -169,7 +169,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Partido
     BEFORE UPDATE ON Partidos
     FOR EACH ROW
     BEGIN
-        IF (:old.marcadorFinal is NOT NULL)
+        IF (:old.marcadorFinal IS NOT NULL AND :new.estadio IS NOT NULL)
     		THEN RAISE_APPLICATION_ERROR(-20211,'ACTUALIZACION NO PERMITIDA, IMPOSBILE CAMBIAR MARCADOR');
 	    END IF; 
 END Tg_Mo_Partido;

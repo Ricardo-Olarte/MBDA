@@ -105,23 +105,23 @@ Atlético Bucaramanga
 Alianza Petrolera
  
 ---Posiciones---
-(POR) - Portero
-(LI) - Lateral izquierdo
-(LD) - Lateral derecho
-(CAD) - Carrilero derecho
-(CAI) - Carrilero izquierdo
-(DFC) - Defensa central
-(MCD) - Mediocentro defensivo
-(MC) - Mediocentro
-(MI) - Medio izquierdo
-(MD) - Medio derecho
-(MCO) - Mediocentro ofensivo
-(ED) - Exterior derecho
-(EI) - Exterior izquierdo
-(MP) - Mediapunta
-(SDD) - Segundo delantero derecho
-(SDI) - Segundo delanterio izquierdo
-(DC)- Delantero centro
+POR,
+LI,
+LD,
+CAD,
+CAI,
+DFC,
+MCD,
+MC,
+MI,
+MD,
+MCO,
+ED,
+EI,
+MP,
+SDD,
+SDI,
+DC
 
 
 --Equipos Estadios--
