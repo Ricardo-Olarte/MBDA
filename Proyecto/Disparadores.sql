@@ -18,7 +18,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Jugador
             THEN :new.lesion := 0;
         END IF;
 END Tg_Ad_Jugador;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_PersonasNaturales
     BEFORE UPDATE ON PersonasNaturales
@@ -31,7 +31,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_PersonasNaturales
 			RAISE_APPLICATION_ERROR(-20202,'ACTUALIZACION NO PERMITIDA');
 	    END IF; 
 END Tg_Mo_PersonasNaturales;
-
+/
 --Eliminar
 CREATE OR REPLACE TRIGGER Tg_El_Jugadores
 	BEFORE DELETE ON Jugadores
@@ -39,7 +39,7 @@ CREATE OR REPLACE TRIGGER Tg_El_Jugadores
 	BEGIN
 		RAISE_APPLICATION_ERROR(-20203,'NO SE PUEDE ELIMINAR UN JUGADOR');
 END Tg_El_Jugadores;
-
+/
 
 /*---------------------------------Mantener Plantilla---------------------------------*/
 /*Disparadores*/
@@ -76,7 +76,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Convocado
             THEN RAISE_APPLICATION_ERROR(-20206,'CAPACIDAD DE PORTEROS TITULARES ALCANZADA');
         END IF;
 END Tg_Ad_Convocado;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Plantilla
     BEFORE UPDATE ON Plantillas
@@ -87,7 +87,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Plantilla
 			RAISE_APPLICATION_ERROR(-20206,'ACTUALIZACION NO PERMITIDA');
 	    END IF; 
 END Tg_Mo_Plantilla;
-
+/
 
 /*---------------------------------Mantener Equipo---------------------------------*/
 /*Disparadores*/ 
@@ -103,7 +103,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Equipo
             THEN :new.apodo := (:new.nombre || ' De ' || :new.pais);
         END IF;
 END Tg_Ad_Equipo;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Equipo
     BEFORE UPDATE ON Equipos
@@ -115,7 +115,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Equipo
 			RAISE_APPLICATION_ERROR(-20207,'ACTUALIZACION NO PERMITIDA');
 	    END IF; 
 END Tg_Mo_Equipo;
-
+/
 --Eliminar
 CREATE OR REPLACE TRIGGER Tg_El_Equipos
 	BEFORE DELETE ON Equipos
@@ -124,7 +124,7 @@ CREATE OR REPLACE TRIGGER Tg_El_Equipos
 		RAISE_APPLICATION_ERROR(-20208,'NO SE PUEDE ELIMINAR UN EQUIPO');
 END Tg_El_Equipos;
 
-
+/
 /*---------------------------------Mantener Estadio---------------------------------*/
 /*Disparadores*/
 --Adicionar
@@ -139,7 +139,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Estadio
             THEN :new.inauguracion := SYSDATE();
         END IF;
 END Tg_Ad_Estadio;
-
+/
 --Modificar capacidad y nombre
 CREATE OR REPLACE TRIGGER Tg_Mo_Estadio
     BEFORE UPDATE ON Estadios
@@ -150,7 +150,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Estadio
 		THEN RAISE_APPLICATION_ERROR(-20209,'ACTUALIZACION NO PERMITIDA');
 	    END IF; 
 END Tg_Mo_Estadio;
-
+/
 
 /*---------------------------------Registrar Partido---------------------------------*/
 /*Disparadores*/
@@ -163,17 +163,17 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Partido
             THEN RAISE_APPLICATION_ERROR(-20210,'FECHA SUPERIOR A UN AÑO');
         END IF;
 END Tg_Ad_Partido;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Partido
     BEFORE UPDATE ON Partidos
     FOR EACH ROW
     BEGIN
-        IF (:old.marcadorFinal IS NOT NULL AND :new.estadio IS NOT NULL)
+        IF (:old.marcadorFinal IS NOT NULL AND :old.Estadio IS NULL)
     		THEN RAISE_APPLICATION_ERROR(-20211,'ACTUALIZACION NO PERMITIDA, IMPOSBILE CAMBIAR MARCADOR');
 	    END IF; 
 END Tg_Mo_Partido;
-
+/
 --Eliminar
 CREATE OR REPLACE TRIGGER Tg_El_Partido
 	BEFORE DELETE ON Partidos
@@ -183,7 +183,7 @@ CREATE OR REPLACE TRIGGER Tg_El_Partido
         	THEN RAISE_APPLICATION_ERROR(-20211,'ELIMINACION NO PERMITIDA');
 	    END IF; 
 END Tg_El_Partido;
-
+/
 
 /*---------------------------------Registrar Arbitro---------------------------------*/
 /*Disparadores*/
@@ -205,7 +205,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Arbitro
             THEN :new.posicion := 'ARC';
         END IF;
 END Tg_Ad_Arbitro;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Arbitro
     BEFORE UPDATE ON Arbitros
@@ -219,7 +219,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Arbitro
 	    END IF;
         :new.puntuacionArbitraje := FLOOR((:new.puntuacionArbitraje + :old.puntuacionArbitraje)/2);
 END Tg_Mo_Arbitro;
-
+/
 
 /*---------------------------------Registrar Evento---------------------------------*/
 --Adicionar
@@ -261,7 +261,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Disparos
         
 END Tg_Ad_Disparos;
 
-
+/
 CREATE OR REPLACE TRIGGER Tg_Ad_Eventos
     BEFORE INSERT ON Eventos
     FOR EACH ROW
@@ -274,7 +274,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Eventos
         END IF;
 END Tg_Ad_Eventos;
 
-
+/
 CREATE OR REPLACE TRIGGER Tg_Ad_Amonestacion
     BEFORE INSERT ON Amonestaciones
     FOR EACH ROW
@@ -289,7 +289,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Amonestacion
         END IF;
 END Tg_Ad_Amonestacion;
 
-
+/
 CREATE OR REPLACE TRIGGER Tg_Ad_Pase
     BEFORE INSERT ON Pases
     FOR EACH ROW
@@ -317,7 +317,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Pase
         END IF;
 END Tg_Ad_Pase;
 
-
+/
 CREATE OR REPLACE TRIGGER Tg_Ad_Atajada
     BEFORE INSERT ON Atajadas
     FOR EACH ROW
@@ -335,7 +335,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Atajada
             THEN RAISE_APPLICATION_ERROR(-20219,'UNA ATAJADA NO PUEDE SER DE ALGUIEN QUE NO SEA PORTERO');
         END IF;
 END Tg_Ad_Atajada;
-
+/
 --Modificar
 CREATE OR REPLACE TRIGGER Tg_Mo_Evento
     BEFORE UPDATE ON Eventos
@@ -343,35 +343,35 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Evento
     BEGIN
         RAISE_APPLICATION_ERROR(-20220,'ACTUALIZACION NO PERMITIDA');
 END Tg_Mo_Evento;
-
+/
 CREATE OR REPLACE TRIGGER Tg_Mo_Amonestacion
     BEFORE UPDATE ON Amonestaciones
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20221,'ACTUALIZACION NO PERMITIDA');
 END Tg_Mo_Amonestacion;
-
+/
 CREATE OR REPLACE TRIGGER Tg_Mo_Atajada
     BEFORE UPDATE ON Atajadas
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
 END Tg_Mo_Atajada;
-
+/
 CREATE OR REPLACE TRIGGER Tg_Mo_Pase
     BEFORE UPDATE ON Pases
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
 END Tg_Mo_Pase;
-
+/
 CREATE OR REPLACE TRIGGER Tg_Mo_Disparo
     BEFORE UPDATE ON Disparos
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20222,'ACTUALIZACION NO PERMITIDA');
 END Tg_Mo_Disparo;
-
+/
 --Eliminar
 CREATE OR REPLACE TRIGGER Tg_El_Evento
     BEFORE DELETE ON Eventos
@@ -379,28 +379,28 @@ CREATE OR REPLACE TRIGGER Tg_El_Evento
     BEGIN
         RAISE_APPLICATION_ERROR(-20223,'NO SE PERMITE BORRAR');
 END Tg_El_Evento;
-
+/
 CREATE OR REPLACE TRIGGER Tg_El_Amonestacion
     BEFORE DELETE ON Amonestaciones
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20224,'NO SE PERMITE BORRAR');
 END Tg_El_Amonestacion;
-
+/
 CREATE OR REPLACE TRIGGER Tg_El_Atajada
     BEFORE DELETE ON Atajadas
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20225,'NO SE PERMITE BORRAR');
 END Tg_El_Atajada;
-
+/
 CREATE OR REPLACE TRIGGER Tg_El_Pase
     BEFORE DELETE ON Pases
     FOR EACH ROW
     BEGIN
         RAISE_APPLICATION_ERROR(-20226,'NO SE PERMITE BORRAR');
 END Tg_El_Pase;
-
+/
 CREATE OR REPLACE TRIGGER Tg_El_Disparo
     BEFORE DELETE ON Disparos
     FOR EACH ROW

@@ -1,42 +1,32 @@
 /*---------------------------------Mantener Jugador---------------------------------*/
 /*Adicionar*/
-/* INSERT QUERY NO: 1 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(9291647714, 30, 'MP', 8120405);
 
-/* INSERT QUERY NO: 2 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(538947879, 26, 'CAI', 8580268);
 
-/* INSERT QUERY NO: 3 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(4264131764, 10, 'MCD', 3133944);
 
-/* INSERT QUERY NO: 4 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(5824287872, 77, 'ED', 6857010);
 
-/* INSERT QUERY NO: 5 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(3252275953, 92, 'MI', 9385516);
 
-/* INSERT QUERY NO: 6 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(8276976810, 75, 'MP', 7842317);
 
-/* INSERT QUERY NO: 7 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(3901522159, 30, 'MD', 1637693);
 
-/* INSERT QUERY NO: 8 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(6505307253, 3, 'LI', 1967931);
 
-/* INSERT QUERY NO: 9 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(9274247126, 25, 'SDI', 4557247);
 
-/* INSERT QUERY NO: 10 */
 INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
 VALUES(5592176544, 91, 'DC', 9551170);
 
@@ -51,6 +41,7 @@ UPDATE PersonasNaturales SET eps = 'Colsubsidio' WHERE cedula = 396657628;
 UPDATE PersonasNaturales SET eps = 'Famisanar' WHERE cedula = 6727920904;
 UPDATE PersonasNaturales SET eps = 'Nueva EPS' WHERE cedula = 6763940351;
 UPDATE PersonasNaturales SET eps = 'Colseguros' WHERE cedula = 7250170006;
+
 
 /*---------------------------------Mantener Plantilla---------------------------------*/
 /*Adiconar*/
@@ -92,12 +83,6 @@ VALUES('Deportes Tolima', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 9073
 
 INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
 VALUES('Deportes Tolima', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 8561544339, 0, 'DFC');
-
-INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
-VALUES('Deportes Tolima', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 8425971880, 0, 'MC');
-
-INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
-VALUES('Deportes Tolima', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 991444853, 0, 'MCO');
 
 INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
 VALUES('Deportes Tolima', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 103955891, 0, 'DC');
@@ -262,3 +247,229 @@ UPDATE Estadios SET capacidad = 12354 WHERE nombre = 'Parq Des Principes';
 UPDATE Estadios SET capacidad = 84593 WHERE nombre = 'Sayayines Stadium';
 UPDATE Estadios SET capacidad = 99999 WHERE nombre = 'Vicente Calderon';
 UPDATE Estadios SET capacidad = 47564 WHERE nombre = 'Anfield';
+
+
+/*---------------------------------Registrar Partido---------------------------------*/
+/*Adicionar*/
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('24-08-2020 14:00','DD-MM-YYYY HH24:MI'), '02-02', 'Santiago Bernabeu');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('24-08-2020 16:00','DD-MM-YYYY HH24:MI'), '02-02', 'Wanda Metropolitano');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('24-08-2020 18:00','DD-MM-YYYY HH24:MI'), '04-03', 'Old Traford');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('24-08-2020 20:00','DD-MM-YYYY HH24:MI'), '04-02', 'Emirates Stadium');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('24-08-2020 22:00','DD-MM-YYYY HH24:MI'), '01-02', 'Juventus Stadium');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('25-09-2020 14:00','DD-MM-YYYY HH24:MI'), '02-02', 'Camp Now');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('25-09-2020 16:00','DD-MM-YYYY HH24:MI'), '03-02', 'Parq Des Principes');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('25-09-2020 18:00','DD-MM-YYYY HH24:MI'), '04-01', 'Sayayines Stadium');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('25-09-2020 20:00','DD-MM-YYYY HH24:MI'), '02-05', 'Vicente Calderon');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('25-09-2020 22:00','DD-MM-YYYY HH24:MI'), '01-02', 'Anfield');
+
+/*Modificar*/
+UPDATE Partidos SET marcadorFinal = '02-02' WHERE partidoFecha = TO_DATE('22-03-2020 14:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '01-06' WHERE partidoFecha = TO_DATE('22-03-2020 16:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '00-00' WHERE partidoFecha = TO_DATE('22-03-2020 18:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '00-01' WHERE partidoFecha = TO_DATE('22-03-2020 20:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '01-03' WHERE partidoFecha = TO_DATE('22-03-2020 22:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '03-02' WHERE partidoFecha = TO_DATE('23-03-2020 14:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '03-03' WHERE partidoFecha = TO_DATE('23-03-2020 16:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '04-08' WHERE partidoFecha = TO_DATE('23-03-2020 18:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '01-01' WHERE partidoFecha = TO_DATE('23-03-2020 20:00','DD-MM-YYYY HH24:MI');
+UPDATE Partidos SET marcadorFinal = '04-01' WHERE partidoFecha = TO_DATE('23-03-2020 22:00','DD-MM-YYYY HH24:MI');
+
+/*Eliminar*/
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('14-03-2020 14:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('14-03-2020 16:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('14-03-2020 18:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('14-03-2020 20:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('14-03-2020 22:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('15-03-2020 14:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('15-03-2020 16:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('15-03-2020 18:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('15-03-2020 20:00','DD-MM-YYYY HH24:MI');
+DELETE FROM Partidos WHERE partidoFecha = TO_DATE('15-03-2020 22:00','DD-MM-YYYY HH24:MI');
+
+/*---------------------------------Mantener Arbitro---------------------------------*/
+/*Adicionar*/
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(1442236020, TO_DATE('1979-09-05', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(8182902750, TO_DATE('1996-11-28', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(9399531885, TO_DATE('1998-06-18', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(6712312616, TO_DATE('1986-05-29', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(9585222521, TO_DATE('1983-01-20', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(508674895, TO_DATE('1983-07-12', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(6026925671, TO_DATE('1990-01-23', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(7480252394, TO_DATE('1977-09-14', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(2406814574, TO_DATE('1979-04-12', 'YYYY-MM-DD'), null);
+
+INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+VALUES(8662744853, TO_DATE('1972-08-04', 'YYYY-MM-DD'), null);
+
+/*Modificar*/
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-14', 'YYYY-MM-DD'), puntuacionarbitraje = 4, posicion = 'VAR' WHERE cedula = 1442236020;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-13', 'YYYY-MM-DD'), puntuacionarbitraje = 1, posicion = 'AFL' WHERE cedula = 8182902750;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-12', 'YYYY-MM-DD'), puntuacionarbitraje = 3, posicion = 'VAR' WHERE cedula = 9399531885;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-11', 'YYYY-MM-DD'), puntuacionarbitraje = 5, posicion = 'VAR' WHERE cedula = 6712312616;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-10', 'YYYY-MM-DD'), puntuacionarbitraje = 5, posicion = 'AFL' WHERE cedula = 9585222521;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-09', 'YYYY-MM-DD'), puntuacionarbitraje = 2, posicion = 'VAR' WHERE cedula = 508674895;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-08', 'YYYY-MM-DD'), puntuacionarbitraje = 3, posicion = 'AFL' WHERE cedula = 6026925671;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-07', 'YYYY-MM-DD'), puntuacionarbitraje = 4, posicion = 'AFL' WHERE cedula = 7480252394;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-06', 'YYYY-MM-DD'), puntuacionarbitraje = 2, posicion = 'VAR' WHERE cedula = 2406814574;
+UPDATE Arbitros SET fechaFinal = TO_DATE('2020-04-05', 'YYYY-MM-DD'), puntuacionarbitraje = 4, posicion = 'VAR' WHERE cedula = 8662744853;
+
+/*---------------------------------Registrar Evento---------------------------------*/
+/*Adicionar*/
+--Tg_Ad_Eventos
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 14, 758865285, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 38, 7020950151, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 52, 758865285, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 90, 5940422660, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 1, 9073392748, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 2, 9073392748, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 3, 7582069659, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 4, 6540172698, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 6, 4359639120, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Eventos(fecha, tiempo, jugador, partido)
+VALUES(TO_DATE('07-03-2020', 'DD-MM-YYYY'), 9, 7446594805, TO_DATE('07-03-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+--Tg_Ad_Disparos
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 1, 8078421943);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 33, 4727151904);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 54, 2288338297);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 93, 1554783540);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 43, 2593333937);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 21, 1894232270);
+
+INSERT INTO Disparos(acertadoGol, distancia, velocidad, fecha, tiempo, jugador)
+VALUES(1, 72, 50, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 12, 396657628);
+
+--Tg_Ad_Amonestacion
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 90, 7582069659, 'A', 'Falta Intencional', 344394667);
+
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 52, 6540172698, 'A', 'Falta Intencional', 344394667);
+
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 38, 7582069659, 'A', 'Falta Intencional', 344394667);
+
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 14, 6540172698, 'A', 'Falta Intencional', 344394667);
+
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 91, 5105300751, 'A', 'Falta Intencional', 344394667);
+
+INSERT INTO Amonestaciones(fecha, tiempo, jugador, tarjeta, comentarios, arbitro)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 86, 3848434383, 'A', 'Falta Intencional', 344394667);
+
+
+--Tg_Ad_Pase
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 1, 8078421943);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 33, 4727151904);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 54, 2288338297);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 93, 1554783540);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 43, 2593333937);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 21, 1894232270);
+
+INSERT INTO Pases(totalPartido, efectividadAcierto, gol, fecha, tiempo, jugador)
+VALUES(20, 48, 1, TO_DATE('29-01-2020', 'DD-MM-YYYY'), 12, 396657628);
+
+--Tg_Ad_Atajada
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 1, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 33, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 54, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 93, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 43, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 21, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 12, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 88, 7582069659, 76, 7);
+
+INSERT INTO Atajadas(fecha, tiempo, jugador, porteriaEnCero, paradas)
+VALUES(TO_DATE('24-01-2020', 'DD-MM-YYYY'), 77, 7582069659, 76, 7);

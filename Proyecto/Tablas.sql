@@ -39,7 +39,7 @@ puntuacionArbitraje NUMBER(1) NOT NULL
 
 --PitadosPor--
 CREATE TABLE PitadosPor(
-arbitro NUMBER(10),
+arbitro NUMBER(10) NULL,
 partido DATE NOT NULL
 );
 

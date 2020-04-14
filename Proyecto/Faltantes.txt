@@ -7,6 +7,3 @@ POBLADA:
 	Faltan Convocados(2-8)
 	Eventos F1(Menos primer partido)-F8
 	Todos Eventos
-
-Implementar:
-	AccionesOK, DisparadoresOK, DisparadoresNoOK
