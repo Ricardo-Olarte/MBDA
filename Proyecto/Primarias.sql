@@ -36,17 +36,17 @@ ALTER TABLE Convocados ADD CONSTRAINT PK_Convocados
 PRIMARY KEY (plantillaEquipo,plantillaPartido,jugador);
 
 ALTER TABLE Eventos ADD CONSTRAINT PK_Eventos 
-PRIMARY KEY (fecha,tiempo,jugador);
+PRIMARY KEY (partido,tiempo,jugador);
 
 ALTER TABLE Amonestaciones ADD CONSTRAINT PK_Amonestaciones 
-PRIMARY KEY (fecha,tiempo,jugador);
+PRIMARY KEY (partido,tiempo,jugador);
 
 ALTER TABLE Atajadas ADD CONSTRAINT PK_Atajadas 
-PRIMARY KEY (fecha,tiempo,jugador);
+PRIMARY KEY (partido,tiempo,jugador);
 
 ALTER TABLE Pases ADD CONSTRAINT PK_Pases 
-PRIMARY KEY (fecha,tiempo,jugador);
+PRIMARY KEY (partido,tiempo,jugador);
 
 ALTER TABLE Disparos ADD CONSTRAINT PK_Disparo 
-PRIMARY KEY (fecha,tiempo,jugador);
+PRIMARY KEY (partido,tiempo,jugador);
 

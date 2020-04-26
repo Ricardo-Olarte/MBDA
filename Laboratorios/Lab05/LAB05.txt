@@ -1,0 +1,383 @@
+﻿/*LAB05*/
+/*--------Punto A.--------*/
+/*
+1.Explore el archivo usando un navegador y un editor. ¿Cuáles son las ventajas de uno u otro?
+	Las ventajas del navegador es que tiene una interfaz mas amigable, mientras que en el editor es más fácil hacer la edición del archivo y esto ayuda a programar el mismo
+2.Describa la información que encuentra en el archivo.
+	La etiqueta raíz es Países, y sus hijos son los países, y estos tienen como atributos el nombre, la población y área; y estos algunos tienen como hijos los lenguajes que se hablan allí y las ciudades de estos mismos, además de esto, los lenguajes tienen como hojas el porcentaje que se habla en el país, y las ciudades tienen como hojas el nombre y la población que habita en esta ciudad
+*/
+
+/*--------B.Consultas iniciales--------*/
+  Implemente las siguientes consultas:
+  Para evaluar use la herramienta que aparece en moodle.
+1.	¿De cúales países se tiene información?
+	[a. Nombre con etiqueta]
+		/countries/country
+	[b. Nombre sin etiqueta]
+		/countries/country/@name
+	[c. Numero con atributo]
+		/countries/country
+	[d. Numero sin atributo]
+		/countries/country/@area
+	[e.Número de países]
+		count(/countries/country)
+	
+2.	¿Cuántos países están detallados? ¿Cuáles son? 
+	[Nombre] 
+		/countries/country[count(city) > 0]/@name
+	
+3.	¿De qué países se conocen sus ciudades y sus lenguas?
+	[nombre, ciudades y lenguas]
+		/countries/country[count(city) > 0 and count(language )>0]/@name
+		/countries/country[count(city) > 0 and count(language )>0]/city
+		/countries/country[count(city) > 0 and count(language )>0]/language
+	
+4.	¿De qué países sólo se conocen sus datos básicos (nombre, area y población)?
+	[nombre, ciudades y lenguas]
+		/countries/country[count(city)=0 and count(language )=0]/@name
+	
+5.	¿Cuál es la información de Colombia?
+	[a. Toda la información] 
+		/countries/country[@name="Colombia"]
+	[b. Todos los atributos] 
+		/countries/country[@name="Colombia"]/@*
+	[c. Todas las etiquetas]
+		/countries/country[@name="Colombia"]/*
+		
+6.	¿Cuántos habitantes tiene Colombia? 
+	[Habitantes]
+		/countries/country[@name="Colombia"]/@population
+		
+7.	¿Cuáles son las principales cuidades de Colombia? 
+	[Nombre]
+		/countries/country[@name="Colombia"]/city/name/text()
+		
+8.	¿Cuáles países tienen una única ciudad importante? 
+	[Nombre]
+		/countries/country[count(city)=1]/@name
+		
+9.	¿Cuáles países tienen menos de 500 millones de habitantes? 
+	[Nombre]
+		/countries/country[@population < 500000000]/@name
+		
+10.	¿En qué países se habla únicamente español? 
+	[Nombre]
+		/countries/country[language/text()="Spanish"]/@name
+	[Toda la información]
+		/countries/country[language/text()="Spanish"]
+		
+11.	¿En qué países se habla un único idioma? 
+	[Nombre]
+		/countries/country[count(language)=1]/@name
+		/countries/country[count(language)=1]/language/text()
+	
+12.	¿En qué países no existe un idioma mayoritario? (Lo conocen más del 50%)
+	[Nombre]
+		/countries/country[(language/@percentage)<50]/@name
+		
+13.	¿Cuál es el país más pequeño? 
+	[Nombre]
+		/countries/country[min(/countries/country/@area)=@area]/@name
+		
+14.	¿Cuáles son los países de área superior al promedio? 
+	[Nombre]
+		/countries/country[avg(/countries/country/@area)<@area]/@name
+	
+
+/*--------B. Consultas quiz Standford--------*/
+
+1.	Return the area of Mongolia.
+		/countries/country[@name="Mongolia"]/@area
+
+2.	Return the names of all cities that have the same name as the country in which they are located.
+		/countries/country/city[name/text()=(/countries/country/@name)]/name/text()
+
+3.	Return the names of all countries where over 50% of the population speaks German.
+		/countries/country[language[text()="German"]/@percentage > 50]/@name
+		
+4.	Return the name of the country with the highest population.
+		/countries/country[max(/countries/country/@population)=@population]/@name
+
+5.	Return the names of all countries that have at least three cities with population greater than 3 million.
+		/countries/country[count(city[population>3000000])>=3]/@name
+
+6.	Return the names of French-speaking and German-speaking countries.
+		/countries/country[count(language[text()="German"])=1 and count(language[text()="French"])]/@name
+
+7.	Return the names of all countries containing a city such that some other country has a city of the same name.
+		//country[city[last()] = city[1]]/@name | /countries/country[city/name = @name]/@name
+
+8.	Return the languages spoken in countries where Russian is spoken.
+		/countries/country[language/text() = "Russian"]/language/text()
+
+9.	Return all country name where the country textually contains a language spoken in the country.
+		/countries/country[language[contains(parent::country/@name, self::language)]]/@name
+
+10. Return all countries that have at least one city with population greater than 7 million.
+		/countries/country[city/population/text() > "700000000"]/@name
+
+11. Return all countries where at least one language is listed, but the total percentage for all listed languages is less than 90%.
+		/countries/country[count(language) >= 1 and (sum(language/@percentage) < 90)]/@name
+
+12. Return all countries where at least one language is listed, and every listed language is spoken by less than 20% of the population.
+		/countries/country[count(language) >= 1 and (not ((language/@percentage) >= 20))]/@name
+
+13. Find all situations where one country's most popular language is another country's least popular, and both countries list more than one language.
+		********************************************************************************************************
+		
+/*--------C. Consultas propuestas--------*/
+
+1. ¿Cuál es el pais mas grande?
+	/countries/country[max(/countries/country/@area)=@area]/@name}
+	
+2. ¿Cuál es la información de España?
+	[a. Toda la información] 
+		/countries/country[@name="España"]
+	[b. Todos los atributos] 
+		/countries/country[@name="España"]/@*
+	[c. Todas las etiquetas]
+		/countries/country[@name="España"]/*
+
+3.	¿En qué países se habla mas de cuatro idiomas?
+	/countries/country[count(language)>=4]/@name
+	
+4. Paises que tenga mas de dos ciudades importantes y hablen mas de dos idiomas
+	/countries/country[count(city)>=2 and count(language)>=2]/@name
+	
+5. Pais donde se habla German y Dutch
+	/countries/country[count(language[text()="German"])=1 and count(language[text()="Dutch"])]/@name
+	
+/*--------D. Esquema--------*/
+
+<?xml version="1.0"?>
+
+<!DOCTYPE countries[
+	<!ELEMENT countries (country*)>
+
+	<!ELEMENT country (city*,language*)>
+	<!ATTLIST country
+	  area CDATA #REQUIRED
+	  name CDATA #REQUIRED
+	  population CDATA #REQUIRED>
+
+	<!ELEMENT city (name+,population+)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT population (#PCDATA)>
+
+	<!ELEMENT language (#PCDATA)>
+	<!ATTLIST language
+	  percentage CDATA #REQUIRED>
+	
+]>
+
+/*--------E. Nuevos datos--------*/
+
+<country name="Luxembourg" population="415870" area="2586">
+	<city>
+		<name>Luxembourg</name>
+		<population>76420</population>
+	</city>
+	<language percentage="40">Luxembourgish</language>
+	<language percentage="30">German</language>
+	<language percentage="30">French</language>
+</country>
+<country name="Paraguay" population="5504146" area="406750">
+	<city>
+		<name>Asunción</name>
+		<population>117</population>
+	</city>
+	<language percentage="100">spanish</language>
+</country>
+<country name="Andorra" population="72766" area="450">
+    <city>
+        <name>Andorra La Vella</name>
+        <population>23,587</population>
+    </city>
+    <language percentage="40">Spanish</language>
+    <language percentage="30">Portuguese</language>
+    <language percentage="30">French</language>
+</country>
+
+
+/*--------PUNTO DOS. (XML – Oracle) TrainingLog. TRecomendación--------*/
+1) Proponga la estructura XML necesaria para tener la información de la recomendación
+de una evaluación. DTD y ejemplos XML OK y XML NoOK. Explique.
+	
+	DTD
+	/*Hacemos obligatoria la existencia de las 3 areas, ademas de que restringimos la 
+	  el valor de la importancia para que este entre 0-5 al igual que con el tipo que sea bien o mal
+	*/
+	<?xml version="1.0"?>
+	<!DOCTYPE TRecomendacion[
+			
+	<!ELEMENT TRecomendacion (area*)>
+	<!ELEMENT area (zonas, calentamiento, cadencia)+>
+	<!ELEMENT zonas (tipo, descripcion, importancia)?>
+	<!ELEMENT calentamiento (tipo, descripcion, importancia)?>
+	<!ELEMENT cadencia (tipo, descripcion, importancia)?>
+	<!ATTLIST zonas
+			  tipo (bien|mal) #REQUIRED
+			  descripcion CDATA #REQUIRED
+			  importancia (0|1|2|3|4|5) #REQUIRED>
+	<!ATTLIST calentamiento
+			  tipo (bien|mal) #REQUIRED
+			  descripcion CDATA #REQUIRED
+			  importancia (0|1|2|3|4|5) #REQUIRED>
+	<!ATTLIST cadencia
+			  tipo (bien|mal) #REQUIRED
+			  descripcion CDATA #REQUIRED
+			  importancia (0|1|2|3|4|5) #REQUIRED>
+		
+	]>
+	
+	XML OK
+	/* Estas recomendaciones estan bien debido a que cumplen con las restricciones propuestas en el DTD
+	*/
+		<TRecomendacion>
+			<area>
+				<zonas tipo= "bien" descripcion= "Buen manejo del area de pesas" importancia= "2"></zonas>
+				<calentamiento tipo= "mal" descripcion= "La persona no calienta antes de entrenar" importancia= "5"></calentamiento>
+				<cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "3"></cadencia>
+			</area>
+		</TRecomendacion>
+		
+		----
+		<TRecomendacion>
+			<area>
+				<zonas tipo= "mal" descripcion= "No limpia las maquinas" importancia= "5"></zonas>
+				<calentamiento tipo= "bien" descripcion= "La persona calienta antes de entrenar" importancia= "5"></calentamiento>
+				<cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "2"></cadencia>
+			</area>
+		</TRecomendacion>
+		
+	XML NoOK
+	/* No son xml correctos debido a que en el DTD se especifica que deben existir las 3 area, ademas que 
+	   una recomendacion no puede superar el valor 5 ni ser negativa y esta al tener un valor superior falla, lo mismo pasa con el tipo
+	   que es un tipo que no aparece en los especificados
+	*/
+	/*tipo*/
+		<TRecomendacion>
+			<area>
+				<zonas tipo= "maso" descripcion= "no sab la manipulacion de las maquinas" importancia= "0"></zonas>
+				<calentamiento tipo= "mal" descripcion= "La persona no calienta antes de entrenar" importancia= "5"></calentamiento>
+				<cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "3"></cadencia>
+			</area>
+		</TRecomendacion>
+
+	/*importancia*/
+		<TRecomendacion>
+            <area>
+                <zonas tipo= "bien" descripcion= "Buen manejo del area de pesas" importancia= "1.5"></zonas>
+                <calentamiento tipo= "mal" descripcion= "La persona no calienta antes de entrenar" importancia= "5.0"></calentamiento>
+                <cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "3.8"></cadencia>
+            </area>
+        </TRecomendacion>
+
+	/*area*/
+		<TRecomendacion>
+            <area>
+                <cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "3"></cadencia>
+            </area>
+        </TRecomendacion>
+	
+2) Actualice la tabla y los datos adicionados a la base de datos. (PoblandoOK, ProblandoNoOK)
+	/*Se encuentra en archivo TrainingLog.sql*/
+
+3) Implemente la consulta definida para Atleta - Consultar las evaluaciones que me
+permiten mejorar mas
+
+	SELECT EntrenadorTID, EntrenadorNID, EXTRACT(recomendaciones, '/TRecomendacion/area/zonas/@descripcion') AS Recomendacion_Zonas, 
+		EXTRACT(recomendaciones, '/TRecomendacion/area/calentamiento/@descripcion') AS Recomendacion_calentamineto, 
+		EXTRACT(recomendaciones, '/TRecomendacion/area/cadencia/@descripcion') AS Recomendacion_cadencia,
+		((TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/zonas/@importancia')) + TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/calentamiento/@importancia')) + TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/cadencia/@importancia')))/3) AS Importancia
+	FROM Evaluaciones, Libres
+	WHERE Evaluaciones.actividad = Libres.numero
+	ORDER BY ((TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/zonas/@importancia')) + TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/calentamiento/@importancia')) + TO_NUMBER(EXTRACT(recomendaciones, '/TRecomendacion/area/cadencia/@importancia')))/3) DESC;
+
+
+4) Proponga otra nueva consulta que use TRecomendación (Diseño e implementación)
+
+	/*Consultar las evaluaciones que tengan una recomendacion mala y una importancia relevante*/
+	
+	SELECT entrenadortid, entrenadornid, fecha, comentarios
+	FROM Evaluaciones
+	WHERE EXTRACT(recomendaciones, '/TRecomendacion/area[(zonas/@importancia>=4 and zonas/@tipo>="mal") 
+		or (calentamiento/@importancia>=4 and zonas/@tipo>="mal") or (cadencia/@importancia>=4 and zonas/@tipo>="mal")]/zonas/@importancia') IS NOT NULL
+	ORDER BY fecha;
+
+5) Extienda la información de la revisión (TRecomendación-DTD) y proponga una nueva
+consulta que ilustre la pertinencia de la nueva información registrada en XML.
+(Diseño e implementación)
+
+	<?xml version="1.0"?>
+	<!DOCTYPE TRecomendacion[
+
+
+	<!ELEMENT TRecomendacion (area*, ejercicios*)>
+	<!ELEMENT ejercicios (cardio, pierna, abdomen)+>
+	<!ELEMENT cardio (necesario, series, tiempo, unidad)?>
+	<!ELEMENT pierna (necesario, series, repeticiones)?>
+	<!ELEMENT cadencia (necesario, series, repeticiones)?>
+	<!ATTLIST cardio
+		 necesario (No|Si) #REQUIRED
+		 series CDATA #REQUIRED
+		 tiempo CDATA #REQUIRED
+				unidad CDATA #REQUIRED>
+	<!ATTLIST pierna
+		 necesario (No|Si) #REQUIRED
+		 series CDATA #REQUIRED
+		 repeticiones CDATA #REQUIRED>
+	<!ATTLIST abdomen
+		 necesario (No|Si) #REQUIRED
+		 series CDATA #REQUIRED
+		 repeticiones CDATA #REQUIRED>
+	<!ELEMENT area (zonas, calentamiento, cadencia)+>
+	<!ELEMENT zonas (tipo, descripcion, importancia)?>
+	<!ELEMENT calentamiento (tipo, descripcion, importancia)?>
+	<!ELEMENT abdomen (tipo, descripcion, importancia)?>
+	<!ATTLIST zonas
+		 tipo (bien|mal) #REQUIRED
+		 descripcion CDATA #REQUIRED
+		 importancia (0|1|2|3|4|5) #REQUIRED>
+	<!ATTLIST calentamiento
+		 tipo (bien|mal) #REQUIRED
+		 descripcion CDATA #REQUIRED
+		 importancia (0|1|2|3|4|5) #REQUIRED>
+	<!ATTLIST cadencia
+		 tipo (bien|mal) #REQUIRED
+		 descripcion CDATA #REQUIRED
+		 importancia (0|1|2|3|4|5) #REQUIRED>
+
+	 ]>
+	<TRecomendacion>
+		<area>
+			<zonas tipo= "bien" descripcion= "Buen compañerismo" importancia= "3"></zonas>
+			<calentamiento tipo= "bien" descripcion= "Buen calentamiento" importancia= "3"></calentamiento>
+			<cadencia tipo= "bien" descripcion= "Buena cadencia" importancia= "3"></cadencia>
+		</area>
+		<ejercicios>
+			<cardio necesario="0" series="1" tiempo="32" unidad="min"></cardio>
+			<pierna necesario="0" series="1" repeticiones="32"></pierna>
+			<abdomen necesario="0" series="1" repeticiones="32"></abdomen>
+		</ejercicios>
+	</TRecomendacion>
+
+	/*Consulta:*/
+	SELECT EntrenadorNID, EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio') AS Entrenamiento_Cardio,
+		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/pierna') AS Entrenamiento_pierna,
+		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/abdomen') AS Entrenamiento_abdomen, fecha
+	FROM Evaluaciones
+	WHERE EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio/@*') IS NOT NULL
+	ORDER BY fecha;
+
+/*--------RETROSPECTIVA--------*/
+1.	¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre) 
+	20h/20h
+2.	¿Cuál es el estado actual del laboratorio? ¿Por qué?
+	Completo
+3.	¿Cuál consideran fue el mayor logro? ¿Por qué? 
+	Comprobacion del funcionamiento de los DTD
+4.	¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+	Creacion de los DTD, tuvimos que investigar mas
+5.	¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados? 
+	Utilizar la programacion a pares

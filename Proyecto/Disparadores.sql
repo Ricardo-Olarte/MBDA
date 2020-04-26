@@ -169,7 +169,7 @@ CREATE OR REPLACE TRIGGER Tg_Mo_Partido
     BEFORE UPDATE ON Partidos
     FOR EACH ROW
     BEGIN
-        IF (:old.marcadorFinal IS NOT NULL AND :old.Estadio IS NULL)
+        IF (:old.marcadorFinal IS NOT NULL and :new.estadio IS NOT NULL)
     		THEN RAISE_APPLICATION_ERROR(-20211,'ACTUALIZACION NO PERMITIDA, IMPOSBILE CAMBIAR MARCADOR');
 	    END IF; 
 END Tg_Mo_Partido;
@@ -235,9 +235,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Disparos
         TotalV NUMBER(10);
         TotalD NUMBER(10);
     BEGIN
-        SELECT partido INTO FechaP 
-        FROM Eventos 
-        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        FechaP := :new.partido;
         
         SELECT marcadorFinal INTO Resultado 
         FROM Partidos 
@@ -252,7 +250,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Disparos
         
         SELECT Count(*) INTO TotalD 
         FROM Disparos, Eventos
-        WHERE Eventos.partido = FechaP AND Disparos.fecha = Eventos.fecha AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
+        WHERE Eventos.partido = FechaP AND Disparos.partido = Eventos.partido AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
             AND Disparos.acertadoGol = 1;
         
         IF (TotalL + TotalV)  = TotalD
@@ -280,11 +278,13 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Amonestacion
     FOR EACH ROW
     DECLARE
         Val NUMBER;
+        Val2 NUMBER;
         Fec DATE;
     BEGIN
-        SELECT partido INTO Fec FROM Eventos WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        SELECT partido INTO Fec FROM Eventos WHERE partido = :new.partido AND tiempo = :new.tiempo AND jugador = :new.jugador;
         SELECT count(*) INTO Val FROM PitadosPor WHERE partido = Fec AND arbitro = :new.arbitro;
-        IF  Val = 0
+        SELECT count(*) INTO Val2 FROM Arbitros WHERE cedula = :new.arbitro AND posicion = 'ARC';
+        IF  Val = 0 or Val2 = 0
             THEN RAISE_APPLICATION_ERROR(-20217,'EL ARBITRO NO ES EL CORRESPONDIENTE');
         END IF;
 END Tg_Ad_Amonestacion;
@@ -298,18 +298,16 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Pase
         Dis NUMBER;
         FechaP DATE;
     BEGIN
-        SELECT partido INTO FechaP 
-        FROM Eventos 
-        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        FechaP := :new.partido;
         
         SELECT Count(*) INTO Dis 
         FROM Disparos, Eventos
-        WHERE Eventos.partido = FechaP AND Disparos.fecha = Eventos.fecha AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
+        WHERE Eventos.partido = FechaP AND Disparos.partido = Eventos.partido AND Disparos.tiempo = Eventos.tiempo AND Disparos.Jugador = Eventos.Jugador
             AND Disparos.acertadoGol = 1;
         
         SELECT Count(*) INTO Pas 
         FROM Pases, Eventos
-        WHERE Eventos.partido = FechaP AND Pases.fecha = Eventos.fecha AND Pases.tiempo = Eventos.tiempo AND Pases.Jugador = Eventos.Jugador
+        WHERE Eventos.partido = FechaP AND Pases.partido = Eventos.partido AND Pases.tiempo = Eventos.tiempo AND Pases.Jugador = Eventos.Jugador
             AND Pases.gol = 1;
             
         IF  Dis = Pas AND :new.gol = 1
@@ -325,9 +323,7 @@ CREATE OR REPLACE TRIGGER Tg_Ad_Atajada
         Pos NUMBER;
         FechaP DATE;
     BEGIN
-        SELECT partido INTO FechaP 
-        FROM Eventos 
-        WHERE fecha = :new.fecha AND tiempo = :new.tiempo AND jugador = :new.jugador;
+        FechaP := :new.partido;
         
         SELECT Count(*) INTO Pos FROM Convocados WHERE jugador = :new.jugador AND plantillaPartido = FechaP AND posicion = 'POR';
     

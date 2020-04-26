@@ -1,0 +1,11 @@
+/*LAB05*/
+
+/*--------B.Consultas iniciales--------*/
+  Implemente las siguientes consultas:
+  Para evaluar use la herramienta que aparece en moodle.
+1.	¿De cúales países se tiene información?
+	[c. Número con atributo]
+	[d. Número sin atributo]
+
+/*--------B.Consultas quiz Standford --------*/
+13. Find all situations where one country's most popular language is another country's least popular, and both countries list more than one language.

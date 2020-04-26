@@ -39,7 +39,7 @@ puntuacionArbitraje NUMBER(1) NOT NULL
 
 --PitadosPor--
 CREATE TABLE PitadosPor(
-arbitro NUMBER(10) NULL,
+arbitro NUMBER(10) NOT NULL,
 partido DATE NOT NULL
 );
 
@@ -103,7 +103,6 @@ posicion VARCHAR(10) NOT NULL
 
 --Eventos--
 CREATE TABLE Eventos(
-fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
 jugador NUMBER(10) NOT NULL,
 partido DATE NOT NULL
@@ -111,9 +110,9 @@ partido DATE NOT NULL
 
 --Amonestaciones--
 CREATE TABLE Amonestaciones(
-fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
 jugador NUMBER(10) NOT NULL,
+partido DATE NOT NULL,
 tarjeta CHAR(1) NOT NULL,
 comentarios VARCHAR(20) NOT NULL,
 arbitro NUMBER(10)
@@ -121,9 +120,9 @@ arbitro NUMBER(10)
 
 --Atajadas--
 CREATE TABLE Atajadas(
-fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
 jugador NUMBER(10) NOT NULL,
+partido DATE NOT NULL,
 porteriaEnCero NUMBER(3) NOT NULL,
 paradas NUMBER(2) NOT NULL
 );
@@ -133,9 +132,9 @@ CREATE TABLE Pases(
 totalPartido NUMBER(3) NOT NULL,
 efectividadAcierto NUMBER(3) NOT NULL,
 gol NUMBER(1) NOT NULL,
-fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
-jugador NUMBER(10) NOT NULL
+jugador NUMBER(10) NOT NULL,
+partido DATE NOT NULL
 );
 
 --Disparos--
@@ -143,7 +142,7 @@ CREATE TABLE Disparos(
 acertadoGol NUMBER(1) NOT NULL,
 distancia NUMBER(2) NOT NULL,
 velocidad NUMBER(3) NOT NULL,
-fecha DATE NOT NULL,
 tiempo NUMBER(3) NOT NULL,
-jugador NUMBER(10) NOT NULL
+jugador NUMBER(10) NOT NULL,
+partido DATE NOT NULL
 );
