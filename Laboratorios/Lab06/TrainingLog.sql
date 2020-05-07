@@ -1,18 +1,18 @@
 /*TABLAS*/
 CREATE TABLE Participantes(
-tid VARCHAR(3) NOT NULL,
-nid VARCHAR(15) NOT NULL,
-email VARCHAR(100) NOT NULL,
-pais VARCHAR(30) NOT NULL,
+tid VARCHAR(38) NOT NULL,
+nid VARCHAR(38) NOT NULL,
+email VARCHAR(50) NOT NULL,
+pais VARCHAR(50) NOT NULL,
 fRegistro DATE NOT NULL,
 fRetiro DATE
 );
 
 CREATE TABLE Atletas(
-tid VARCHAR(3) NOT NULL,
-nid VARCHAR(15) NOT NULL,
-rh VARCHAR(1) NOT NULL,
-tSangre VARCHAR(2) NOT NULL
+tid VARCHAR(38) NOT NULL,
+nid VARCHAR(38) NOT NULL,
+rh VARCHAR(38) NOT NULL,
+tSangre VARCHAR(38) NOT NULL
 );
 
 CREATE TABLE Entrenadores(
@@ -2164,7 +2164,6 @@ VALUES(4, TO_DATE('27/01/2020', 'dd/mm/yyyy'), 2000, 'C', 138832, 47);
 INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad)
 VALUES(3, TO_DATE('16/12/2019', 'dd/mm/yyyy'), 2000, 'C', 204821, 48);
 
-delete from evaluaciones
 /*-------------------------------------------------------------------Evaluaciones---------------------------------------------------*/
 /* INSERT QUERY NO: 1 */
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
@@ -2976,3 +2975,9 @@ INSERT INTO Fotos(actividad,fotos)
 VALUES (1, 'ABCDEFGpng');
 
 
+SELECT EntrenadorNID, EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio') AS Entrenamiento_Cardio,
+		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/pierna') AS Entrenamiento_pierna,
+		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/abdomen') AS Entrenamiento_abdomen, fecha
+	FROM Evaluaciones
+	WHERE EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio/@*') IS NOT NULL
+	ORDER BY fecha;

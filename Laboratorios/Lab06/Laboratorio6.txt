@@ -26,23 +26,25 @@ E. Escriban las instrucciones necesarias para importar los datos de esa tabla a 
 	entrenador: es el número en la tabla]
 	
 	INSERT INTO Participantes
-	SELECT 
+	SELECT DISTINCT
 		CASE WHEN tid = 1 THEN 'CC'
 			 WHEN tid = 2 THEN 'TI'
-			 WHEN tid = 3 THEN 'CE'
+			 ELSE 'CE'
 		END AS tid,
 		nid,
 		email,
 		pais,
-		TO_DATE(Fregistro, 'YYYY-MM-DD'),
-		TO_DATE(Fretiro, 'YYYY/MM/DD')
+		TO_DATE(Fregistro,'YYYY-MM-DD HH24:MI') AS Fregistro,
+		CASE WHEN Fretiro IS NULL THEN null
+			 ELSE TO_DATE(Fretiro,'YYYY/MM/DD HH24:MI')
+		END AS Fretiro
 	FROM MBDA.Miembros;
 
 	INSERT INTO Atletas
-	SELECT 
+	SELECT DISTINCT
 		CASE WHEN tid = 1 THEN 'CC'
 			 WHEN tid = 2 THEN 'TI'
-			 WHEN tid = 3 THEN 'CE'
+			 ELSE 'CE'
 		END AS tid,
 		nid,
 		CASE WHEN rh = 1 THEN '+'
@@ -66,3 +68,9 @@ Modelo físico. Componentes.
 A. Diseñe e implemente los paquetes correspondiente a los siguientes CRUD del sistema:
 	1. Actividad (PC_ACTIVIDAD)
 	2. Evaluación (PC_EVALUACION)
+En los paquetes deben incluir los subprogramas necesarios para atender los escenarios de
+los casos de uso de funciones y los casos de uso de consultas.
+CRUDE (Especificacion)
+CRUDI (Implementación)
+--
+XCRUD
