@@ -1,0 +1,68 @@
+CICLO UNO. TrainingLog
+
+A. Consulte la información que actualmente está en el archivo
+	SELECT * FROM MBDA.Miembros;
+	
+B. Inclúyanse como atletas.
+	
+	INSERT INTO MBDA.Miembros 
+	VALUES (740, 1, 1019151395, 'andres.calderon-o@mail.escuelaing.edu.co', 'Male', 'Colombia', SYSDATE,null,1,3, null, 405);
+	
+	INSERT INTO MBDA.Miembros 
+	VALUES (741, 1, 1022446999,'jose.olarte@mail.escuelaing.edu.co','Male','Colombia',SYSDATE,null,1,1,null,666);
+
+C. Traten de modificarse o borrarse. ¿qué pasa?
+	No se tienen privilegios de borrado y de actualizacion de datos sobre la base
+	
+D. Escriban la instrucción necesaria para lograr ese comportamiento. ¿quién la debería
+	escribir?
+	"Esta instruccion la deberia ejecutar el administrador de la base de datos o la persona que
+	 tenga permisos para dar permisos"
+	 
+	GRANT UPDATE,DELETE ON MBDA.Miembros TO bd2144828,bd2151185;
+		  
+E. Escriban las instrucciones necesarias para importar los datos de esa tabla a su base de datos.
+	[tipo documento: (1,2,3)→ (‘CC’, ‘TI’ ‘CE’), rh : (1,2)→(+,-) tSangre (1,2,3)→ (A,B,AB)
+	entrenador: es el número en la tabla]
+	
+	INSERT INTO Participantes
+	SELECT 
+		CASE WHEN tid = 1 THEN 'CC'
+			 WHEN tid = 2 THEN 'TI'
+			 WHEN tid = 3 THEN 'CE'
+		END AS tid,
+		nid,
+		email,
+		pais,
+		TO_DATE(Fregistro, 'YYYY-MM-DD'),
+		TO_DATE(Fretiro, 'YYYY/MM/DD')
+	FROM MBDA.Miembros;
+
+	INSERT INTO Atletas
+	SELECT 
+		CASE WHEN tid = 1 THEN 'CC'
+			 WHEN tid = 2 THEN 'TI'
+			 WHEN tid = 3 THEN 'CE'
+		END AS tid,
+		nid,
+		CASE WHEN rh = 1 THEN '+'
+			 WHEN rh = 2 THEN '-'
+		END AS rh,
+		CASE WHEN tSangre = 1 THEN 'A'
+			 WHEN tSangre = 2 THEN 'B'
+			 WHEN tSangre = 3 THEN 'AB'
+		END AS tSangre
+	FROM MBDA.Miembros
+	WHERE rh IS NOT NULL;
+	
+	
+F. Para esta nueva funcionalidad, adicionen este nuevo caso de uso a funciones
+	/*astah*/
+	COMO Administrador
+	QUIERO importar miembros de una fuente externa
+	PARA PODER contar con esta información
+
+Modelo físico. Componentes.
+A. Diseñe e implemente los paquetes correspondiente a los siguientes CRUD del sistema:
+	1. Actividad (PC_ACTIVIDAD)
+	2. Evaluación (PC_EVALUACION)
