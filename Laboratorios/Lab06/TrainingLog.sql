@@ -101,21 +101,6 @@ atletanid VARCHAR(15) NOT NULL
 );
 
 
-/*xTABLAS*/
-DROP TABLE Participantes;
-DROP TABLE Atletas;
-DROP TABLE Entrenadores;
-DROP TABLE Contactos;
-DROP TABLE Entrenamientos;
-DROP TABLE Sesiones;
-DROP TABLE Evaluaciones;
-DROP TABLE Similitudes;
-DROP TABLE Actividades;
-DROP TABLE Fotos;
-DROP TABLE Registros;
-DROP TABLE Planeadas;
-DROP TABLE Libres;
-
 /*Atributos*/
 ALTER TABLE Atletas ADD CONSTRAINT CHK_tipoSangre CHECK(tSangre IN ('A', 'B', 'O', 'AB'));
 ALTER TABLE Atletas ADD CONSTRAINT CHK_rh CHECK(rh IN ('+','-'));
@@ -538,13 +523,6 @@ VALUES
 'CC', '569423977-6', 'bbloss1g@themeforest.net', 'Ukraine', TO_DATE('10/12/2017', 'dd/mm/yyyy'),null
 );
 
-/* INSERT QUERY NO: 54 */
-INSERT INTO Participantes(tid, nid, email, pais, fRegistro, fRetiro)
-VALUES
-(
-'CC', '423029084-5', 'sbirley1h@icq.com', 'China', TO_DATE('02/12/2017', 'dd/mm/yyyy'),null
-);
-
 /* INSERT QUERY NO: 55 */
 INSERT INTO Participantes(tid, nid, email, pais, fRegistro, fRetiro)
 VALUES
@@ -865,6 +843,13 @@ INSERT INTO Participantes(tid, nid, email, pais, fRegistro, fRetiro)
 VALUES
 (
 'CE', '545671317-9', 'ymacdougall2r@friendfeed.com', 'Kenya', TO_DATE('20/10/2019', 'dd/mm/yyyy'),null
+);
+
+/* INSERT QUERY NO: 100 */
+INSERT INTO Participantes(tid, nid, email, pais, fRegistro, fRetiro)
+VALUES
+(
+'CC', '423029084-5', 'pruebaprueba@friendfeed.com', 'Colombia', TO_DATE('20/10/2019', 'dd/mm/yyyy'),null
 );
 
 /*Atletas*/
@@ -2205,21 +2190,7 @@ VALUES
 		</area>
 	</TRecomendacion>', 'CC', '569423977-6',3
 );
-	
-
-/* INSERT QUERY NO: 4 */
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES
-(
-4, TO_DATE('29/08/2019', 'dd/mm/yyyy'), 4, 'Displaced fracture of proximal phalanx of left ring finger', '<TRecomendacion>
-		<area>
-			<zonas tipo= "bien" descripcion= "Buen manejo del area de pesas" importancia= "0"></zonas>
-			<calentamiento tipo= "mal" descripcion= "La persona no calienta antes de entrenar" importancia= "5"></calentamiento>
-			<cadencia tipo= "bien" descripcion= "Cantidad de pasos adecuada" importancia= "1"></cadencia>
-		</area>
-	</TRecomendacion>', 'CC', '423029084-5',4
-);
-	
+		
 	
 /* INSERT QUERY NO: 5 */
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
@@ -2602,6 +2573,7 @@ VALUES
 );
 
 /* INSERT QUERY NO: 31 */
+
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
 VALUES
 (
@@ -2616,7 +2588,6 @@ VALUES
 	</TRecomendacion>
 ', 'CE', '597250522-3',31
 );
-
 /* INSERT QUERY NO: 32 */
 INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
 VALUES
@@ -2857,6 +2828,27 @@ VALUES
 ', 'CE', '725641380-7',46
 );
 
+/* INSERT QUERY NO: 47 */
+INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
+VALUES
+(
+47, TO_DATE('09/11/2019', 'dd/mm/yyyy'), 2, 'Recomendacion de Entrenamiento', 
+	'<?xml version="1.0"?>
+	<TRecomendacion>
+		<area>
+			<zonas tipo= "bien" descripcion= "Buen compañerismo" importancia= "3"></zonas>
+			<calentamiento tipo= "bien" descripcion= "Buen calentamiento" importancia= "3"></calentamiento>
+			<cadencia tipo= "bien" descripcion= "Buena cadencia" importancia= "3"></cadencia>
+		</area>
+		<ejercicios>
+			<cardio necesario="No" series="1" tiempo="32" unidad="min"></cardio>
+			<pierna necesario="No" series="1" repeticiones="32"></pierna>
+			<abdomen necesario="Si" series="1" repeticiones="32"></abdomen>
+		</ejercicios>
+	</TRecomendacion>
+', 'CE', '725641380-7',47
+);
+
 /*Planeadas*/
 INSERT INTO Planeadas(numero, sesiondia, sesionorden)
 VALUES(1, 0, 6);
@@ -2909,75 +2901,26 @@ VALUES ('CE', '298997851-8', 'CC', '423029084-5');
 INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
 VALUES('CC', '368740104-9', 13, 'CC', '834957005-9', 15, 30);
 
-/*------Punto5-------*/
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad)
-VALUES
-(
-47, TO_DATE('09/11/2019', 'dd/mm/yyyy'), 2, 'Recomendacion de Entrenamiento', 
-	'<?xml version="1.0"?>
-	<TRecomendacion>
-		<area>
-			<zonas tipo= "bien" descripcion= "Buen compañerismo" importancia= "3"></zonas>
-			<calentamiento tipo= "bien" descripcion= "Buen calentamiento" importancia= "3"></calentamiento>
-			<cadencia tipo= "bien" descripcion= "Buena cadencia" importancia= "3"></cadencia>
-		</area>
-		<ejercicios>
-			<cardio necesario="No" series="1" tiempo="32" unidad="min"></cardio>
-			<pierna necesario="No" series="1" repeticiones="32"></pierna>
-			<abdomen necesario="Si" series="1" repeticiones="32"></abdomen>
-		</ejercicios>
-	</TRecomendacion>
-', 'CE', '725641380-7',47
-);
-
-/*-----------------------------------------------------PoblarNoOk----------------------------------------------------------*/
-
-INSERT INTO Atletas 
-VALUES ('Aab','Anid1','+','KK');
-
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad) 
-VALUES (1,TO_DATE('30/06/2017','dd/mm/yyyy'),9,'Perfcecto siguio instrucciones',
-'<?xml version="1.0"?>
-	<TRecomendacion>
-			<area>
-				<zonas tipo= "bien" descripcion= "Buen compañerismo" importancia= "3"></zonas>
-				<calentamiento tipo= "bien" descripcion= "Buen calentamiento" importancia= "3"></calentamiento>
-				<cadencia tipo= "bien" descripcion= "Buena cadencia" importancia= "3"></cadencia>
-			</area>
-	</TRecomendacion>
-','Eab','Enid1',1);
-
-INSERT INTO Similitudes(evaluacion1tid,evaluacion1nid,evaluacion1actividad,evaluacion2tid,evaluacion2nid,evaluacion2actividad,porcentaje) 
-VALUES ('Eab','Enid1',1,'Ecd','Enid2',2,200);
-
-INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm) 
-VALUES (1, TO_DATE('10/06/2020','dd/mm/yyyy'), 5000, 60, 85);
-
-INSERT INTO Fotos(actividad,fotos) 
-VALUES (2, 'qwejpg');
-
-INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad) 
-VALUES (1,TO_DATE('10/06/2020','dd/mm/yyyy'),800,'X',100,1);
-
-INSERT INTO Atletas 
-VALUES ('Aab','Anid1','Â¿','AB');
-
-INSERT INTO Evaluaciones(numero, fecha, puntaje, comentarios, recomendaciones, entrenadortid, entrenadornid, actividad) 
-VALUES (1,TO_DATE('1/06/2020','dd/mm/yyyy'),4,'InPerfcecto siguio instrucciones','Bien','Erf','Enid1',1);
-
-INSERT INTO Actividades(numero, fechaInicio, horaInicio, tiempoTotal, pulsacionesProm) 
-VALUES (1, TO_DATE('10/06/2020','dd/mm/yyyy'), 700, 1441, 85);
-
-INSERT INTO Registros(numero, fecha, hora, sensor, valor, actividad) 
-VALUES (1,TO_DATE('18/12/2010','dd/mm/yyyy'),2500,'V',100,1);
-
-INSERT INTO Fotos(actividad,fotos)
-VALUES (1, 'ABCDEFGpng');
+/*Similitudes*/
+INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
+VALUES('CC', '368740104-9', 13, 'CC', '459345336-4', 21, 50);
+INSERT INTO Similitudes(evaluacion1tid, evaluacion1nid, evaluacion1actividad, evaluacion2tid, evaluacion2nid, evaluacion2actividad, porcentaje)
+VALUES('CC', '368740104-9', 13, 'CC', '740756795-6', 24, 70);
 
 
-SELECT EntrenadorNID, EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio') AS Entrenamiento_Cardio,
-		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/pierna') AS Entrenamiento_pierna,
-		EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/abdomen') AS Entrenamiento_abdomen, fecha
-	FROM Evaluaciones
-	WHERE EXTRACT(recomendaciones, '/TRecomendacion/ejercicios/cardio/@*') IS NOT NULL
-	ORDER BY fecha;
+/*xTABLAS*/
+
+DROP TABLE Contactos;
+DROP TABLE Entrenamientos;
+DROP TABLE Similitudes;
+DROP TABLE Fotos;
+DROP TABLE Registros;
+DROP TABLE Planeadas;
+DROP TABLE Libres;
+DROP TABLE Evaluaciones;
+DROP TABLE Actividades;
+DROP TABLE Sesiones;
+DROP TABLE Atletas;
+DROP TABLE Entrenadores;
+DROP TABLE Participantes;
+

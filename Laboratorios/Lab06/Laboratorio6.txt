@@ -64,13 +64,37 @@ F. Para esta nueva funcionalidad, adicionen este nuevo caso de uso a funciones
 	QUIERO importar miembros de una fuente externa
 	PARA PODER contar con esta información
 
+--------------------------------------------------
 Modelo físico. Componentes.
 A. Diseñe e implemente los paquetes correspondiente a los siguientes CRUD del sistema:
-	1. Actividad (PC_ACTIVIDAD)
-	2. Evaluación (PC_EVALUACION)
-En los paquetes deben incluir los subprogramas necesarios para atender los escenarios de
-los casos de uso de funciones y los casos de uso de consultas.
-CRUDE (Especificacion)
-CRUDI (Implementación)
---
-XCRUD
+	/*Se encuentra en Crude.sql, Crudi.sql y xCrude.sql*/
+B. Prueben los paquetes construidos con los casos más significativos: 5 éxito y 3 de fracaso.
+	/*Se encuentra en CrudeOK.sql y CrudiNoOk.sql*/
+	
+--------------------------------------------------
+Modelo físico. Seguridad.
+A. Diseñe e implemente los paquetes que ofrezcan las operaciones válidas para cada uno de los usuarios del sistema.
+	/*Se encuentra en ActoresE.sql y ActoresI.sql*/
+B. Creen el rol de entrenador, otorguen los permisos correspondientes a ese rol.
+	/*Se encuentra en Seguridad.sql*/
+C. Creen el rol de atletas, otorguen los permisos correspondientes a ese rol.
+	/*Se encuentra en Seguridad.sql y xSeguridad.sql*/
+D. Prueben el esquema de seguridad con los casos más significativos: 5 éxito y 3 de fracaso.
+	/*Se encuentra en SeguridadOK.sql y SeguridadNoOk.sql*/
+
+--------------------------------------------------
+Pruebas
+A. Diseñen e implementen una prueba de aceptación.
+	/*Se encuentra en Prueba.sql*/
+--------------------------------------------------
+RETROSPECTIVA
+1. ¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes?(Horas/Hombre)
+	24h/24h
+2. ¿Cuál es el estado actual del laboratorio? ¿Por qué?
+	Completo
+3. ¿Cuál consideran fue el mayor logro? ¿Por qué?
+	Conseguir el efectivo funcionamiento de CrudeI
+4. ¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+	Creacion de y compresion de CrudeI
+5. ¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados?
+	Utilizar la programacion a pares
