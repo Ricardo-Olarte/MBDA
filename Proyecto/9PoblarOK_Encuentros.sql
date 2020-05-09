@@ -122,3 +122,65 @@ VALUES ('Deportivo Pasto', 'Atlético Bucaramanga', TO_DATE('08-02-2020 20:00','D
 
 INSERT INTO Encuentros (equipo1, equipo2, partido)
 VALUES ('Cúcuta Deportivo', 'Alianza Petrolera', TO_DATE('08-02-2020 22:00','DD-MM-YYYY HH24:MI'));
+
+---Fecha_5---
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Jaguares', 'Millonarios Fútbol Club', TO_DATE('28-07-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Club Deportivo La Equidad', 'Deportivo Pereira', TO_DATE('28-07-2020 16:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Boyaca Chico', 'Atletico Nacional', TO_DATE('28-07-2020 18:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Independiente Santa Fe', 'Atlético Junior', TO_DATE('28-07-2020 20:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Once Caldas', 'Rionegro', TO_DATE('28-07-2020 22:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Cali', 'América de Cali', TO_DATE('29-07-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportes Tolima', 'Envigado Fútbol Club', TO_DATE('29-07-2020 16:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Independiente Medellín', 'Patriotas Boyaca', TO_DATE('29-07-2020 18:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Pasto', 'Atlético Bucaramanga', TO_DATE('29-07-2020 20:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Cúcuta Deportivo', 'Alianza Petrolera', TO_DATE('29-07-2020 22:00','DD-MM-YYYY HH24:MI'));
+
+---Fecha_6---
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Pereira', 'Jaguares', TO_DATE('28-08-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Club Deportivo La Equidad', 'Millonarios Fútbol Club', TO_DATE('28-08-2020 16:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Boyaca Chico', 'Atletico Nacional', TO_DATE('28-08-2020 18:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Independiente Santa Fe', 'Atlético Junior', TO_DATE('28-08-2020 20:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Once Caldas', 'Rionegro', TO_DATE('28-08-2020 22:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Cali', 'América de Cali', TO_DATE('29-08-2020 14:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportes Tolima', 'Envigado Fútbol Club', TO_DATE('29-08-2020 16:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Independiente Medellín', 'Patriotas Boyaca', TO_DATE('29-08-2020 18:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Deportivo Pasto', 'Atlético Bucaramanga', TO_DATE('29-08-2020 20:00','DD-MM-YYYY HH24:MI'));
+
+INSERT INTO Encuentros (equipo1, equipo2, partido)
+VALUES ('Cúcuta Deportivo', 'Alianza Petrolera', TO_DATE('29-08-2020 22:00','DD-MM-YYYY HH24:MI'));

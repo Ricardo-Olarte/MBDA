@@ -33,14 +33,3 @@ FOREIGN KEY (partido) REFERENCES Partidos(partidoFecha) ON DELETE CASCADE;
 ALTER TABLE Encuentros DROP CONSTRAINT FK_Encuentros_Partidos;
 ALTER TABLE Encuentros ADD CONSTRAINT FK_Encuentros_Partidos 
 FOREIGN KEY (partido) REFERENCES Partidos(partidoFecha) ON DELETE CASCADE;
-
-
-/*---------------------------------Registrar Arbitros---------------------------------*/
-/*Acciones de referencia*/
-ALTER TABLE PitadosPor DROP CONSTRAINT FK_PitadosPor_Arbitros;
-ALTER TABLE PitadosPor ADD CONSTRAINT FK_PitadosPor_Arbitros
-FOREIGN KEY (arbitro) REFERENCES Arbitros(cedula) ON DELETE SET NULL;
-
-ALTER TABLE Amonestaciones DROP CONSTRAINT FK_Amonestaciones_Arbitro;
-ALTER TABLE Amonestaciones ADD CONSTRAINT FK_Amonestaciones_Arbitro 
-FOREIGN KEY (arbitro) REFERENCES Arbitros(cedula) ON DELETE SET NULL;

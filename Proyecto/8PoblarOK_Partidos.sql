@@ -373,3 +373,33 @@ VALUES (TO_DATE('29-07-2020 20:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Manuel 
 INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
 VALUES (TO_DATE('29-07-2020 22:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Deportivo Cali');
 
+--FechaTest2
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('28-08-2020 14:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Jaraguay');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('28-08-2020 16:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Nemesio Camacho El Campin');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('28-08-2020 18:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Atanasio Girardot');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('28-08-2020 20:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Palogrande');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('28-08-2020 22:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Alberto Grisales');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('29-08-2020 14:00','DD-MM-YYYY HH24:MI'), null, 'Polideportivo Sur');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('29-08-2020 16:00','DD-MM-YYYY HH24:MI'), null, 'Estadio La Independencia');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('29-08-2020 18:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Alfonso López');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('29-08-2020 20:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Manuel Murillo Toro');
+
+INSERT INTO Partidos (partidoFecha, marcadorFinal, estadio)
+VALUES (TO_DATE('29-08-2020 22:00','DD-MM-YYYY HH24:MI'), null, 'Estadio Deportivo Cali');
