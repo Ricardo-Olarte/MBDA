@@ -413,4 +413,50 @@ CREATE OR REPLACE PACKAGE BODY PC_EVENTO IS
             RAISE_APPLICATION_ERROR(-20042, 'No se puede eliminar la Atajada.');
     END;
     
+	FUNCTION CO_FairPlay  RETURN SYS_REFCURSOR IS CO_FA SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_FA  FOR
+		SELECT Equipos.Nombre, count(Amonestaciones.jugador) AS "Total Amonestaciones"
+		FROM Equipos, JugadoEn, Jugadores, Amonestaciones
+		WHERE Equipos.nombre = JugadoEn.equipo AND Jugadores.cedula = JugadoEn.jugador  AND Jugadores.cedula = Amonestaciones.jugador
+		GROUP BY Equipos.Nombre
+		ORDER BY count(Amonestaciones.jugador) DESC;
+	RETURN CO_FA;
+	END;
+	
+	FUNCTION CO_MaxGoleadores  RETURN SYS_REFCURSOR IS CO_MG SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_MG  FOR
+		SELECT PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, count(Disparos.jugador) AS "TotalGoles"
+		FROM PersonasNaturales, Equipos, Jugadores, JugadoEn, Disparos
+		WHERE Equipos.nombre = JugadoEn.equipo AND Jugadores.cedula = JugadoEn.jugador AND Jugadores.cedula = Disparos.jugador 
+			  AND PersonasNaturales.cedula = Jugadores.cedula AND Disparos.acertadoGol = 1
+		GROUP BY PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, PersonasNaturales.cedula
+		ORDER BY count(Disparos.jugador) DESC;
+	RETURN CO_MG;
+	END;
+	
+	FUNCTION CO_MaxAsistentes  RETURN SYS_REFCURSOR IS CO_MA SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_MA  FOR
+		SELECT PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, count(Pases.jugador) AS "Asistencias"
+		FROM PersonasNaturales, Equipos, Jugadores, JugadoEn, Pases
+		WHERE Equipos.nombre = JugadoEn.equipo AND Jugadores.cedula = JugadoEn.jugador AND Jugadores.cedula = Pases.jugador 
+			  AND PersonasNaturales.cedula = Jugadores.cedula AND Pases.gol = 1
+		GROUP BY PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, PersonasNaturales.cedula
+		ORDER BY count(Pases.jugador) DESC;
+	RETURN CO_MA;
+	END;
+	
+	FUNCTION CO_MaxAtajador  RETURN SYS_REFCURSOR IS CO_MAT SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_MAT  FOR
+		SELECT PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, count(Atajadas.porteriaEnCero) AS "Atajadas"
+		FROM PersonasNaturales, Equipos, Jugadores, JugadoEn, Atajadas
+		WHERE Equipos.nombre = JugadoEn.equipo AND Jugadores.cedula = JugadoEn.jugador AND Jugadores.cedula = Atajadas.jugador 
+			  AND PersonasNaturales.cedula = Jugadores.cedula
+		GROUP BY PersonasNaturales.PrimerNombre, PersonasNaturales.PrimerApellido, PersonasNaturales.cedula
+		ORDER BY count(Atajadas.porteriaEnCero) DESC;
+	RETURN CO_MAT;
+	END;
 END PC_EVENTO;

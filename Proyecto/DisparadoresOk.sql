@@ -141,9 +141,6 @@ VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 3695
 INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
 VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 809619660, 0, 'DC');
 
-INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
-VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 7933126582, 0, 'EI');
-
 /*Modificar*/
 UPDATE Plantillas SET formacion = '5-4-1' WHERE partido = TO_DATE('24-01-2020 14:00','DD-MM-YYYY HH24:MI') AND equipo = 'Deportes Tolima';
 UPDATE Plantillas SET formacion = '5-3-2' WHERE partido = TO_DATE('24-01-2020 16:00','DD-MM-YYYY HH24:MI') AND equipo = 'Rionegro';
