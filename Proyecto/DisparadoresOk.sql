@@ -144,9 +144,6 @@ VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 8096
 INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
 VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 7933126582, 0, 'EI');
 
-INSERT INTO Convocados(plantillaEquipo, plantillaPartido, jugador, titular, posicion)
-VALUES('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 252183516, 0, 'ED');
-
 /*Modificar*/
 UPDATE Plantillas SET formacion = '5-4-1' WHERE partido = TO_DATE('24-01-2020 14:00','DD-MM-YYYY HH24:MI') AND equipo = 'Deportes Tolima';
 UPDATE Plantillas SET formacion = '5-3-2' WHERE partido = TO_DATE('24-01-2020 16:00','DD-MM-YYYY HH24:MI') AND equipo = 'Rionegro';
@@ -420,9 +417,6 @@ VALUES(TO_DATE('29-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 14, 6540172698, 'A', '
 INSERT INTO Amonestaciones(partido, tiempo, jugador, tarjeta, comentarios, arbitro)
 VALUES(TO_DATE('29-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 91, 5105300751, 'A', 'Falta Intencional', 344394667);
 
-INSERT INTO Amonestaciones(partido, tiempo, jugador, tarjeta, comentarios, arbitro)
-VALUES(TO_DATE('29-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 86, 3848434383, 'A', 'Falta Intencional', 344394667);
-
 
 --Tg_Ad_Pase
 INSERT INTO Pases(totalPartido, efectividadAcierto, gol, partido, tiempo, jugador)
@@ -470,6 +464,3 @@ VALUES(TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 12, 7582069659, 76, 7)
 
 INSERT INTO Atajadas(partido, tiempo, jugador, porteriaEnCero, paradas)
 VALUES(TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 88, 7582069659, 76, 7);
-
-INSERT INTO Atajadas(partido, tiempo, jugador, porteriaEnCero, paradas)
-VALUES(TO_DATE('24-01-2020 14:00', 'DD-MM-YYYY HH24:MI'), 77, 7582069659, 76, 7);

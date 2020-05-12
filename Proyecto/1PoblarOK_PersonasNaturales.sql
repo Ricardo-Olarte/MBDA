@@ -6977,7 +6977,7 @@ VALUES
 'Julee', 'Sawkins', 8741837681, 'jsawkinsro@hugedomains.com', 'SuSalud', 'North Korea', TO_DATE('1987-07-11', 'YYYY-MM-DD'), '+', 'AB'
 );
 
-/* INSERT QUERY NO: 998 */
+/* INSERT QUERY NO: 998 Jug_CrudOk*/
 INSERT INTO personasNaturales(primerNombre, primerApellido, cedula, correo, eps, nacionalidad, fechaNacimiento, rh, sangre)
 VALUES
 (
