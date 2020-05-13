@@ -1,9 +1,0 @@
-POBLADA:
-	Faltan agregar todos los partidos(10-20)
-	Faltan  los encuentros de las fehcas (5-20)
-	Faltan agregar jugadores con pasado en los equipos (JugadoEn fechaFinal - NoNULL) MENOR a 5/8/1990
-	Falta agregar PitadosPor de los partido 10-20
-	Faltan plantillas para partidos (4-8)
-	Faltan Convocados(2-8)
-	Eventos F1(Menos primer partido)-F8
-	Todos Eventos
