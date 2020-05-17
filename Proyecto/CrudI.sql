@@ -11,28 +11,6 @@ CREATE OR REPLACE PACKAGE BODY PC_PERSONASNATURALES IS
             RAISE_APPLICATION_ERROR(-20016, 'No se puede insertar la PersonaNatural.');
     END;
     
-    PROCEDURE AD_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
-    BEGIN
-        INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
-        VALUES (xCedula, xDorsal, xPosicion, xSalario);
-        COMMIT;
-            EXCEPTION
-            WHEN OTHERS THEN
-            ROLLBACK;
-            RAISE_APPLICATION_ERROR(-20017, 'No se puede insertar el Jugador.');
-    END;
-    
-    PROCEDURE AD_Arbitro (xCedula IN NUMBER, xFechaInicio IN DATE, xFechaFinal IN DATE)IS
-    BEGIN
-        INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
-        VALUES (xCedula, xFechaInicio, xFechaFinal);
-        COMMIT;
-            EXCEPTION
-            WHEN OTHERS THEN
-            ROLLBACK;
-            RAISE_APPLICATION_ERROR(-20018, 'No se puede insertar el Arbitro.');
-    END;
-    
     PROCEDURE MO_PersonaNatural (xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR)IS
     BEGIN
         UPDATE PersonasNaturales SET correo = xCorreo WHERE cedula = xcedula;
@@ -45,16 +23,39 @@ CREATE OR REPLACE PACKAGE BODY PC_PERSONASNATURALES IS
             RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar la PersonaNatural.');
     END;
     
-    PROCEDURE MO_Arbitro (xCedula IN NUMBER, xFechaFinal IN DATE, xPuntuacionArbitraje IN NUMBER)IS
+    PROCEDURE EL_PersonaNatural (xCedula IN NUMBER)IS
     BEGIN
-        UPDATE Arbitros SET FechaFinal = xFechaFinal WHERE cedula = xcedula;
-        COMMIT;
-        UPDATE Arbitros SET puntuacionArbitraje = xPuntuacionArbitraje WHERE cedula = xcedula;
+        DELETE FROM  personasNaturales WHERE cedula = xCedula;
         COMMIT;
             EXCEPTION
             WHEN OTHERS THEN
             ROLLBACK;
-            RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar el Arbitro.');
+            RAISE_APPLICATION_ERROR(-20020, 'No se puede eliminar la PersonaNatural.');
+    END;
+    
+    PROCEDURE AD_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
+    BEGIN
+        INSERT INTO Jugadores(cedula, dorsal, posicion, salario)
+        VALUES (xCedula, xDorsal, xPosicion, xSalario);
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20017, 'No se puede insertar el Jugador.');
+    END;
+    
+    PROCEDURE MO_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
+    BEGIN
+        UPDATE Jugadores SET dorsal = xDorsal WHERE cedula = xcedula;
+        COMMIT;
+        UPDATE Jugadores SET posicion = xPosicion WHERE cedula = xcedula;
+        COMMIT;
+        UPDATE Jugadores SET salario = xSalario WHERE cedula = xcedula;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar el Jugador.');
     END;
     
     PROCEDURE EL_Jugador (xCedula IN NUMBER)IS
@@ -67,6 +68,29 @@ CREATE OR REPLACE PACKAGE BODY PC_PERSONASNATURALES IS
             RAISE_APPLICATION_ERROR(-20020, 'No se puede eliminar el Jugador.');
     END;
     
+    PROCEDURE AD_Arbitro (xCedula IN NUMBER, xFechaInicio IN DATE, xFechaFinal IN DATE)IS
+    BEGIN
+        INSERT INTO Arbitros(cedula, fechaInicio, fechaFinal)
+        VALUES (xCedula, xFechaInicio, xFechaFinal);
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20018, 'No se puede insertar el Arbitro.');
+    END;
+
+    PROCEDURE MO_Arbitro (xCedula IN NUMBER, xFechaFinal IN DATE, xPuntuacionArbitraje IN NUMBER)IS
+    BEGIN
+        UPDATE Arbitros SET FechaFinal = xFechaFinal WHERE cedula = xcedula;
+        COMMIT;
+        UPDATE Arbitros SET puntuacionArbitraje = xPuntuacionArbitraje WHERE cedula = xcedula;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar el Arbitro.');
+    END;
+    
     PROCEDURE EL_Arbitro(xCedula IN NUMBER)IS
     BEGIN
         DELETE FROM  Arbitros WHERE cedula = xCedula;
@@ -76,6 +100,32 @@ CREATE OR REPLACE PACKAGE BODY PC_PERSONASNATURALES IS
             ROLLBACK;
             RAISE_APPLICATION_ERROR(-20020, 'No se puede eliminar el Arbitro.');
     END;
+    
+    FUNCTION CO_Arbitro_T   RETURN SYS_REFCURSOR IS CO_ART SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_ART  FOR
+		SELECT *
+        FROM Arbitros, PersonasNaturales
+        WHERE arbitros.cedula = personasnaturales.cedula;
+	RETURN CO_ART;
+	END;
+    
+    FUNCTION CO_PersonaNatural   RETURN SYS_REFCURSOR IS CO_PN SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_PN  FOR
+		SELECT *
+        FROM PersonasNaturales;
+	RETURN CO_PN;
+	END;
+    
+    FUNCTION CO_Jugador   RETURN SYS_REFCURSOR IS CO_JU SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_JU  FOR
+		SELECT *
+        FROM Jugadores, PersonasNaturales
+        WHERE Jugadores.cedula = personasnaturales.cedula;
+	RETURN CO_JU;
+	END;
     
     FUNCTION CO_Arbitro (xPuntaje IN NUMBER)   RETURN SYS_REFCURSOR IS CO_AR SYS_REFCURSOR;
 	BEGIN
@@ -124,6 +174,28 @@ CREATE OR REPLACE PACKAGE BODY PC_PLANTILLA IS
             RAISE_APPLICATION_ERROR(-20021, 'No se puede insertar el Convocado.');
     END;
     
+    PROCEDURE MO_Convocado (xPlantillaEquipo IN VARCHAR, xPlantillaPartido IN DATE, xJugador IN NUMBER, xTitular IN NUMBER, xPosicion IN VARCHAR)IS
+    BEGIN
+        UPDATE Convocados SET titular = xTitular WHERE PlantillaEquipo = xPlantillaEquipo AND PlantillaPartido=xPlantillaPartido AND Jugador=xJugador;
+        COMMIT;
+        UPDATE Convocados SET Posicion = xPosicion WHERE PlantillaEquipo = xPlantillaEquipo AND PlantillaPartido=xPlantillaPartido AND Jugador=xJugador;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar el Convocado.');
+    END;
+    
+    PROCEDURE EL_Convocado (xPlantillaEquipo IN VARCHAR, xPlantillaPartido IN DATE, xJugador IN NUMBER)IS
+    BEGIN
+        DELETE FROM  Convocados WHERE PlantillaEquipo = xPlantillaEquipo AND PlantillaPartido=xPlantillaPartido AND Jugador=xJugador;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20020, 'No se puede eliminar el Convocado.');
+    END;
+    
     PROCEDURE AD_Plantilla (xFormacion IN VARCHAR, xEquipo IN VARCHAR, xPartido IN DATE)IS
     BEGIN
         INSERT INTO Plantillas(formacion, equipo, partido)
@@ -144,6 +216,32 @@ CREATE OR REPLACE PACKAGE BODY PC_PLANTILLA IS
             ROLLBACK;
             RAISE_APPLICATION_ERROR(-20023, 'No se puede actualizar la plantilla.');
     END;
+    
+    PROCEDURE EL_Plantilla (xPartido IN DATE, xEquipo IN VARCHAR)IS
+    BEGIN
+        DELETE FROM  Plantillas WHERE partido = xPartido AND equipo = xEquipo;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20020, 'No se puede eliminar la Plantilla.');
+    END;
+    
+    FUNCTION CO_Convocado  RETURN SYS_REFCURSOR IS CO_CO SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_CO  FOR
+		SELECT *
+        FROM Convocados;
+	RETURN CO_CO;
+	END;
+    
+    FUNCTION CO_Plantilla  RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_PA  FOR
+		SELECT *
+        FROM Convocados;
+	RETURN CO_PA;
+	END;
     
 END PC_PLANTILLA;
 /
@@ -184,6 +282,14 @@ CREATE OR REPLACE PACKAGE BODY PC_EQUIPO IS
             RAISE_APPLICATION_ERROR(-20026, 'No se puede eliminar el Equipo.');
     END;
     
+    FUNCTION CO_Equipo  RETURN SYS_REFCURSOR IS CO_EQ SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_EQ  FOR
+		SELECT *
+        FROM Equipos;
+	RETURN CO_EQ;
+	END;
+    
 END PC_EQUIPO;
 /
 /*-------------------PC_ESTADIO-------------------*/
@@ -219,6 +325,14 @@ CREATE OR REPLACE PACKAGE BODY PC_ESTADIO IS
             RAISE_APPLICATION_ERROR(-20029, 'No se puede eliminar el Estadio.');
     END;
     
+    FUNCTION CO_Estadio  RETURN SYS_REFCURSOR IS CO_ES SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_ES  FOR
+		SELECT *
+        FROM Estadios;
+	RETURN CO_ES;
+	END;
+    
 END PC_ESTADIO;
 /
 /*-------------------PC_PARTIDO-------------------*/
@@ -253,6 +367,16 @@ CREATE OR REPLACE PACKAGE BODY PC_PARTIDO IS
             ROLLBACK;
             RAISE_APPLICATION_ERROR(-20032, 'No se puede eliminar el partido.');
     END;
+    
+    FUNCTION CO_PartidosT   RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_PA  FOR
+		SELECT Equipo1, Equipo2, partidos.partidofecha AS "Fecha", partidos.estadio AS "Estadio", MarcadorFinal
+        FROM Partidos, Encuentros 
+        WHERE Partidos.partidoFecha=encuentros.partido
+        ORDER BY partidos.partidofecha;
+	RETURN CO_PA;
+	END;
     
     FUNCTION CO_Partidos  (xEquipo IN VARCHAR) RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
 	BEGIN
@@ -459,4 +583,45 @@ CREATE OR REPLACE PACKAGE BODY PC_EVENTO IS
 		ORDER BY count(Atajadas.porteriaEnCero) DESC;
 	RETURN CO_MAT;
 	END;
+    
+    FUNCTION CO_Evento  RETURN SYS_REFCURSOR IS CO_EV SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_EV  FOR
+		SELECT *
+        FROM Eventos;
+	RETURN CO_EV;
+	END;
+    
+    FUNCTION CO_Disparo  RETURN SYS_REFCURSOR IS CO_DI SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_DI  FOR
+		SELECT *
+        FROM Disparos;
+	RETURN CO_DI;
+	END;
+    
+    FUNCTION CO_Amonestacion  RETURN SYS_REFCURSOR IS CO_AM SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_AM  FOR
+		SELECT *
+        FROM Amonestaciones;
+	RETURN CO_AM;
+	END;
+    
+    FUNCTION CO_Pase  RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_PA  FOR
+		SELECT *
+        FROM Pases;
+	RETURN CO_PA;
+	END;
+    
+    FUNCTION CO_Atajada  RETURN SYS_REFCURSOR IS CO_AT SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_AT  FOR
+		SELECT *
+        FROM Atajadas;
+	RETURN CO_AT;
+	END;
+    
 END PC_EVENTO;
