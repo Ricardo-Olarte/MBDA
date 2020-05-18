@@ -231,7 +231,8 @@ CREATE OR REPLACE PACKAGE BODY PC_PLANTILLA IS
 	BEGIN
 	OPEN CO_CO  FOR
 		SELECT *
-        FROM Convocados;
+        FROM Convocados
+        ORDER BY plantillaPartido;
 	RETURN CO_CO;
 	END;
     
@@ -239,7 +240,8 @@ CREATE OR REPLACE PACKAGE BODY PC_PLANTILLA IS
 	BEGIN
 	OPEN CO_PA  FOR
 		SELECT *
-        FROM Convocados;
+        FROM Plantillas
+        ORDER BY partido;
 	RETURN CO_PA;
 	END;
     
@@ -367,7 +369,40 @@ CREATE OR REPLACE PACKAGE BODY PC_PARTIDO IS
             ROLLBACK;
             RAISE_APPLICATION_ERROR(-20032, 'No se puede eliminar el partido.');
     END;
+    -----
+    PROCEDURE AD_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE) IS
+    BEGIN
+        INSERT INTO Encuentros (equipo1, equipo2, partido)
+        VALUES (xEquipo1, xEquipo2, xPartido);
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20030, 'No se puede insertar el encuentro.');
+    END;
     
+    PROCEDURE MO_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE) IS
+    BEGIN
+        UPDATE Encuentros SET Equipo1 = xEquipo1 WHERE Partido = xPartido;
+        COMMIT;
+        UPDATE Encuentros SET Equipo2 = xEquipo2 WHERE Partido = xPartido;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20031, 'No se puede actualizar el encuentro.');
+    END;
+    
+    PROCEDURE EL_Encuentros (xPartido IN DATE) IS
+    BEGIN
+        DELETE FROM  Encuentros WHERE Partido = xPartido;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20032, 'No se puede eliminar el encuentro.');
+    END;
+  
     FUNCTION CO_PartidosT   RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
 	BEGIN
 	OPEN CO_PA  FOR
@@ -386,6 +421,36 @@ CREATE OR REPLACE PACKAGE BODY PC_PARTIDO IS
         WHERE Partidos.partidoFecha=encuentros.partido and MARCADORFINAL is null and (EQUIPO1=xEquipo or EQUIPO2=xEquipo)
         ORDER BY partidos.partidofecha;
 	RETURN CO_PA;
+	END;
+    ---
+    PROCEDURE AD_PitadosPor (xArbitro IN NUMBER, xPartido IN DATE) IS
+    BEGIN
+        INSERT INTO PitadosPor (arbitro, partido)
+        VALUES (xArbitro, xPartido);
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20030, 'No se puede insertar el PitadosPor.');
+    END;
+    
+    PROCEDURE EL_PitadosPor(xArbitro IN NUMBER, xPartido IN DATE) IS
+    BEGIN
+        DELETE FROM  PitadosPor WHERE Partido = xPartido AND arbitro = xArbitro;
+        COMMIT;
+            EXCEPTION
+            WHEN OTHERS THEN
+            ROLLBACK;
+            RAISE_APPLICATION_ERROR(-20032, 'No se puede eliminar el PitadosPor.');
+    END;
+    
+    FUNCTION CO_PitadosPor  RETURN SYS_REFCURSOR IS CO_PP SYS_REFCURSOR;
+	BEGIN
+	OPEN CO_PP  FOR
+		SELECT *
+        FROM PitadosPor
+        ORDER BY partido;
+	RETURN CO_PP;
 	END;
     
 END PC_PARTIDO;

@@ -139,7 +139,17 @@ CREATE OR REPLACE PACKAGE BODY PA_ORGANIZADOR IS
     BEGIN
         PC_PARTIDO.MO_Partido(xPartidoFecha, xMarcadorFinal);
     END;
+  
+    PROCEDURE AD_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE) IS
+    BEGIN
+        PC_PARTIDO.AD_Encuentros(xEquipo1, xEquipo2, xPartido);
+    END;
     
+    PROCEDURE MO_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE) IS
+    BEGIN
+        PC_PARTIDO.MO_Encuentros(xEquipo1, xEquipo2, xPartido);
+    END;
+ 
     FUNCTION CO_PartidosT  RETURN SYS_REFCURSOR IS CO_PT SYS_REFCURSOR;
     BEGIN
         CO_PT:= PC_PARTIDO.CO_PartidosT;  
@@ -221,6 +231,22 @@ CREATE OR REPLACE PACKAGE BODY PA_ORGANIZADOR IS
     BEGIN
         CO_AT:= PC_EVENTO.CO_Atajada;  
         RETURN CO_AT;
+    END;
+    
+    PROCEDURE AD_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE)IS
+    BEGIN
+        PC_PARTIDO.AD_PitadosPor(xArbitro, xPartido);
+    END;
+    
+    PROCEDURE EL_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE)IS
+    BEGIN
+        PC_PARTIDO.AD_PitadosPor(xArbitro, xPartido);
+    END;
+    
+    FUNCTION CO_PitadosPor  RETURN SYS_REFCURSOR IS CO_PP SYS_REFCURSOR;
+    BEGIN
+        CO_PP:= PC_PARTIDO.CO_PitadosPor;  
+        RETURN CO_PP;
     END;
     
 END PA_ORGANIZADOR;

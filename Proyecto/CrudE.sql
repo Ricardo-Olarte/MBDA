@@ -45,7 +45,13 @@ CREATE OR REPLACE PACKAGE PC_PARTIDO IS
     PROCEDURE AD_Partido (xPartidoFecha IN DATE, xMarcadorFinal IN VARCHAR, xEstadio IN VARCHAR);
     PROCEDURE MO_Partido (xPartidoFecha IN DATE, xMarcadorFinal IN VARCHAR);
     PROCEDURE EL_Partido (xPartidoFecha IN DATE);
+    PROCEDURE AD_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE);
+    PROCEDURE MO_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE);
+    PROCEDURE EL_Encuentros (xPartido IN DATE);
+    PROCEDURE AD_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE);
+    PROCEDURE EL_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE);
     FUNCTION CO_PartidosT  RETURN SYS_REFCURSOR;
+    FUNCTION CO_PitadosPor  RETURN SYS_REFCURSOR;
     FUNCTION CO_Partidos  (xEquipo IN VARCHAR) RETURN SYS_REFCURSOR;
 END PC_PARTIDO;
 /
