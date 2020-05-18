@@ -30,11 +30,11 @@
    SELECT PA_PRESIDENTE.CO_Equipo FROM DUAL;
 
 /*
-    Adiconal a eso soy el encargo de registrar los jugadores pertenecientes a mi equipo, de ellos debo ingresar su cedula, nombre, apellidoo, correo si tiene, la eps, su fecha de nacimiento,
+    Adiconal a eso soy el encargo de registrar los jugadores pertenecientes a mi equipo, de ellos debo ingresar su cedula, nombre, apellido, correo si tiene, la eps, su fecha de nacimiento,
     su rh, su tipo de sangre, su posicion dentro del campo y el salario asignado a cada uno de ellos, 
 */
 /*
-    Inicialmente los ingreso con sus datos personales
+    Inicialmente ingreso con sus datos personales
 */
      begin
         PA_PRESIDENTE.AD_PersonaNatural('Mario', 'Gtoze', 2651912, 'Mario@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A');
@@ -92,7 +92,7 @@
 ---Organizador
 /*
     Yo como organizador oficial de partidos de la liga, soy el encargo de registrar los partidos y ubicarlos para un fecha especifica; debe tener en cuenta
-    que por politicas de la organizacion no puedo colcoar un partui
+    que por politicas de la organizacion no puedo colcoar un partido en simultaneo con otro
 */
     /*Intentando programar un partido simultaneo*/
     begin
@@ -100,7 +100,7 @@
     end;
     
 /*
-    Ahora programare y registrare los partidos los partidos que tubo el Borussia Dortmund contra el Deportivo pasto el 15 de marzo de este año; 
+    Ahora programare y registrare los partidos que tubo el Borussia Dortmund contra el Deportivo pasto el 15 de marzo de este año; 
     y programare el partido contra Millonarios Fútbol Club el 25 del mismo mes
 */
     begin
@@ -113,7 +113,8 @@
     SELECT PA_ORGANIZADOR.CO_PartidosT FROM DUAL;
     
 /*
-    Como el partido entre el Borussia Dortmund y el Deportivo Pasto ya se jugo tengo que asignar el resultado del partido
+    Como el partido entre el Borussia Dortmund y el Deportivo Pasto ya se jugo, tengo que asignar el resultado del partido; este partido termino 4 - 1 a favor 
+    de los negriAmarillos
 */
     begin
         PA_ORGANIZADOR.MO_Partido(TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), '04-01');
@@ -122,10 +123,10 @@
     SELECT PA_ORGANIZADOR.CO_PartidosT FROM DUAL;
 
 /*
-    Tambein soy el encargado de asignar los eventos sucedidos durante el partido; esto solo lo puedo hacer si ya le he puesto 
+    Tambien soy el encargado de asignar los eventos sucedidos durante el partido; esto solo lo puedo hacer si ya le he puesto 
     el resultado final del partido; en este caso registre los 4 goles realizados por el Borussia Dortmund en los minutos 4, 35, 67 y 89; 
     todos marcados por earling braut halaand identificado con cedula (498461368); y el gol del deportivo pasto realizado en el minuto 90 + 2,
-    durante el partido el protero Marwin(54569852) tuvo una intervencion
+    durante el partido el portero Marwin(54569852) del Borussia Dormunt tuvo una intervencion
 */
     begin
         PA_ORGANIZADOR.AD_Evento(4, 498461368,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
@@ -136,15 +137,14 @@
         PA_ORGANIZADOR.AD_Evento(1, 54569852,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
     end;
     /
-    /
     SELECT PA_ORGANIZADOR.CO_Evento FROM DUAL;
-    --Intentando ingresar un evento a un partido que no tiene marcadorfinal
+    /*Intentaremos registrar un evento sobre un partido el cual no ha sido jugado por ende no posee un marcador final*/
     begin
         PA_ORGANIZADOR.AD_Evento(4, 498461368,TO_DATE('25-08-2020 22:00','DD-MM-YYYY HH24:MI'));
     end;
     
 /*
-    Los goles marcados por earling braut halaand fueron goles desde el borde del area chica, y cada una velocdidad de 95, 92, 93 y 69 km/h,
+    Los goles marcados por earling braut halaand fueron goles desde el borde del area chica, y cada uno con una velocdidad de 95, 92, 93 y 69 km/h,
     el gol marcado por el jugador del Deportivo Pasto fue un gol dentro del area chica con una velocidad de 45 km/h
 */
     
@@ -157,12 +157,12 @@
     end;
     /
     SELECT PA_ORGANIZADOR.CO_Disparo FROM DUAL;
-    --Intentando ingresar un gol que no existio
+    /*No pudo ingresar mas de la cantidad de los goles que se registraron en el partido*/
     begin
         PA_ORGANIZADOR.AD_Disparo(1, 70, 95, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 1, 54569852);
     end;
 /*
-    De los goles realizado por Halaand uno de sus asitentes fue Marco Reus el cual le dio la asistencia al gol que hizo en el minuto 67;
+    De los goles realizado por Halaand uno de sus asitentes fue Marco Reus el cual le dio la asistencia al gol marcado en el minuto 67;
     ademas de esto el jugador Marco Reus tuvo una efectividad del 89% en sus pases(realizo 13)
     
 */
@@ -176,8 +176,8 @@
     
 ---Presidente
 /*
-    Como presidente del club Borussia Dortmund, debo registrar la lsita de convocados para un partido; ademas de incluir la formacion que este tendra,
-    para el partido que jugamos contra el deportivo pasto el dia 15 de mayo de este año utilizamos la formacion 4-4-2
+    Como presidente del club Borussia Dortmund, debo registrar la lista de convocados para un partido; ademas de incluir la formacion que este tendra,
+    en el caso del partido que jugamos contra el deportivo pasto el dia 15 de mayo de este año utilizamos la formacion 4-4-2
 */
     begin
         PA_PRESIDENTE.AD_Plantilla('4-4-2', 'Borussia Dortmund', TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
@@ -211,7 +211,7 @@
     SELECT PA_PRESIDENTE.CO_Convocado FROM DUAL;
 
 /*
-    Por politicas de la liga no puedo llevar de suplentes mas de un portero
+    Por politicas de la liga no puedo llevar mas de un portero como suplente
 */
     begin
         PA_PRESIDENTE.AD_Convocado('Borussia Dortmund', TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 6540172698, 0, 'POR');
@@ -222,7 +222,7 @@
 ---Organizador
 
 /*
-    El portero del Dormunt realizo 2 paradas mientras estuvo su arco invicto hasta el gol del pasto en el minuto 92, 
+    El portero del Dormunt realizo 2 paradas mientras mantuvo su arco invicto hasta el gol del pasto en el minuto 92, 
     debo dejar claro que me es imposible adicionar un gol que no existio es decir agregar mas goles de los registrados en el partido
 */
     begin
@@ -231,9 +231,8 @@
     /
     SELECT PA_ORGANIZADOR.CO_Atajada FROM DUAL;
 
-
 /*
-    Debido a que el proximo encuentro entre el Borussia Dortmund y Millonarios Fútbol Club es un encuentro que definira el resultado
+    Debido a que el proximo encuentro entre el Borussia Dortmund y Millonarios Fútbol Club sera un encuentro que definira el resultado
     de la liga, debo asignar al mejor arbitro hasta el momento
 */
     SELECT PA_ORGANIZADOR.CO_Arbitro(4) FROM DUAL;
