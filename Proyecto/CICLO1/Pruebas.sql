@@ -27,7 +27,7 @@
         PA_PRESIDENTE.MO_Equipo('Borussia Dortmund', 100010000000000, 'Los negriamarillos', 'Signal Iduna Park');
     end;
     /
-   SELECT PA_PRESIDENTE.CO_Equipo FROM DUAL;
+    SELECT PA_PRESIDENTE.CO_Equipo FROM DUAL;
 
 /*
     Adiconal a eso soy el encargo de registrar los jugadores pertenecientes a mi equipo, de ellos debo ingresar su cedula, nombre, apellido, correo si tiene, la eps, su fecha de nacimiento,
@@ -37,56 +37,30 @@
     Inicialmente ingreso con sus datos personales
 */
      begin
-        PA_PRESIDENTE.AD_PersonaNatural('Mario', 'Gtoze', 2651912, 'Mario@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Erling', 'Haaland', 498461368, 'Erling@dmoz.org', 'Salud Total', 'Noruega', TO_DATE('2000-02-23', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Marco', 'Reus', 654321588, 'Marco@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1975-02-12', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Jadon', 'Sancho', 3215164981, 'Jadon@dmoz.org', 'Salud Total', 'Inglaterra', TO_DATE('1995-03-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Thorgan', 'Hazard', 798432187, 'Thorgan@dmoz.org', 'Salud Total', 'Belgica', TO_DATE('1985-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Julian', 'Brandt', 3216598456, 'Julian@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1970-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Axel', 'Witsel', 46545512, 'Axel@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1995-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Emre', 'Can', 12315105, 'Emre@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1992-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Lukas', 'Piszczek', 98154562, 'Lukas@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1991-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Achraf', 'Hakimi', 45601893, 'Achraf@dmoz.org', 'Salud Total', 'Marruecos', TO_DATE('1998-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Nico', 'Schulz', 1963753692, 'Nico@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('2002-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Leonardo', 'Balerdi', 79895034, 'Leonardo@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Mats', 'Hummels', 12368429, 'Mats@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1987-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Dan', 'Zagadou', 782145368, 'Dan@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1995-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Luca', 'Unbehaun', 78924295, 'Luca@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Marcel', 'Schmelzer', 39747858, 'Marcel@dmoz.org', 'Salud Total', 'Colombia', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Roman', 'Burki', 52253266, 'Roman@dmoz.org', 'Salud Total', 'Suiza', TO_DATE('1999-02-22', 'YYYY-MM-DD'), '+', 'A');
-        PA_PRESIDENTE.AD_PersonaNatural('Marwin', 'Hitz', 54569852, 'Marwin@dmoz.org', 'Salud Total', 'Suiza', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A');
-     end;
-     /
-     SELECT PA_PRESIDENTE.CO_PersonaNatural FROM DUAL;
-/*
-    Luego los ingreso con el dorsal que hemos designado para ellos junto con su posicon preferida y el salario negociado, debo tener cuidado al momento de ingresar las cedulas para no ir a ingresar la cedula
-    de algun arbitro que este registrado
-*/
-     begin
-        PA_PRESIDENTE.AD_Jugador(2651912, 10, 'DC', 789798798);
-        PA_PRESIDENTE.AD_Jugador(498461368, 17, 'DC', 6544655);
-        PA_PRESIDENTE.AD_Jugador(654321588, 11, 'MP', 321321231);
-        PA_PRESIDENTE.AD_Jugador(3215164981, 7, 'ED', 7987987);
-        PA_PRESIDENTE.AD_Jugador(798432187, 26, 'EI', 4654564);
-        PA_PRESIDENTE.AD_Jugador(3216598456, 8, 'MCO', 1321456);
-        PA_PRESIDENTE.AD_Jugador(46545512, 21, 'MCO', 45678123);
-        PA_PRESIDENTE.AD_Jugador(12315105, 20, 'MC', 3214567);
-        PA_PRESIDENTE.AD_Jugador(98154562, 6, 'MC', 451237);
-        PA_PRESIDENTE.AD_Jugador(45601893, 2, 'LI', 4563217);
-        PA_PRESIDENTE.AD_Jugador(1963753692, 2, 'LD', 6457123);
-        PA_PRESIDENTE.AD_Jugador(79895034, 12, 'DFC', 1237456);
-        PA_PRESIDENTE.AD_Jugador(12368429, 4, 'DFC', 12714195);
-        PA_PRESIDENTE.AD_Jugador(782145368, 15, 'DFC', 1957645);
-        PA_PRESIDENTE.AD_Jugador(78924295, 22, 'DFC', 4569522);
-        PA_PRESIDENTE.AD_Jugador(39747858, 23, 'LD', 65465498);
-        PA_PRESIDENTE.AD_Jugador(52253266, 13, 'POR', 4678852);
-        PA_PRESIDENTE.AD_Jugador(54569852, 1, 'POR', 15498528);
+        PA_PRESIDENTE.AD_Jugador('Mario', 'Gtoze', 2651912, 'Mario@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A', 10, 'DC', 789798798);
+        PA_PRESIDENTE.AD_Jugador('Erling', 'Haaland', 498461368, 'Erling@dmoz.org', 'Salud Total', 'Noruega', TO_DATE('2000-02-23', 'YYYY-MM-DD'), '+', 'A', 17, 'DC', 6544655);
+        PA_PRESIDENTE.AD_Jugador('Marco', 'Reus', 654321588, 'Marco@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1975-02-12', 'YYYY-MM-DD'), '+', 'A', 11, 'MP', 321321231);
+        PA_PRESIDENTE.AD_Jugador('Jadon', 'Sancho', 3215164981, 'Jadon@dmoz.org', 'Salud Total', 'Inglaterra', TO_DATE('1995-03-22', 'YYYY-MM-DD'), '+', 'A', 7, 'ED', 7987987);
+        PA_PRESIDENTE.AD_Jugador('Thorgan', 'Hazard', 798432187, 'Thorgan@dmoz.org', 'Salud Total', 'Belgica', TO_DATE('1985-02-22', 'YYYY-MM-DD'), '+', 'A', 26, 'EI', 4654564);
+        PA_PRESIDENTE.AD_Jugador('Julian', 'Brandt', 3216598456, 'Julian@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1970-02-22', 'YYYY-MM-DD'), '+', 'A', 8, 'MCO', 1321456);
+        PA_PRESIDENTE.AD_Jugador('Axel', 'Witsel', 46545512, 'Axel@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1995-02-22', 'YYYY-MM-DD'), '+', 'A', 21, 'MCO', 45678123);
+        PA_PRESIDENTE.AD_Jugador('Emre', 'Can', 12315105, 'Emre@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1992-02-22', 'YYYY-MM-DD'), '+', 'A', 20, 'MC', 3214567);
+        PA_PRESIDENTE.AD_Jugador('Lukas', 'Piszczek', 98154562, 'Lukas@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1991-02-22', 'YYYY-MM-DD'), '+', 'A', 6, 'MC', 451237);
+        PA_PRESIDENTE.AD_Jugador('Achraf', 'Hakimi', 45601893, 'Achraf@dmoz.org', 'Salud Total', 'Marruecos', TO_DATE('1998-02-22', 'YYYY-MM-DD'), '+', 'A', 2, 'LI', 4563217);
+        PA_PRESIDENTE.AD_Jugador('Nico', 'Schulz', 1963753692, 'Nico@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('2002-02-22', 'YYYY-MM-DD'), '+', 'A', 2, 'LD', 6457123);
+        PA_PRESIDENTE.AD_Jugador('Leonardo', 'Balerdi', 79895034, 'Leonardo@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A', 12, 'DFC', 1237456);
+        PA_PRESIDENTE.AD_Jugador('Mats', 'Hummels', 12368429, 'Mats@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1987-02-22', 'YYYY-MM-DD'), '+', 'A', 4, 'DFC', 12714195);
+        PA_PRESIDENTE.AD_Jugador('Dan', 'Zagadou', 782145368, 'Dan@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1995-02-22', 'YYYY-MM-DD'), '+', 'A', 15, 'DFC', 1957645);
+        PA_PRESIDENTE.AD_Jugador('Luca', 'Unbehaun', 78924295, 'Luca@dmoz.org', 'Salud Total', 'Bulgaria', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A', 22, 'DFC', 4569522);
+        PA_PRESIDENTE.AD_Jugador('Marcel', 'Schmelzer', 39747858, 'Marcel@dmoz.org', 'Salud Total', 'Colombia', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A', 23, 'LD', 65465498);
+        PA_PRESIDENTE.AD_Jugador('Roman', 'Burki', 52253266, 'Roman@dmoz.org', 'Salud Total', 'Suiza', TO_DATE('1999-02-22', 'YYYY-MM-DD'), '+', 'A', 13, 'POR', 4678852);
+        PA_PRESIDENTE.AD_Jugador('Marwin', 'Hitz', 54569852, 'Marwin@dmoz.org', 'Salud Total', 'Suiza', TO_DATE('1990-02-22', 'YYYY-MM-DD'), '+', 'A', 1, 'POR', 15498528);
      end;
      /
      SELECT PA_PRESIDENTE.CO_Jugador FROM DUAL;
      /
      begin
-        PA_PRESIDENTE.AD_Jugador(6812319878, 1, 'POR', 15498528);
+        PA_PRESIDENTE.AD_Jugador('Pierluigi', 'Collina', 6812319878, 'Mario@dmoz.org', 'Salud Total', 'Alemania', TO_DATE('1975-02-22', 'YYYY-MM-DD'), '+', 'A', 1, 'POR', 15498528);
      end;
     
 ---Organizador
@@ -128,19 +102,9 @@
     todos marcados por earling braut halaand identificado con cedula (498461368); y el gol del deportivo pasto realizado en el minuto 90 + 2,
     durante el partido el portero Marwin(54569852) del Borussia Dormunt tuvo una intervencion
 */
+    /* Primero intentare registrar un disparo sobre un partido el cual no ha sido jugado por ende no posee un marcador final*/
     begin
-        PA_ORGANIZADOR.AD_Evento(4, 498461368,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-        PA_ORGANIZADOR.AD_Evento(35, 498461368,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-        PA_ORGANIZADOR.AD_Evento(67, 498461368,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-        PA_ORGANIZADOR.AD_Evento(89, 498461368,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-        PA_ORGANIZADOR.AD_Evento(92, 8425971880,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-        PA_ORGANIZADOR.AD_Evento(1, 54569852,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
-    end;
-    /
-    SELECT PA_ORGANIZADOR.CO_Evento FROM DUAL;
-    /*Intentaremos registrar un evento sobre un partido el cual no ha sido jugado por ende no posee un marcador final*/
-    begin
-        PA_ORGANIZADOR.AD_Evento(4, 498461368,TO_DATE('25-08-2020 22:00','DD-MM-YYYY HH24:MI'));
+        PA_ORGANIZADOR.AD_Disparo(1, 70, 95, TO_DATE('25-08-2020 22:00','DD-MM-YYYY HH24:MI'), 4, 498461368);
     end;
     
 /*
@@ -156,7 +120,7 @@
         PA_ORGANIZADOR.AD_Disparo(1, 40, 45, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 92, 8425971880);
     end;
     /
-    SELECT PA_ORGANIZADOR.CO_Disparo FROM DUAL;
+    SELECT PA_ORGANIZADOR.CO_Evento ('DS') FROM DUAL;
     /*No pudo ingresar mas de la cantidad de los goles que se registraron en el partido*/
     begin
         PA_ORGANIZADOR.AD_Disparo(1, 70, 95, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 1, 54569852);
@@ -167,11 +131,10 @@
     
 */
     begin
-        PA_ORGANIZADOR.AD_Evento(66, 654321588,TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
         PA_ORGANIZADOR.AD_Pase(134, 89, 1, 66, 654321588, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'));
     end;
     /
-    SELECT PA_ORGANIZADOR.CO_Pase FROM DUAL;
+    SELECT PA_ORGANIZADOR.CO_Evento ('PA') FROM DUAL;
 
     
 ---Presidente
@@ -226,10 +189,10 @@
     debo dejar claro que me es imposible adicionar un gol que no existio es decir agregar mas goles de los registrados en el partido
 */
     begin
-        PA_ORGANIZADOR.AD_Atajada(1, 54569852, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 91, 2);
+        PA_ORGANIZADOR.AD_Atajada(0, 54569852, TO_DATE('15-08-2020 22:00','DD-MM-YYYY HH24:MI'), 91, 2);
     end;
     /
-    SELECT PA_ORGANIZADOR.CO_Atajada FROM DUAL;
+    SELECT PA_ORGANIZADOR.CO_Evento ('AT') FROM DUAL;
 
 /*
     Debido a que el proximo encuentro entre el Borussia Dortmund y Millonarios Fútbol Club sera un encuentro que definira el resultado

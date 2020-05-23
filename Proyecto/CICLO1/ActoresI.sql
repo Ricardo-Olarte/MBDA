@@ -1,39 +1,21 @@
 /*-------------------PA_PRESIDENTE-------------------*/
 CREATE OR REPLACE PACKAGE BODY PA_PRESIDENTE IS
-    PROCEDURE AD_PersonaNatural (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR)IS
+    PROCEDURE AD_Jugador (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
     BEGIN
         PC_PERSONASNATURALES.AD_PersonaNatural(xPrimerNombre, xPrimerApellido, xCedula, xCorreo, xEps, xNacionalidad, xFechaNacimiento, xRh, xSangre);
+        PC_PERSONASNATURALES.AD_Jugador(xCedula,  xDorsal, xPosicion, xSalario);
     END;
     
-    PROCEDURE MO_PersonaNatural (xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR)IS
+    PROCEDURE MO_Jugador (xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
     BEGIN
         PC_PERSONASNATURALES.MO_PersonaNatural(xCedula, xCorreo, xEps);
-    END;
-    
-    PROCEDURE EL_PersonaNatural (xCedula IN NUMBER)IS
-    BEGIN
-        PC_PERSONASNATURALES.EL_PersonaNatural(xCedula);
-    END;
-    
-    PROCEDURE AD_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
-    BEGIN
-        PC_PERSONASNATURALES.AD_Jugador(xCedula, xDorsal, xPosicion, xSalario);
-    END;
-    
-    PROCEDURE MO_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER)IS
-    BEGIN
-        PC_PERSONASNATURALES.MO_Jugador(xCedula, xDorsal, xPosicion, xSalario);
+        PC_PERSONASNATURALES.MO_Jugador (xCedula, xDorsal, xPosicion, xSalario);
     END;
     
     PROCEDURE EL_Jugador (xCedula IN NUMBER)IS
     BEGIN
         PC_PERSONASNATURALES.EL_Jugador(xCedula);
-    END;
-    
-    FUNCTION CO_PersonaNatural  RETURN SYS_REFCURSOR IS CO_PN SYS_REFCURSOR;
-    BEGIN
-        CO_PN:= PC_PERSONASNATURALES.CO_PersonaNatural;  
-        RETURN CO_PN;
+        PC_PERSONASNATURALES.EL_PersonaNatural(xCedula);
     END;
     
     FUNCTION CO_Jugador  RETURN SYS_REFCURSOR IS CO_JU SYS_REFCURSOR;
@@ -156,13 +138,9 @@ CREATE OR REPLACE PACKAGE BODY PA_ORGANIZADOR IS
         RETURN CO_PT;
     END;
     
-    PROCEDURE AD_PersonaNatural (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR)IS
+    PROCEDURE AD_Arbitro (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR, xFechaInicio IN DATE, xFechaFinal IN DATE)IS
     BEGIN
         PC_PERSONASNATURALES.AD_PersonaNatural(xPrimerNombre, xPrimerApellido, xCedula, xCorreo, xEps, xNacionalidad, xFechaNacimiento, xRh, xSangre);
-    END;
-    
-    PROCEDURE AD_Arbitro (xCedula IN NUMBER, xFechaInicio IN DATE, xFechaFinal IN DATE)IS
-    BEGIN
         PC_PERSONASNATURALES.AD_Arbitro(xCedula, xFechaInicio, xFechaFinal);
     END;
     
@@ -178,59 +156,44 @@ CREATE OR REPLACE PACKAGE BODY PA_ORGANIZADOR IS
         RETURN CO_AR;
     END;
     
-    PROCEDURE AD_Evento (xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE)IS
-    BEGIN
-        PC_EVENTO.AD_Evento(xTiempo, xJugador, xPartido);
-    END;
-    
     PROCEDURE AD_Disparo (xAcertadoGol IN NUMBER, xDistancia IN NUMBER, xVelocidad IN NUMBER, xPartido IN DATE, xTiempo IN NUMBER, xJugador IN NUMBER)IS
     BEGIN
+        PC_EVENTO.AD_Evento(xTiempo, xJugador, xPartido);
         PC_EVENTO.AD_Disparo(xAcertadoGol, xDistancia, xVelocidad, xPartido, xTiempo, xJugador);
     END;
     
     PROCEDURE AD_Amonestacion (xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE, xTarjeta IN CHAR, xComentarios IN VARCHAR, xArbitro IN NUMBER)IS
     BEGIN
+        PC_EVENTO.AD_Evento(xTiempo, xJugador, xPartido);
         PC_EVENTO.AD_Amonestacion(xTiempo, xJugador, xPartido, xTarjeta, xComentarios, xArbitro);
     END;
     
     PROCEDURE AD_Pase (xTotalPartido IN NUMBER, xEfectividadAcierto IN NUMBER, xGol IN NUMBER, xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE)IS
     BEGIN
+        PC_EVENTO.AD_Evento(xTiempo, xJugador, xPartido);
         PC_EVENTO.AD_Pase(xTotalPartido, xEfectividadAcierto, xGol, xTiempo, xJugador, xPartido);
     END;
     
     PROCEDURE AD_Atajada (xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE, xPorteriaEnCero IN NUMBER, xParadas IN NUMBER)IS
     BEGIN
+        PC_EVENTO.AD_Evento(xTiempo, xJugador, xPartido);
         PC_EVENTO.AD_Atajada(xTiempo, xJugador, xPartido, xPorteriaEnCero, xParadas);
     END;
     
-    FUNCTION CO_Evento  RETURN SYS_REFCURSOR IS CO_EV SYS_REFCURSOR;
+    FUNCTION CO_Evento (xTipo IN CHAR)  RETURN SYS_REFCURSOR IS CO_EV SYS_REFCURSOR;
     BEGIN
-        CO_EV:= PC_EVENTO.CO_Evento;  
+        IF xTipo = 'DS'
+            THEN CO_EV:= PC_EVENTO.CO_Disparo;
+        ELSIF xTipo = 'AM'
+            THEN CO_EV:= PC_EVENTO.CO_Amonestacion;
+        ELSIF xTipo = 'PA'
+            THEN CO_EV:= PC_EVENTO.CO_Pase;
+        ELSIF xTipo = 'AT'
+            THEN CO_EV:= PC_EVENTO.CO_Atajada;
+        ELSE
+            RAISE_APPLICATION_ERROR(-20019, 'No se puede mostrar el tipo de Evento.');
+        END IF;
         RETURN CO_EV;
-    END;
-    
-    FUNCTION CO_Disparo  RETURN SYS_REFCURSOR IS CO_DI SYS_REFCURSOR;
-    BEGIN
-        CO_DI:= PC_EVENTO.CO_Disparo;  
-        RETURN CO_DI;
-    END;
-    
-    FUNCTION CO_Amonestacion  RETURN SYS_REFCURSOR IS CO_AM SYS_REFCURSOR;
-    BEGIN
-        CO_AM:= PC_EVENTO.CO_Amonestacion;  
-        RETURN CO_AM;
-    END;
-    
-    FUNCTION CO_Pase  RETURN SYS_REFCURSOR IS CO_PA SYS_REFCURSOR;
-    BEGIN
-        CO_PA:= PC_EVENTO.CO_Pase;  
-        RETURN CO_PA;
-    END;
-    
-    FUNCTION CO_Atajada  RETURN SYS_REFCURSOR IS CO_AT SYS_REFCURSOR;
-    BEGIN
-        CO_AT:= PC_EVENTO.CO_Atajada;  
-        RETURN CO_AT;
     END;
     
     PROCEDURE AD_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE)IS

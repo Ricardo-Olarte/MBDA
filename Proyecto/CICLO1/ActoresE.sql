@@ -1,12 +1,8 @@
 CREATE OR REPLACE PACKAGE PA_PRESIDENTE IS
     /*PersonaNat*/
-    PROCEDURE AD_PersonaNatural (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR);
-	PROCEDURE MO_PersonaNatural (xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR);
-	PROCEDURE EL_PersonaNatural (xCedula IN NUMBER);
-    PROCEDURE AD_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER);
-    PROCEDURE MO_Jugador (xCedula IN NUMBER, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER);
+    PROCEDURE AD_Jugador (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER);
+	PROCEDURE MO_Jugador (xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xDorsal IN NUMBER, xPosicion IN VARCHAR, xSalario IN NUMBER);
 	PROCEDURE EL_Jugador (xCedula IN NUMBER);
-    FUNCTION CO_PersonaNatural RETURN SYS_REFCURSOR;
     FUNCTION CO_Jugador RETURN SYS_REFCURSOR;
     /*Plantilla*/
     PROCEDURE AD_Convocado (xPlantillaEquipo IN VARCHAR, xPlantillaPartido IN DATE, xJugador IN NUMBER, xTitular IN NUMBER, xPosicion IN VARCHAR);
@@ -37,12 +33,10 @@ CREATE OR REPLACE PACKAGE PA_ORGANIZADOR IS
     PROCEDURE MO_Encuentros (xEquipo1 IN VARCHAR, xEquipo2 IN VARCHAR, xPartido IN DATE);
     FUNCTION CO_PartidosT  RETURN SYS_REFCURSOR;
     /*Arbitro*/
-    PROCEDURE AD_PersonaNatural (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR);
-    PROCEDURE AD_Arbitro (xCedula IN NUMBER, xFechaInicio IN DATE, xFechaFinal IN DATE);
+    PROCEDURE AD_Arbitro (xPrimerNombre IN VARCHAR, xPrimerApellido IN VARCHAR, xCedula IN NUMBER, xCorreo IN VARCHAR, xEps IN VARCHAR, xNacionalidad IN VARCHAR, xFechaNacimiento IN DATE, xRh IN CHAR, xSangre IN VARCHAR, xFechaInicio IN DATE, xFechaFinal IN DATE);
     FUNCTION CO_Arbitro_T  RETURN SYS_REFCURSOR;
     FUNCTION CO_Arbitro (xPuntaje IN NUMBER) RETURN SYS_REFCURSOR;
     /*Eventos*/
-    PROCEDURE AD_Evento (xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE);
     PROCEDURE AD_Disparo (xAcertadoGol IN NUMBER, xDistancia IN NUMBER, xVelocidad IN NUMBER, xPartido IN DATE, xTiempo IN NUMBER, xJugador IN NUMBER);
     PROCEDURE AD_Amonestacion (xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE, xTarjeta IN CHAR, xComentarios IN VARCHAR, xArbitro IN NUMBER);
     PROCEDURE AD_Pase (xTotalPartido IN NUMBER, xEfectividadAcierto IN NUMBER, xGol IN NUMBER, xTiempo IN NUMBER, xJugador IN NUMBER, xPartido IN DATE);
@@ -50,13 +44,8 @@ CREATE OR REPLACE PACKAGE PA_ORGANIZADOR IS
     /*PitadosPor*/
     PROCEDURE AD_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE);
     PROCEDURE EL_PitadosPor (xArbitro IN NUMBER,  xPartido IN DATE);
-    
-    FUNCTION CO_Evento  RETURN SYS_REFCURSOR;
-    FUNCTION CO_Disparo  RETURN SYS_REFCURSOR;
-    FUNCTION CO_Amonestacion  RETURN SYS_REFCURSOR;
-    FUNCTION CO_Pase  RETURN SYS_REFCURSOR;
-    FUNCTION CO_Atajada  RETURN SYS_REFCURSOR;
     FUNCTION CO_PitadosPor  RETURN SYS_REFCURSOR;
+    FUNCTION CO_Evento(xTipo IN CHAR)  RETURN SYS_REFCURSOR;
 END PA_ORGANIZADOR;
 /
 CREATE OR REPLACE PACKAGE PA_TECNICO IS
