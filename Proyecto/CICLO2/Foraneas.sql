@@ -18,7 +18,7 @@ ALTER TABLE Contratos ADD CONSTRAINT FK_Contratos_Presidentes
 FOREIGN KEY (presidente) REFERENCES Presidentes(cedula);
 
 ALTER TABLE Contratos ADD CONSTRAINT FK_Contratos_DirectoresTecnicos
-FOREIGN KEY (directorTecnico) REFERENCES Presidentes(cedula);
+FOREIGN KEY (directorTecnico) REFERENCES DirectoresTecnicos(cedula);
 --
 
 ALTER TABLE Equipos ADD CONSTRAINT FK_Equipos_Decensos 
@@ -33,14 +33,17 @@ FOREIGN KEY (equipo) REFERENCES Equipos(nombre);
 ALTER TABLE DirectoresTecnicos ADD CONSTRAINT FK_DirectoresTecnicos_Equipo 
 FOREIGN KEY (equipo) REFERENCES Equipos(nombre);
 --
+ALTER TABLE Traspasos ADD CONSTRAINT FK_Traspasos_Jugador
+FOREIGN KEY (Jugador) REFERENCES Jugadores(cedula);
+
+ALTER TABLE Traspasos ADD CONSTRAINT FK_Traspasos_Equipo
+FOREIGN KEY (equipo) REFERENCES Equipos(nombre);
+
 ALTER TABLE Compuestas ADD CONSTRAINT FK_Compuestas_Traspasos 
 FOREIGN KEY (numero) REFERENCES Traspasos(numero);
 
 ALTER TABLE Compuestas ADD CONSTRAINT FK_Compuestas_Jugador
 FOREIGN KEY (JugadorCambio) REFERENCES Jugadores(cedula);
-
-ALTER TABLE Traspasos ADD CONSTRAINT FK_Traspasos_Jugador
-FOREIGN KEY (Jugador) REFERENCES Jugadores(cedula);
 
 ALTER TABLE Simples ADD CONSTRAINT FK_Simples_Traspasos 
 FOREIGN KEY (numero) REFERENCES Traspasos(numero);
