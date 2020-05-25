@@ -103,7 +103,7 @@ CREATE TABLE Traspasos(
 numero NUMBER(5) NOT NULL,
 contrato VARCHAR(1) NOT NULL,
 jugador NUMBER(10) NOT NULL,
-valor NUMBER(10),
+valor NUMBER(10)
 );
 
 --Compuestas--
