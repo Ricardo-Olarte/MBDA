@@ -1,0 +1,6999 @@
+﻿/* INSERT QUERY NO: 1 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+1, 'V', 6637627526, 0
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+2, 'P', 7896121824, 0
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+3, 'V', 4117417428, 0
+);
+
+/* INSERT QUERY NO: 4 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+4, 'P', 9670377218, 0
+);
+
+/* INSERT QUERY NO: 5 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+5, 'V', 8142373106, 0
+);
+
+/* INSERT QUERY NO: 6 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+6, 'P', 3600282824, 0
+);
+
+/* INSERT QUERY NO: 7 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+7, 'P', 4964114945, 0
+);
+
+/* INSERT QUERY NO: 8 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+8, 'V', 8561840463, 0
+);
+
+/* INSERT QUERY NO: 9 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+9, 'P', 7719078411, 0
+);
+
+/* INSERT QUERY NO: 10 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+10, 'P', 7594402812, 0
+);
+
+/* INSERT QUERY NO: 11 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+11, 'V', 694684996, 0
+);
+
+/* INSERT QUERY NO: 12 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+12, 'P', 6777705317, 0
+);
+
+/* INSERT QUERY NO: 13 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+13, 'P', 3881356681, 0
+);
+
+/* INSERT QUERY NO: 14 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+14, 'V', 611044714, 0
+);
+
+/* INSERT QUERY NO: 15 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+15, 'P', 814567290, 0
+);
+
+/* INSERT QUERY NO: 16 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+16, 'P', 3777191310, 0
+);
+
+/* INSERT QUERY NO: 17 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+17, 'V', 3372517903, 0
+);
+
+/* INSERT QUERY NO: 18 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+18, 'V', 2416022520, 0
+);
+
+/* INSERT QUERY NO: 19 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+19, 'V', 2130875580, 0
+);
+
+/* INSERT QUERY NO: 20 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+20, 'P', 6963557608, 0
+);
+
+/* INSERT QUERY NO: 21 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+21, 'V', 2678153002, 0
+);
+
+/* INSERT QUERY NO: 22 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+22, 'V', 46861025, 0
+);
+
+/* INSERT QUERY NO: 23 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+23, 'V', 779473329, 0
+);
+
+/* INSERT QUERY NO: 24 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+24, 'V', 7281664710, 0
+);
+
+/* INSERT QUERY NO: 25 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+25, 'P', 751246840, 0
+);
+
+/* INSERT QUERY NO: 26 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+26, 'V', 1138555495, 0
+);
+
+/* INSERT QUERY NO: 27 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+27, 'P', 1565606299, 0
+);
+
+/* INSERT QUERY NO: 28 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+28, 'P', 7570521528, 0
+);
+
+/* INSERT QUERY NO: 29 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+29, 'V', 5072880745, 0
+);
+
+/* INSERT QUERY NO: 30 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+30, 'V', 540967882, 0
+);
+
+/* INSERT QUERY NO: 31 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+31, 'P', 2643735285, 0
+);
+
+/* INSERT QUERY NO: 32 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+32, 'P', 673719219, 0
+);
+
+/* INSERT QUERY NO: 33 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+33, 'P', 1529762596, 0
+);
+
+/* INSERT QUERY NO: 34 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+34, 'V', 4227715881, 0
+);
+
+/* INSERT QUERY NO: 35 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+35, 'P', 8685646561, 0
+);
+
+/* INSERT QUERY NO: 36 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+36, 'P', 3067101197, 0
+);
+
+/* INSERT QUERY NO: 37 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+37, 'P', 9310472952, 0
+);
+
+/* INSERT QUERY NO: 38 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+38, 'P', 8396557837, 0
+);
+
+/* INSERT QUERY NO: 39 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+39, 'V', 2712279263, 0
+);
+
+/* INSERT QUERY NO: 40 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+40, 'P', 6708549018, 0
+);
+
+/* INSERT QUERY NO: 41 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+41, 'P', 7128130586, 0
+);
+
+/* INSERT QUERY NO: 42 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+42, 'P', 7511974376, 0
+);
+
+/* INSERT QUERY NO: 43 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+43, 'V', 6796882814, 0
+);
+
+/* INSERT QUERY NO: 44 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+44, 'P', 3882775882, 0
+);
+
+/* INSERT QUERY NO: 45 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+45, 'V', 9411573975, 0
+);
+
+/* INSERT QUERY NO: 46 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+46, 'P', 3252975297, 0
+);
+
+/* INSERT QUERY NO: 47 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+47, 'P', 7343357018, 0
+);
+
+/* INSERT QUERY NO: 48 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+48, 'V', 5758099856, 0
+);
+
+/* INSERT QUERY NO: 49 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+49, 'V', 302176543, 0
+);
+
+/* INSERT QUERY NO: 50 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+50, 'V', 2312765179, 0
+);
+
+/* INSERT QUERY NO: 51 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+51, 'P', 3714524037, 0
+);
+
+/* INSERT QUERY NO: 52 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+52, 'P', 8233124397, 0
+);
+
+/* INSERT QUERY NO: 53 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+53, 'P', 2982638622, 0
+);
+
+/* INSERT QUERY NO: 54 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+54, 'V', 2753891699, 0
+);
+
+/* INSERT QUERY NO: 55 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+55, 'V', 1012293211, 0
+);
+
+/* INSERT QUERY NO: 56 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+56, 'P', 9927431732, 0
+);
+
+/* INSERT QUERY NO: 57 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+57, 'V', 788120328, 0
+);
+
+/* INSERT QUERY NO: 58 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+58, 'P', 4525646616, 0
+);
+
+/* INSERT QUERY NO: 59 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+59, 'P', 9362378574, 0
+);
+
+/* INSERT QUERY NO: 60 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+60, 'V', 450705889, 0
+);
+
+/* INSERT QUERY NO: 61 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+61, 'V', 9127504018, 0
+);
+
+/* INSERT QUERY NO: 62 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+62, 'V', 4772450483, 0
+);
+
+/* INSERT QUERY NO: 63 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+63, 'P', 524816042, 0
+);
+
+/* INSERT QUERY NO: 64 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+64, 'V', 1483819043, 0
+);
+
+/* INSERT QUERY NO: 65 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+65, 'V', 7952176757, 0
+);
+
+/* INSERT QUERY NO: 66 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+66, 'V', 4375188057, 0
+);
+
+/* INSERT QUERY NO: 67 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+67, 'P', 5839535583, 0
+);
+
+/* INSERT QUERY NO: 68 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+68, 'V', 797319387, 0
+);
+
+/* INSERT QUERY NO: 69 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+69, 'P', 5835886144, 0
+);
+
+/* INSERT QUERY NO: 70 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+70, 'P', 9981939714, 0
+);
+
+/* INSERT QUERY NO: 71 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+71, 'V', 3697915118, 0
+);
+
+/* INSERT QUERY NO: 72 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+72, 'P', 8262497457, 0
+);
+
+/* INSERT QUERY NO: 73 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+73, 'V', 1891819089, 0
+);
+
+/* INSERT QUERY NO: 74 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+74, 'P', 5717683014, 0
+);
+
+/* INSERT QUERY NO: 75 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+75, 'P', 6307100796, 0
+);
+
+/* INSERT QUERY NO: 76 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+76, 'V', 1325450006, 0
+);
+
+/* INSERT QUERY NO: 77 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+77, 'V', 967773032, 0
+);
+
+/* INSERT QUERY NO: 78 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+78, 'P', 621079790, 0
+);
+
+/* INSERT QUERY NO: 79 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+79, 'P', 8599714252, 0
+);
+
+/* INSERT QUERY NO: 80 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+80, 'V', 5499397775, 0
+);
+
+/* INSERT QUERY NO: 81 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+81, 'P', 9653034014, 0
+);
+
+/* INSERT QUERY NO: 82 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+82, 'P', 951393383, 0
+);
+
+/* INSERT QUERY NO: 83 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+83, 'V', 6731582700, 0
+);
+
+/* INSERT QUERY NO: 84 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+84, 'P', 3542183377, 0
+);
+
+/* INSERT QUERY NO: 85 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+85, 'P', 1775493059, 0
+);
+
+/* INSERT QUERY NO: 86 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+86, 'P', 2839103486, 0
+);
+
+/* INSERT QUERY NO: 87 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+87, 'P', 4641390479, 0
+);
+
+/* INSERT QUERY NO: 88 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+88, 'V', 6122164348, 0
+);
+
+/* INSERT QUERY NO: 89 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+89, 'V', 2881130593, 0
+);
+
+/* INSERT QUERY NO: 90 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+90, 'P', 1271984415, 0
+);
+
+/* INSERT QUERY NO: 91 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+91, 'V', 7442794645, 0
+);
+
+/* INSERT QUERY NO: 92 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+92, 'V', 1749858215, 0
+);
+
+/* INSERT QUERY NO: 93 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+93, 'V', 524459576, 0
+);
+
+/* INSERT QUERY NO: 94 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+94, 'V', 3587405824, 0
+);
+
+/* INSERT QUERY NO: 95 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+95, 'V', 2731934867, 0
+);
+
+/* INSERT QUERY NO: 96 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+96, 'V', 781861764, 0
+);
+
+/* INSERT QUERY NO: 97 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+97, 'P', 7519753808, 0
+);
+
+/* INSERT QUERY NO: 98 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+98, 'V', 621132217, 0
+);
+
+/* INSERT QUERY NO: 99 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+99, 'P', 5437636695, 0
+);
+
+/* INSERT QUERY NO: 100 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+100, 'V', 8777250990, 0
+);
+
+/* INSERT QUERY NO: 101 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+101, 'V', 4389243144, 0
+);
+
+/* INSERT QUERY NO: 102 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+102, 'V', 7062105570, 0
+);
+
+/* INSERT QUERY NO: 103 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+103, 'V', 1236588061, 0
+);
+
+/* INSERT QUERY NO: 104 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+104, 'P', 2002829241, 0
+);
+
+/* INSERT QUERY NO: 105 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+105, 'P', 8907694184, 0
+);
+
+/* INSERT QUERY NO: 106 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+106, 'V', 1362339997, 0
+);
+
+/* INSERT QUERY NO: 107 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+107, 'V', 2212000804, 0
+);
+
+/* INSERT QUERY NO: 108 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+108, 'V', 2799175961, 0
+);
+
+/* INSERT QUERY NO: 109 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+109, 'P', 9701801571, 0
+);
+
+/* INSERT QUERY NO: 110 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+110, 'P', 4779084180, 0
+);
+
+/* INSERT QUERY NO: 111 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+111, 'V', 4810932516, 0
+);
+
+/* INSERT QUERY NO: 112 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+112, 'V', 4577594188, 0
+);
+
+/* INSERT QUERY NO: 113 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+113, 'P', 1500638447, 0
+);
+
+/* INSERT QUERY NO: 114 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+114, 'V', 8998964767, 0
+);
+
+/* INSERT QUERY NO: 115 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+115, 'V', 319199835, 0
+);
+
+/* INSERT QUERY NO: 116 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+116, 'V', 9877960206, 0
+);
+
+/* INSERT QUERY NO: 117 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+117, 'P', 4174252173, 0
+);
+
+/* INSERT QUERY NO: 118 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+118, 'V', 1649961316, 0
+);
+
+/* INSERT QUERY NO: 119 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+119, 'V', 3850797171, 0
+);
+
+/* INSERT QUERY NO: 120 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+120, 'V', 9041640681, 0
+);
+
+/* INSERT QUERY NO: 121 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+121, 'V', 6395958216, 0
+);
+
+/* INSERT QUERY NO: 122 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+122, 'P', 2207098001, 0
+);
+
+/* INSERT QUERY NO: 123 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+123, 'V', 4759554602, 0
+);
+
+/* INSERT QUERY NO: 124 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+124, 'V', 9625380949, 0
+);
+
+/* INSERT QUERY NO: 125 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+125, 'P', 1778705774, 0
+);
+
+/* INSERT QUERY NO: 126 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+126, 'V', 1914281284, 0
+);
+
+/* INSERT QUERY NO: 127 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+127, 'V', 3442366402, 0
+);
+
+/* INSERT QUERY NO: 128 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+128, 'V', 1425303293, 0
+);
+
+/* INSERT QUERY NO: 129 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+129, 'P', 9595592064, 0
+);
+
+/* INSERT QUERY NO: 130 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+130, 'V', 4603081006, 0
+);
+
+/* INSERT QUERY NO: 131 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+131, 'V', 9492328984, 0
+);
+
+/* INSERT QUERY NO: 132 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+132, 'P', 1575575426, 0
+);
+
+/* INSERT QUERY NO: 133 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+133, 'P', 2587117372, 0
+);
+
+/* INSERT QUERY NO: 134 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+134, 'P', 8174314350, 0
+);
+
+/* INSERT QUERY NO: 135 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+135, 'P', 2571738062, 0
+);
+
+/* INSERT QUERY NO: 136 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+136, 'P', 4266128967, 0
+);
+
+/* INSERT QUERY NO: 137 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+137, 'V', 9102387611, 0
+);
+
+/* INSERT QUERY NO: 138 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+138, 'V', 3970907713, 0
+);
+
+/* INSERT QUERY NO: 139 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+139, 'P', 1851332294, 0
+);
+
+/* INSERT QUERY NO: 140 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+140, 'V', 4091885624, 0
+);
+
+/* INSERT QUERY NO: 141 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+141, 'P', 2399793579, 0
+);
+
+/* INSERT QUERY NO: 142 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+142, 'V', 2828633489, 0
+);
+
+/* INSERT QUERY NO: 143 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+143, 'P', 6945951545, 0
+);
+
+/* INSERT QUERY NO: 144 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+144, 'V', 1101032146, 0
+);
+
+/* INSERT QUERY NO: 145 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+145, 'V', 4292673233, 0
+);
+
+/* INSERT QUERY NO: 146 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+146, 'V', 3301242936, 0
+);
+
+/* INSERT QUERY NO: 147 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+147, 'V', 1605236209, 0
+);
+
+/* INSERT QUERY NO: 148 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+148, 'P', 3871132764, 0
+);
+
+/* INSERT QUERY NO: 149 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+149, 'V', 2655998901, 0
+);
+
+/* INSERT QUERY NO: 150 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+150, 'P', 2822150842, 0
+);
+
+/* INSERT QUERY NO: 151 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+151, 'V', 1580986889, 0
+);
+
+/* INSERT QUERY NO: 152 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+152, 'P', 7444722242, 0
+);
+
+/* INSERT QUERY NO: 153 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+153, 'V', 9870816371, 0
+);
+
+/* INSERT QUERY NO: 154 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+154, 'V', 3908814987, 0
+);
+
+/* INSERT QUERY NO: 155 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+155, 'V', 7227214575, 0
+);
+
+/* INSERT QUERY NO: 156 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+156, 'V', 385717334, 0
+);
+
+/* INSERT QUERY NO: 157 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+157, 'V', 8201287592, 0
+);
+
+/* INSERT QUERY NO: 158 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+158, 'P', 5564694805, 0
+);
+
+/* INSERT QUERY NO: 159 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+159, 'V', 1247410706, 0
+);
+
+/* INSERT QUERY NO: 160 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+160, 'V', 4113357617, 0
+);
+
+/* INSERT QUERY NO: 161 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+161, 'P', 252347285, 0
+);
+
+/* INSERT QUERY NO: 162 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+162, 'V', 1256629235, 0
+);
+
+/* INSERT QUERY NO: 163 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+163, 'V', 1446227464, 0
+);
+
+/* INSERT QUERY NO: 164 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+164, 'V', 2245029453, 0
+);
+
+/* INSERT QUERY NO: 165 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+165, 'V', 8317886646, 0
+);
+
+/* INSERT QUERY NO: 166 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+166, 'V', 8326835234, 0
+);
+
+/* INSERT QUERY NO: 167 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+167, 'V', 5214575874, 0
+);
+
+/* INSERT QUERY NO: 168 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+168, 'V', 2131959036, 0
+);
+
+/* INSERT QUERY NO: 169 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+169, 'P', 3985016038, 0
+);
+
+/* INSERT QUERY NO: 170 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+170, 'V', 513027718, 0
+);
+
+/* INSERT QUERY NO: 171 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+171, 'V', 6298411496, 0
+);
+
+/* INSERT QUERY NO: 172 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+172, 'P', 5287766602, 0
+);
+
+/* INSERT QUERY NO: 173 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+173, 'P', 3998675930, 0
+);
+
+/* INSERT QUERY NO: 174 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+174, 'P', 9074498728, 0
+);
+
+/* INSERT QUERY NO: 175 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+175, 'V', 8660616537, 0
+);
+
+/* INSERT QUERY NO: 176 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+176, 'P', 8526153617, 0
+);
+
+/* INSERT QUERY NO: 177 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+177, 'P', 156191350, 0
+);
+
+/* INSERT QUERY NO: 178 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+178, 'V', 5622634563, 0
+);
+
+/* INSERT QUERY NO: 179 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+179, 'V', 3383545342, 0
+);
+
+/* INSERT QUERY NO: 180 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+180, 'P', 8261452077, 0
+);
+
+/* INSERT QUERY NO: 181 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+181, 'V', 7877056974, 0
+);
+
+/* INSERT QUERY NO: 182 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+182, 'V', 138392102, 0
+);
+
+/* INSERT QUERY NO: 183 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+183, 'P', 2086142536, 0
+);
+
+/* INSERT QUERY NO: 184 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+184, 'V', 5417256617, 0
+);
+
+/* INSERT QUERY NO: 185 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+185, 'V', 9037022707, 0
+);
+
+/* INSERT QUERY NO: 186 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+186, 'P', 2226026606, 0
+);
+
+/* INSERT QUERY NO: 187 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+187, 'P', 5341101286, 0
+);
+
+/* INSERT QUERY NO: 188 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+188, 'V', 8250807987, 0
+);
+
+/* INSERT QUERY NO: 189 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+189, 'P', 7660644408, 0
+);
+
+/* INSERT QUERY NO: 190 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+190, 'V', 9203173749, 0
+);
+
+/* INSERT QUERY NO: 191 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+191, 'V', 7292168787, 0
+);
+
+/* INSERT QUERY NO: 192 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+192, 'P', 7309720288, 0
+);
+
+/* INSERT QUERY NO: 193 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+193, 'V', 4977098293, 0
+);
+
+/* INSERT QUERY NO: 194 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+194, 'P', 5295280098, 0
+);
+
+/* INSERT QUERY NO: 195 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+195, 'P', 8662333087, 0
+);
+
+/* INSERT QUERY NO: 196 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+196, 'V', 7097435143, 0
+);
+
+/* INSERT QUERY NO: 197 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+197, 'P', 4423766493, 0
+);
+
+/* INSERT QUERY NO: 198 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+198, 'P', 9399431932, 0
+);
+
+/* INSERT QUERY NO: 199 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+199, 'P', 9995490897, 0
+);
+
+/* INSERT QUERY NO: 200 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+200, 'V', 9720489871, 0
+);
+
+/* INSERT QUERY NO: 201 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+201, 'P', 6406430018, 0
+);
+
+/* INSERT QUERY NO: 202 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+202, 'V', 5621786904, 0
+);
+
+/* INSERT QUERY NO: 203 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+203, 'V', 6284690584, 0
+);
+
+/* INSERT QUERY NO: 204 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+204, 'P', 4462448111, 0
+);
+
+/* INSERT QUERY NO: 205 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+205, 'P', 1175034444, 0
+);
+
+/* INSERT QUERY NO: 206 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+206, 'P', 1159659435, 0
+);
+
+/* INSERT QUERY NO: 207 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+207, 'P', 6507931152, 0
+);
+
+/* INSERT QUERY NO: 208 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+208, 'P', 6371587455, 0
+);
+
+/* INSERT QUERY NO: 209 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+209, 'P', 944692141, 0
+);
+
+/* INSERT QUERY NO: 210 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+210, 'P', 7505128248, 0
+);
+
+/* INSERT QUERY NO: 211 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+211, 'V', 6951337551, 0
+);
+
+/* INSERT QUERY NO: 212 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+212, 'V', 1389251047, 0
+);
+
+/* INSERT QUERY NO: 213 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+213, 'V', 7162665756, 0
+);
+
+/* INSERT QUERY NO: 214 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+214, 'V', 6883991867, 0
+);
+
+/* INSERT QUERY NO: 215 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+215, 'P', 6337043472, 0
+);
+
+/* INSERT QUERY NO: 216 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+216, 'V', 415902657, 0
+);
+
+/* INSERT QUERY NO: 217 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+217, 'V', 8029228368, 0
+);
+
+/* INSERT QUERY NO: 218 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+218, 'V', 6557073982, 0
+);
+
+/* INSERT QUERY NO: 219 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+219, 'V', 764924990, 0
+);
+
+/* INSERT QUERY NO: 220 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+220, 'V', 1580651895, 0
+);
+
+/* INSERT QUERY NO: 221 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+221, 'V', 6421810187, 0
+);
+
+/* INSERT QUERY NO: 222 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+222, 'P', 1359349677, 0
+);
+
+/* INSERT QUERY NO: 223 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+223, 'V', 7274206028, 0
+);
+
+/* INSERT QUERY NO: 224 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+224, 'V', 3817346999, 0
+);
+
+/* INSERT QUERY NO: 225 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+225, 'P', 7188556318, 0
+);
+
+/* INSERT QUERY NO: 226 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+226, 'P', 4119992462, 0
+);
+
+/* INSERT QUERY NO: 227 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+227, 'P', 966176243, 0
+);
+
+/* INSERT QUERY NO: 228 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+228, 'P', 1489464646, 0
+);
+
+/* INSERT QUERY NO: 229 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+229, 'P', 2318875464, 0
+);
+
+/* INSERT QUERY NO: 230 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+230, 'V', 3691918093, 0
+);
+
+/* INSERT QUERY NO: 231 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+231, 'P', 2031802666, 0
+);
+
+/* INSERT QUERY NO: 232 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+232, 'V', 5005467084, 0
+);
+
+/* INSERT QUERY NO: 233 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+233, 'V', 3087423432, 0
+);
+
+/* INSERT QUERY NO: 234 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+234, 'V', 9477508179, 0
+);
+
+/* INSERT QUERY NO: 235 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+235, 'V', 3850996786, 0
+);
+
+/* INSERT QUERY NO: 236 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+236, 'P', 8263899745, 0
+);
+
+/* INSERT QUERY NO: 237 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+237, 'P', 3454145848, 0
+);
+
+/* INSERT QUERY NO: 238 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+238, 'V', 6363851351, 0
+);
+
+/* INSERT QUERY NO: 239 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+239, 'P', 5141274330, 0
+);
+
+/* INSERT QUERY NO: 240 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+240, 'V', 9676217913, 0
+);
+
+/* INSERT QUERY NO: 241 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+241, 'V', 2596163365, 0
+);
+
+/* INSERT QUERY NO: 242 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+242, 'V', 770087493, 0
+);
+
+/* INSERT QUERY NO: 243 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+243, 'P', 1971818631, 0
+);
+
+/* INSERT QUERY NO: 244 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+244, 'P', 6015663944, 0
+);
+
+/* INSERT QUERY NO: 245 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+245, 'P', 6546751887, 0
+);
+
+/* INSERT QUERY NO: 246 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+246, 'P', 4487793858, 0
+);
+
+/* INSERT QUERY NO: 247 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+247, 'P', 4600321758, 0
+);
+
+/* INSERT QUERY NO: 248 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+248, 'P', 9999667627, 0
+);
+
+/* INSERT QUERY NO: 249 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+249, 'V', 7020461719, 0
+);
+
+/* INSERT QUERY NO: 250 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+250, 'P', 5069028731, 0
+);
+
+/* INSERT QUERY NO: 251 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+251, 'P', 2717737030, 0
+);
+
+/* INSERT QUERY NO: 252 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+252, 'V', 20034369, 0
+);
+
+/* INSERT QUERY NO: 253 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+253, 'V', 7486845547, 0
+);
+
+/* INSERT QUERY NO: 254 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+254, 'V', 3173156455, 0
+);
+
+/* INSERT QUERY NO: 255 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+255, 'V', 1830814591, 0
+);
+
+/* INSERT QUERY NO: 256 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+256, 'V', 902580248, 0
+);
+
+/* INSERT QUERY NO: 257 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+257, 'P', 8139510742, 0
+);
+
+/* INSERT QUERY NO: 258 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+258, 'V', 6945748375, 0
+);
+
+/* INSERT QUERY NO: 259 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+259, 'P', 6408055753, 0
+);
+
+/* INSERT QUERY NO: 260 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+260, 'V', 1970858974, 0
+);
+
+/* INSERT QUERY NO: 261 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+261, 'V', 700924892, 0
+);
+
+/* INSERT QUERY NO: 262 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+262, 'P', 87915847, 0
+);
+
+/* INSERT QUERY NO: 263 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+263, 'P', 6438001945, 0
+);
+
+/* INSERT QUERY NO: 264 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+264, 'P', 9367305680, 0
+);
+
+/* INSERT QUERY NO: 265 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+265, 'P', 7853108818, 0
+);
+
+/* INSERT QUERY NO: 266 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+266, 'V', 6188247527, 0
+);
+
+/* INSERT QUERY NO: 267 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+267, 'P', 6234810306, 0
+);
+
+/* INSERT QUERY NO: 268 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+268, 'V', 5206534358, 0
+);
+
+/* INSERT QUERY NO: 269 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+269, 'V', 201059142, 0
+);
+
+/* INSERT QUERY NO: 270 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+270, 'P', 3707939197, 0
+);
+
+/* INSERT QUERY NO: 271 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+271, 'P', 1962436233, 0
+);
+
+/* INSERT QUERY NO: 272 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+272, 'P', 7671856207, 0
+);
+
+/* INSERT QUERY NO: 273 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+273, 'P', 5065826366, 0
+);
+
+/* INSERT QUERY NO: 274 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+274, 'P', 7546077842, 0
+);
+
+/* INSERT QUERY NO: 275 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+275, 'P', 8117705, 0
+);
+
+/* INSERT QUERY NO: 276 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+276, 'V', 8712059978, 0
+);
+
+/* INSERT QUERY NO: 277 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+277, 'V', 2263036911, 0
+);
+
+/* INSERT QUERY NO: 278 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+278, 'V', 6896149019, 0
+);
+
+/* INSERT QUERY NO: 279 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+279, 'P', 2526103576, 0
+);
+
+/* INSERT QUERY NO: 280 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+280, 'P', 5439854320, 0
+);
+
+/* INSERT QUERY NO: 281 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+281, 'P', 7942010392, 0
+);
+
+/* INSERT QUERY NO: 282 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+282, 'V', 9903365497, 0
+);
+
+/* INSERT QUERY NO: 283 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+283, 'V', 7190719741, 0
+);
+
+/* INSERT QUERY NO: 284 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+284, 'V', 4968639392, 0
+);
+
+/* INSERT QUERY NO: 285 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+285, 'P', 3847195832, 0
+);
+
+/* INSERT QUERY NO: 286 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+286, 'P', 5383768270, 0
+);
+
+/* INSERT QUERY NO: 287 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+287, 'V', 9129989388, 0
+);
+
+/* INSERT QUERY NO: 288 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+288, 'P', 6606753368, 0
+);
+
+/* INSERT QUERY NO: 289 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+289, 'P', 6611979875, 0
+);
+
+/* INSERT QUERY NO: 290 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+290, 'P', 1111453608, 0
+);
+
+/* INSERT QUERY NO: 291 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+291, 'P', 5686579601, 0
+);
+
+/* INSERT QUERY NO: 292 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+292, 'P', 1763531619, 0
+);
+
+/* INSERT QUERY NO: 293 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+293, 'P', 5447286662, 0
+);
+
+/* INSERT QUERY NO: 294 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+294, 'P', 3608323163, 0
+);
+
+/* INSERT QUERY NO: 295 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+295, 'P', 7468026580, 0
+);
+
+/* INSERT QUERY NO: 296 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+296, 'V', 3837171965, 0
+);
+
+/* INSERT QUERY NO: 297 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+297, 'V', 7879729895, 0
+);
+
+/* INSERT QUERY NO: 298 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+298, 'P', 1542227267, 0
+);
+
+/* INSERT QUERY NO: 299 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+299, 'V', 2416045059, 0
+);
+
+/* INSERT QUERY NO: 300 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+300, 'V', 1322488479, 0
+);
+
+/* INSERT QUERY NO: 301 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+301, 'P', 4417007349, 0
+);
+
+/* INSERT QUERY NO: 302 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+302, 'V', 3913594124, 0
+);
+
+/* INSERT QUERY NO: 303 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+303, 'P', 7961934782, 0
+);
+
+/* INSERT QUERY NO: 304 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+304, 'P', 9013640001, 0
+);
+
+/* INSERT QUERY NO: 305 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+305, 'P', 2217499424, 0
+);
+
+/* INSERT QUERY NO: 306 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+306, 'P', 2157597247, 0
+);
+
+/* INSERT QUERY NO: 307 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+307, 'V', 4893751204, 0
+);
+
+/* INSERT QUERY NO: 308 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+308, 'V', 4702292285, 0
+);
+
+/* INSERT QUERY NO: 309 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+309, 'P', 2987848056, 0
+);
+
+/* INSERT QUERY NO: 310 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+310, 'P', 650436423, 0
+);
+
+/* INSERT QUERY NO: 311 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+311, 'P', 5374887793, 0
+);
+
+/* INSERT QUERY NO: 312 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+312, 'P', 5690712663, 0
+);
+
+/* INSERT QUERY NO: 313 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+313, 'V', 3770653467, 0
+);
+
+/* INSERT QUERY NO: 314 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+314, 'P', 6560917169, 0
+);
+
+/* INSERT QUERY NO: 315 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+315, 'P', 4730093054, 0
+);
+
+/* INSERT QUERY NO: 316 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+316, 'V', 702694584, 0
+);
+
+/* INSERT QUERY NO: 317 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+317, 'V', 1246096250, 0
+);
+
+/* INSERT QUERY NO: 318 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+318, 'V', 8792239870, 0
+);
+
+/* INSERT QUERY NO: 319 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+319, 'P', 5281030892, 0
+);
+
+/* INSERT QUERY NO: 320 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+320, 'V', 3418289320, 0
+);
+
+/* INSERT QUERY NO: 321 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+321, 'P', 6253223151, 0
+);
+
+/* INSERT QUERY NO: 322 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+322, 'P', 9790642296, 0
+);
+
+/* INSERT QUERY NO: 323 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+323, 'P', 3950183205, 0
+);
+
+/* INSERT QUERY NO: 324 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+324, 'P', 4956080425, 0
+);
+
+/* INSERT QUERY NO: 325 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+325, 'V', 2805647653, 0
+);
+
+/* INSERT QUERY NO: 326 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+326, 'V', 8256575263, 0
+);
+
+/* INSERT QUERY NO: 327 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+327, 'P', 73588032, 0
+);
+
+/* INSERT QUERY NO: 328 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+328, 'V', 1863261559, 0
+);
+
+/* INSERT QUERY NO: 329 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+329, 'V', 235830054, 0
+);
+
+/* INSERT QUERY NO: 330 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+330, 'P', 4803963835, 0
+);
+
+/* INSERT QUERY NO: 331 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+331, 'V', 3443395163, 0
+);
+
+/* INSERT QUERY NO: 332 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+332, 'V', 1594741913, 0
+);
+
+/* INSERT QUERY NO: 333 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+333, 'V', 9867600282, 0
+);
+
+/* INSERT QUERY NO: 334 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+334, 'V', 5928223285, 0
+);
+
+/* INSERT QUERY NO: 335 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+335, 'V', 7883902911, 0
+);
+
+/* INSERT QUERY NO: 336 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+336, 'V', 8485424557, 0
+);
+
+/* INSERT QUERY NO: 337 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+337, 'P', 1571267875, 0
+);
+
+/* INSERT QUERY NO: 338 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+338, 'P', 3333916568, 0
+);
+
+/* INSERT QUERY NO: 339 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+339, 'P', 9406883074, 0
+);
+
+/* INSERT QUERY NO: 340 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+340, 'P', 4556953197, 0
+);
+
+/* INSERT QUERY NO: 341 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+341, 'P', 7667376301, 0
+);
+
+/* INSERT QUERY NO: 342 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+342, 'V', 2642922405, 0
+);
+
+/* INSERT QUERY NO: 343 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+343, 'V', 5406783459, 0
+);
+
+/* INSERT QUERY NO: 344 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+344, 'P', 6954630519, 0
+);
+
+/* INSERT QUERY NO: 345 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+345, 'P', 983514976, 0
+);
+
+/* INSERT QUERY NO: 346 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+346, 'V', 133771415, 0
+);
+
+/* INSERT QUERY NO: 347 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+347, 'P', 6721567393, 0
+);
+
+/* INSERT QUERY NO: 348 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+348, 'P', 2028296747, 0
+);
+
+/* INSERT QUERY NO: 349 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+349, 'V', 4756458726, 0
+);
+
+/* INSERT QUERY NO: 350 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+350, 'V', 3329158018, 0
+);
+
+/* INSERT QUERY NO: 351 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+351, 'V', 2697740562, 0
+);
+
+/* INSERT QUERY NO: 352 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+352, 'V', 3086550139, 0
+);
+
+/* INSERT QUERY NO: 353 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+353, 'V', 1791352979, 0
+);
+
+/* INSERT QUERY NO: 354 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+354, 'V', 8411451003, 0
+);
+
+/* INSERT QUERY NO: 355 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+355, 'V', 4337219498, 0
+);
+
+/* INSERT QUERY NO: 356 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+356, 'V', 4333645700, 0
+);
+
+/* INSERT QUERY NO: 357 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+357, 'P', 8618536814, 0
+);
+
+/* INSERT QUERY NO: 358 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+358, 'P', 1337022977, 0
+);
+
+/* INSERT QUERY NO: 359 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+359, 'V', 4593839998, 0
+);
+
+/* INSERT QUERY NO: 360 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+360, 'V', 4208253991, 0
+);
+
+/* INSERT QUERY NO: 361 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+361, 'V', 2913514146, 0
+);
+
+/* INSERT QUERY NO: 362 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+362, 'V', 1066136076, 0
+);
+
+/* INSERT QUERY NO: 363 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+363, 'P', 4545643167, 0
+);
+
+/* INSERT QUERY NO: 364 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+364, 'P', 2362231461, 0
+);
+
+/* INSERT QUERY NO: 365 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+365, 'P', 1707908796, 0
+);
+
+/* INSERT QUERY NO: 366 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+366, 'V', 1633643158, 0
+);
+
+/* INSERT QUERY NO: 367 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+367, 'V', 5061955080, 0
+);
+
+/* INSERT QUERY NO: 368 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+368, 'V', 6738951345, 0
+);
+
+/* INSERT QUERY NO: 369 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+369, 'V', 5008765329, 0
+);
+
+/* INSERT QUERY NO: 370 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+370, 'P', 134555392, 0
+);
+
+/* INSERT QUERY NO: 371 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+371, 'P', 8339799169, 0
+);
+
+/* INSERT QUERY NO: 372 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+372, 'P', 9247863082, 0
+);
+
+/* INSERT QUERY NO: 373 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+373, 'V', 2293565998, 0
+);
+
+/* INSERT QUERY NO: 374 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+374, 'V', 1826860134, 0
+);
+
+/* INSERT QUERY NO: 375 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+375, 'V', 5185784253, 0
+);
+
+/* INSERT QUERY NO: 376 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+376, 'V', 3783632684, 0
+);
+
+/* INSERT QUERY NO: 377 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+377, 'P', 3506069845, 0
+);
+
+/* INSERT QUERY NO: 378 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+378, 'V', 4908703191, 0
+);
+
+/* INSERT QUERY NO: 379 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+379, 'P', 2732206326, 0
+);
+
+/* INSERT QUERY NO: 380 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+380, 'P', 9589040853, 0
+);
+
+/* INSERT QUERY NO: 381 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+381, 'P', 5445733351, 0
+);
+
+/* INSERT QUERY NO: 382 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+382, 'V', 8245568813, 0
+);
+
+/* INSERT QUERY NO: 383 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+383, 'V', 8835551536, 0
+);
+
+/* INSERT QUERY NO: 384 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+384, 'V', 5578497993, 0
+);
+
+/* INSERT QUERY NO: 385 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+385, 'V', 2260588034, 0
+);
+
+/* INSERT QUERY NO: 386 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+386, 'P', 5176589796, 0
+);
+
+/* INSERT QUERY NO: 387 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+387, 'V', 1065950136, 0
+);
+
+/* INSERT QUERY NO: 388 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+388, 'V', 5583280417, 0
+);
+
+/* INSERT QUERY NO: 389 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+389, 'P', 7370302660, 0
+);
+
+/* INSERT QUERY NO: 390 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+390, 'V', 1345093144, 0
+);
+
+/* INSERT QUERY NO: 391 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+391, 'P', 2440268828, 0
+);
+
+/* INSERT QUERY NO: 392 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+392, 'V', 652085938, 0
+);
+
+/* INSERT QUERY NO: 393 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+393, 'P', 8417642919, 0
+);
+
+/* INSERT QUERY NO: 394 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+394, 'P', 420755543, 0
+);
+
+/* INSERT QUERY NO: 395 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+395, 'P', 485868741, 0
+);
+
+/* INSERT QUERY NO: 396 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+396, 'V', 4611133877, 0
+);
+
+/* INSERT QUERY NO: 397 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+397, 'P', 780437381, 0
+);
+
+/* INSERT QUERY NO: 398 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+398, 'P', 9884283648, 0
+);
+
+/* INSERT QUERY NO: 399 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+399, 'P', 6042463101, 0
+);
+
+/* INSERT QUERY NO: 400 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+400, 'P', 9425418357, 0
+);
+
+/* INSERT QUERY NO: 401 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+401, 'P', 7429668437, 0
+);
+
+/* INSERT QUERY NO: 402 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+402, 'P', 907480411, 0
+);
+
+/* INSERT QUERY NO: 403 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+403, 'P', 8664708975, 0
+);
+
+/* INSERT QUERY NO: 404 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+404, 'V', 4314724366, 0
+);
+
+/* INSERT QUERY NO: 405 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+405, 'P', 2954352418, 0
+);
+
+/* INSERT QUERY NO: 406 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+406, 'V', 4716121798, 0
+);
+
+/* INSERT QUERY NO: 407 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+407, 'V', 9351806251, 0
+);
+
+/* INSERT QUERY NO: 408 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+408, 'P', 3281910777, 0
+);
+
+/* INSERT QUERY NO: 409 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+409, 'V', 7261134228, 0
+);
+
+/* INSERT QUERY NO: 410 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+410, 'P', 763344915, 0
+);
+
+/* INSERT QUERY NO: 411 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+411, 'P', 3129305025, 0
+);
+
+/* INSERT QUERY NO: 412 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+412, 'V', 9257192547, 0
+);
+
+/* INSERT QUERY NO: 413 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+413, 'P', 4616422737, 0
+);
+
+/* INSERT QUERY NO: 414 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+414, 'P', 6433136516, 0
+);
+
+/* INSERT QUERY NO: 415 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+415, 'V', 2643050207, 0
+);
+
+/* INSERT QUERY NO: 416 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+416, 'P', 1838414444, 0
+);
+
+/* INSERT QUERY NO: 417 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+417, 'P', 7195640116, 0
+);
+
+/* INSERT QUERY NO: 418 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+418, 'P', 446992348, 0
+);
+
+/* INSERT QUERY NO: 419 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+419, 'P', 6948260160, 0
+);
+
+/* INSERT QUERY NO: 420 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+420, 'P', 9556329587, 0
+);
+
+/* INSERT QUERY NO: 421 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+421, 'P', 4433761451, 0
+);
+
+/* INSERT QUERY NO: 422 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+422, 'V', 3938944307, 0
+);
+
+/* INSERT QUERY NO: 423 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+423, 'P', 3193198242, 0
+);
+
+/* INSERT QUERY NO: 424 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+424, 'P', 6725582877, 0
+);
+
+/* INSERT QUERY NO: 425 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+425, 'V', 3768876470, 0
+);
+
+/* INSERT QUERY NO: 426 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+426, 'V', 2658511795, 0
+);
+
+/* INSERT QUERY NO: 427 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+427, 'P', 6569793640, 0
+);
+
+/* INSERT QUERY NO: 428 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+428, 'V', 3692344600, 0
+);
+
+/* INSERT QUERY NO: 429 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+429, 'V', 9914124321, 0
+);
+
+/* INSERT QUERY NO: 430 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+430, 'V', 3989168509, 0
+);
+
+/* INSERT QUERY NO: 431 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+431, 'V', 6659142401, 0
+);
+
+/* INSERT QUERY NO: 432 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+432, 'P', 3521883604, 0
+);
+
+/* INSERT QUERY NO: 433 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+433, 'V', 8502956825, 0
+);
+
+/* INSERT QUERY NO: 434 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+434, 'V', 6824318043, 0
+);
+
+/* INSERT QUERY NO: 435 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+435, 'P', 5890818562, 0
+);
+
+/* INSERT QUERY NO: 436 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+436, 'P', 6904390344, 0
+);
+
+/* INSERT QUERY NO: 437 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+437, 'P', 2269012151, 0
+);
+
+/* INSERT QUERY NO: 438 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+438, 'V', 3065391651, 0
+);
+
+/* INSERT QUERY NO: 439 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+439, 'P', 5602935940, 0
+);
+
+/* INSERT QUERY NO: 440 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+440, 'P', 7684908006, 0
+);
+
+/* INSERT QUERY NO: 441 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+441, 'P', 4249797260, 0
+);
+
+/* INSERT QUERY NO: 442 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+442, 'V', 7246123598, 0
+);
+
+/* INSERT QUERY NO: 443 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+443, 'P', 4163323686, 0
+);
+
+/* INSERT QUERY NO: 444 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+444, 'P', 335290981, 0
+);
+
+/* INSERT QUERY NO: 445 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+445, 'P', 631563156, 0
+);
+
+/* INSERT QUERY NO: 446 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+446, 'V', 5300629782, 0
+);
+
+/* INSERT QUERY NO: 447 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+447, 'V', 3383699722, 0
+);
+
+/* INSERT QUERY NO: 448 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+448, 'P', 2028462981, 0
+);
+
+/* INSERT QUERY NO: 449 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+449, 'P', 2739054017, 0
+);
+
+/* INSERT QUERY NO: 450 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+450, 'P', 3053722232, 0
+);
+
+/* INSERT QUERY NO: 451 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+451, 'P', 2741431582, 0
+);
+
+/* INSERT QUERY NO: 452 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+452, 'V', 3381351265, 0
+);
+
+/* INSERT QUERY NO: 453 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+453, 'P', 8308947980, 0
+);
+
+/* INSERT QUERY NO: 454 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+454, 'V', 5070188372, 0
+);
+
+/* INSERT QUERY NO: 455 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+455, 'P', 813413885, 0
+);
+
+/* INSERT QUERY NO: 456 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+456, 'P', 6188511569, 0
+);
+
+/* INSERT QUERY NO: 457 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+457, 'V', 1543938396, 0
+);
+
+/* INSERT QUERY NO: 458 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+458, 'P', 6373514404, 0
+);
+
+/* INSERT QUERY NO: 459 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+459, 'P', 5341280415, 0
+);
+
+/* INSERT QUERY NO: 460 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+460, 'V', 8779781128, 0
+);
+
+/* INSERT QUERY NO: 461 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+461, 'V', 6582291610, 0
+);
+
+/* INSERT QUERY NO: 462 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+462, 'P', 7604023681, 0
+);
+
+/* INSERT QUERY NO: 463 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+463, 'P', 2485611610, 0
+);
+
+/* INSERT QUERY NO: 464 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+464, 'V', 5006387270, 0
+);
+
+/* INSERT QUERY NO: 465 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+465, 'P', 2917099879, 0
+);
+
+/* INSERT QUERY NO: 466 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+466, 'V', 8309127138, 0
+);
+
+/* INSERT QUERY NO: 467 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+467, 'V', 7092966108, 0
+);
+
+/* INSERT QUERY NO: 468 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+468, 'P', 9000038154, 0
+);
+
+/* INSERT QUERY NO: 469 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+469, 'V', 1356713211, 0
+);
+
+/* INSERT QUERY NO: 470 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+470, 'P', 1029042160, 0
+);
+
+/* INSERT QUERY NO: 471 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+471, 'V', 7884048302, 0
+);
+
+/* INSERT QUERY NO: 472 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+472, 'P', 1337395412, 0
+);
+
+/* INSERT QUERY NO: 473 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+473, 'P', 5150128481, 0
+);
+
+/* INSERT QUERY NO: 474 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+474, 'P', 5560049506, 0
+);
+
+/* INSERT QUERY NO: 475 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+475, 'V', 4604097143, 0
+);
+
+/* INSERT QUERY NO: 476 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+476, 'P', 3587768919, 0
+);
+
+/* INSERT QUERY NO: 477 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+477, 'P', 2082527700, 0
+);
+
+/* INSERT QUERY NO: 478 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+478, 'P', 8535942459, 0
+);
+
+/* INSERT QUERY NO: 479 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+479, 'P', 7825496507, 0
+);
+
+/* INSERT QUERY NO: 480 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+480, 'V', 587837691, 0
+);
+
+/* INSERT QUERY NO: 481 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+481, 'P', 2216317993, 0
+);
+
+/* INSERT QUERY NO: 482 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+482, 'V', 6874040529, 0
+);
+
+/* INSERT QUERY NO: 483 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+483, 'P', 3449021745, 0
+);
+
+/* INSERT QUERY NO: 484 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+484, 'P', 774918195, 0
+);
+
+/* INSERT QUERY NO: 485 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+485, 'P', 9078513810, 0
+);
+
+/* INSERT QUERY NO: 486 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+486, 'V', 9990423660, 0
+);
+
+/* INSERT QUERY NO: 487 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+487, 'V', 4865650466, 0
+);
+
+/* INSERT QUERY NO: 488 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+488, 'V', 5320156626, 0
+);
+
+/* INSERT QUERY NO: 489 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+489, 'P', 1958470317, 0
+);
+
+/* INSERT QUERY NO: 490 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+490, 'P', 3246041717, 0
+);
+
+/* INSERT QUERY NO: 491 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+491, 'P', 2891192680, 0
+);
+
+/* INSERT QUERY NO: 492 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+492, 'V', 4953893522, 0
+);
+
+/* INSERT QUERY NO: 493 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+493, 'V', 5506126778, 0
+);
+
+/* INSERT QUERY NO: 494 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+494, 'P', 9632999193, 0
+);
+
+/* INSERT QUERY NO: 495 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+495, 'V', 3630154298, 0
+);
+
+/* INSERT QUERY NO: 496 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+496, 'V', 131193546, 0
+);
+
+/* INSERT QUERY NO: 497 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+497, 'P', 3143241039, 0
+);
+
+/* INSERT QUERY NO: 498 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+498, 'V', 6542372091, 0
+);
+
+/* INSERT QUERY NO: 499 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+499, 'V', 2659385955, 0
+);
+
+/* INSERT QUERY NO: 500 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+500, 'V', 5723706179, 0
+);
+
+/* INSERT QUERY NO: 501 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+501, 'V', 770525326, 0
+);
+
+/* INSERT QUERY NO: 502 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+502, 'P', 3525071930, 0
+);
+
+/* INSERT QUERY NO: 503 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+503, 'V', 4211069748, 0
+);
+
+/* INSERT QUERY NO: 504 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+504, 'P', 3575075611, 0
+);
+
+/* INSERT QUERY NO: 505 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+505, 'V', 8290545967, 0
+);
+
+/* INSERT QUERY NO: 506 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+506, 'V', 8951360598, 0
+);
+
+/* INSERT QUERY NO: 507 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+507, 'P', 6701536301, 0
+);
+
+/* INSERT QUERY NO: 508 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+508, 'P', 5354302676, 0
+);
+
+/* INSERT QUERY NO: 509 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+509, 'P', 5592333021, 0
+);
+
+/* INSERT QUERY NO: 510 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+510, 'V', 4059735418, 0
+);
+
+/* INSERT QUERY NO: 511 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+511, 'P', 2090359250, 0
+);
+
+/* INSERT QUERY NO: 512 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+512, 'V', 8328186578, 0
+);
+
+/* INSERT QUERY NO: 513 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+513, 'V', 7145613115, 0
+);
+
+/* INSERT QUERY NO: 514 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+514, 'V', 2279429322, 0
+);
+
+/* INSERT QUERY NO: 515 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+515, 'V', 711789762, 0
+);
+
+/* INSERT QUERY NO: 516 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+516, 'P', 3642910548, 0
+);
+
+/* INSERT QUERY NO: 517 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+517, 'V', 8316105063, 0
+);
+
+/* INSERT QUERY NO: 518 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+518, 'V', 5083243172, 0
+);
+
+/* INSERT QUERY NO: 519 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+519, 'P', 8697205816, 0
+);
+
+/* INSERT QUERY NO: 520 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+520, 'P', 489661580, 0
+);
+
+/* INSERT QUERY NO: 521 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+521, 'P', 3226896490, 0
+);
+
+/* INSERT QUERY NO: 522 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+522, 'P', 7202266555, 0
+);
+
+/* INSERT QUERY NO: 523 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+523, 'V', 4856899406, 0
+);
+
+/* INSERT QUERY NO: 524 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+524, 'P', 6190440436, 0
+);
+
+/* INSERT QUERY NO: 525 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+525, 'V', 13278924, 0
+);
+
+/* INSERT QUERY NO: 526 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+526, 'V', 7291043581, 0
+);
+
+/* INSERT QUERY NO: 527 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+527, 'V', 6081014460, 0
+);
+
+/* INSERT QUERY NO: 528 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+528, 'P', 9235518377, 0
+);
+
+/* INSERT QUERY NO: 529 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+529, 'P', 178746223, 0
+);
+
+/* INSERT QUERY NO: 530 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+530, 'P', 7806324437, 0
+);
+
+/* INSERT QUERY NO: 531 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+531, 'V', 4035630071, 0
+);
+
+/* INSERT QUERY NO: 532 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+532, 'V', 8169316456, 0
+);
+
+/* INSERT QUERY NO: 533 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+533, 'P', 7956362202, 0
+);
+
+/* INSERT QUERY NO: 534 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+534, 'P', 5794049030, 0
+);
+
+/* INSERT QUERY NO: 535 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+535, 'P', 5256961748, 0
+);
+
+/* INSERT QUERY NO: 536 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+536, 'V', 9539690935, 0
+);
+
+/* INSERT QUERY NO: 537 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+537, 'V', 5541094275, 0
+);
+
+/* INSERT QUERY NO: 538 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+538, 'P', 4222061077, 0
+);
+
+/* INSERT QUERY NO: 539 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+539, 'P', 7966336158, 0
+);
+
+/* INSERT QUERY NO: 540 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+540, 'V', 5974897056, 0
+);
+
+/* INSERT QUERY NO: 541 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+541, 'P', 189602996, 0
+);
+
+/* INSERT QUERY NO: 542 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+542, 'V', 6383170023, 0
+);
+
+/* INSERT QUERY NO: 543 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+543, 'V', 5815697745, 0
+);
+
+/* INSERT QUERY NO: 544 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+544, 'V', 3499840871, 0
+);
+
+/* INSERT QUERY NO: 545 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+545, 'P', 1497450659, 0
+);
+
+/* INSERT QUERY NO: 546 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+546, 'V', 8277627173, 0
+);
+
+/* INSERT QUERY NO: 547 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+547, 'V', 7182803658, 0
+);
+
+/* INSERT QUERY NO: 548 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+548, 'P', 954111648, 0
+);
+
+/* INSERT QUERY NO: 549 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+549, 'P', 3243165407, 0
+);
+
+/* INSERT QUERY NO: 550 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+550, 'V', 9543399484, 0
+);
+
+/* INSERT QUERY NO: 551 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+551, 'P', 2286923728, 0
+);
+
+/* INSERT QUERY NO: 552 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+552, 'P', 8058122262, 0
+);
+
+/* INSERT QUERY NO: 553 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+553, 'V', 9043484636, 0
+);
+
+/* INSERT QUERY NO: 554 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+554, 'P', 1233587900, 0
+);
+
+/* INSERT QUERY NO: 555 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+555, 'V', 9931157763, 0
+);
+
+/* INSERT QUERY NO: 556 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+556, 'P', 6246163602, 0
+);
+
+/* INSERT QUERY NO: 557 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+557, 'P', 464786312, 0
+);
+
+/* INSERT QUERY NO: 558 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+558, 'P', 4449803191, 0
+);
+
+/* INSERT QUERY NO: 559 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+559, 'V', 6171680648, 0
+);
+
+/* INSERT QUERY NO: 560 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+560, 'P', 2696199051, 0
+);
+
+/* INSERT QUERY NO: 561 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+561, 'V', 83727388, 0
+);
+
+/* INSERT QUERY NO: 562 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+562, 'P', 2613751436, 0
+);
+
+/* INSERT QUERY NO: 563 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+563, 'P', 3671494778, 0
+);
+
+/* INSERT QUERY NO: 564 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+564, 'V', 9627830437, 0
+);
+
+/* INSERT QUERY NO: 565 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+565, 'V', 7967342127, 0
+);
+
+/* INSERT QUERY NO: 566 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+566, 'P', 2807243126, 0
+);
+
+/* INSERT QUERY NO: 567 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+567, 'P', 9052906254, 0
+);
+
+/* INSERT QUERY NO: 568 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+568, 'P', 2406356019, 0
+);
+
+/* INSERT QUERY NO: 569 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+569, 'V', 5833398215, 0
+);
+
+/* INSERT QUERY NO: 570 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+570, 'V', 2173980653, 0
+);
+
+/* INSERT QUERY NO: 571 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+571, 'P', 7717554038, 0
+);
+
+/* INSERT QUERY NO: 572 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+572, 'V', 3578021261, 0
+);
+
+/* INSERT QUERY NO: 573 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+573, 'P', 2867212553, 0
+);
+
+/* INSERT QUERY NO: 574 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+574, 'P', 3162905486, 0
+);
+
+/* INSERT QUERY NO: 575 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+575, 'P', 1564391558, 0
+);
+
+/* INSERT QUERY NO: 576 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+576, 'P', 1275728766, 0
+);
+
+/* INSERT QUERY NO: 577 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+577, 'V', 7833953482, 0
+);
+
+/* INSERT QUERY NO: 578 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+578, 'P', 4127774290, 0
+);
+
+/* INSERT QUERY NO: 579 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+579, 'P', 6574637791, 0
+);
+
+/* INSERT QUERY NO: 580 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+580, 'P', 5556560714, 0
+);
+
+/* INSERT QUERY NO: 581 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+581, 'P', 6320319011, 0
+);
+
+/* INSERT QUERY NO: 582 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+582, 'V', 4216443370, 0
+);
+
+/* INSERT QUERY NO: 583 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+583, 'P', 4090729998, 0
+);
+
+/* INSERT QUERY NO: 584 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+584, 'V', 1709838620, 0
+);
+
+/* INSERT QUERY NO: 585 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+585, 'V', 3129043276, 0
+);
+
+/* INSERT QUERY NO: 586 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+586, 'P', 7737225617, 0
+);
+
+/* INSERT QUERY NO: 587 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+587, 'P', 8590499189, 0
+);
+
+/* INSERT QUERY NO: 588 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+588, 'P', 9215903852, 0
+);
+
+/* INSERT QUERY NO: 589 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+589, 'V', 6412584285, 0
+);
+
+/* INSERT QUERY NO: 590 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+590, 'V', 8434297183, 0
+);
+
+/* INSERT QUERY NO: 591 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+591, 'V', 1972460625, 0
+);
+
+/* INSERT QUERY NO: 592 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+592, 'V', 4890961984, 0
+);
+
+/* INSERT QUERY NO: 593 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+593, 'P', 8395362501, 0
+);
+
+/* INSERT QUERY NO: 594 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+594, 'P', 7832355182, 0
+);
+
+/* INSERT QUERY NO: 595 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+595, 'P', 9842575799, 0
+);
+
+/* INSERT QUERY NO: 596 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+596, 'V', 9779039163, 0
+);
+
+/* INSERT QUERY NO: 597 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+597, 'P', 2950139981, 0
+);
+
+/* INSERT QUERY NO: 598 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+598, 'V', 3154691359, 0
+);
+
+/* INSERT QUERY NO: 599 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+599, 'V', 3620508984, 0
+);
+
+/* INSERT QUERY NO: 600 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+600, 'P', 2889452867, 0
+);
+
+/* INSERT QUERY NO: 601 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+601, 'V', 1240137605, 0
+);
+
+/* INSERT QUERY NO: 602 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+602, 'V', 6653542149, 0
+);
+
+/* INSERT QUERY NO: 603 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+603, 'V', 7803992137, 0
+);
+
+/* INSERT QUERY NO: 604 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+604, 'V', 5999523427, 0
+);
+
+/* INSERT QUERY NO: 605 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+605, 'V', 9772514281, 0
+);
+
+/* INSERT QUERY NO: 606 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+606, 'V', 2511714620, 0
+);
+
+/* INSERT QUERY NO: 607 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+607, 'P', 5044386758, 0
+);
+
+/* INSERT QUERY NO: 608 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+608, 'V', 5260343999, 0
+);
+
+/* INSERT QUERY NO: 609 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+609, 'P', 5189349268, 0
+);
+
+/* INSERT QUERY NO: 610 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+610, 'P', 4781765769, 0
+);
+
+/* INSERT QUERY NO: 611 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+611, 'P', 5082333224, 0
+);
+
+/* INSERT QUERY NO: 612 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+612, 'P', 2747904520, 0
+);
+
+/* INSERT QUERY NO: 613 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+613, 'V', 5917776059, 0
+);
+
+/* INSERT QUERY NO: 614 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+614, 'V', 3529621404, 0
+);
+
+/* INSERT QUERY NO: 615 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+615, 'V', 7941553732, 0
+);
+
+/* INSERT QUERY NO: 616 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+616, 'V', 7800510956, 0
+);
+
+/* INSERT QUERY NO: 617 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+617, 'V', 2329727976, 0
+);
+
+/* INSERT QUERY NO: 618 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+618, 'P', 1652862587, 0
+);
+
+/* INSERT QUERY NO: 619 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+619, 'V', 3492538886, 0
+);
+
+/* INSERT QUERY NO: 620 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+620, 'V', 3519407183, 0
+);
+
+/* INSERT QUERY NO: 621 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+621, 'V', 6289021427, 0
+);
+
+/* INSERT QUERY NO: 622 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+622, 'P', 1757633960, 0
+);
+
+/* INSERT QUERY NO: 623 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+623, 'V', 3678080421, 0
+);
+
+/* INSERT QUERY NO: 624 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+624, 'V', 5331115284, 0
+);
+
+/* INSERT QUERY NO: 625 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+625, 'P', 1627215522, 0
+);
+
+/* INSERT QUERY NO: 626 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+626, 'P', 1056860839, 0
+);
+
+/* INSERT QUERY NO: 627 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+627, 'V', 7022407177, 0
+);
+
+/* INSERT QUERY NO: 628 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+628, 'P', 4635995062, 0
+);
+
+/* INSERT QUERY NO: 629 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+629, 'V', 2239532513, 0
+);
+
+/* INSERT QUERY NO: 630 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+630, 'V', 1536014273, 0
+);
+
+/* INSERT QUERY NO: 631 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+631, 'V', 8211879190, 0
+);
+
+/* INSERT QUERY NO: 632 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+632, 'V', 6761635063, 0
+);
+
+/* INSERT QUERY NO: 633 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+633, 'P', 3753975354, 0
+);
+
+/* INSERT QUERY NO: 634 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+634, 'V', 6221905702, 0
+);
+
+/* INSERT QUERY NO: 635 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+635, 'P', 9660811225, 0
+);
+
+/* INSERT QUERY NO: 636 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+636, 'P', 4020500258, 0
+);
+
+/* INSERT QUERY NO: 637 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+637, 'V', 9593501487, 0
+);
+
+/* INSERT QUERY NO: 638 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+638, 'P', 2647270910, 0
+);
+
+/* INSERT QUERY NO: 639 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+639, 'P', 4440554210, 0
+);
+
+/* INSERT QUERY NO: 640 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+640, 'P', 6697633298, 0
+);
+
+/* INSERT QUERY NO: 641 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+641, 'P', 4786037915, 0
+);
+
+/* INSERT QUERY NO: 642 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+642, 'P', 5071697912, 0
+);
+
+/* INSERT QUERY NO: 643 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+643, 'V', 9468768155, 0
+);
+
+/* INSERT QUERY NO: 644 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+644, 'P', 9781554339, 0
+);
+
+/* INSERT QUERY NO: 645 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+645, 'V', 4266211716, 0
+);
+
+/* INSERT QUERY NO: 646 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+646, 'P', 4799632582, 0
+);
+
+/* INSERT QUERY NO: 647 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+647, 'P', 8371867352, 0
+);
+
+/* INSERT QUERY NO: 648 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+648, 'V', 8437589118, 0
+);
+
+/* INSERT QUERY NO: 649 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+649, 'P', 1047668572, 0
+);
+
+/* INSERT QUERY NO: 650 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+650, 'V', 7419232725, 0
+);
+
+/* INSERT QUERY NO: 651 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+651, 'P', 8362624191, 0
+);
+
+/* INSERT QUERY NO: 652 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+652, 'V', 7146872645, 0
+);
+
+/* INSERT QUERY NO: 653 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+653, 'P', 6054894366, 0
+);
+
+/* INSERT QUERY NO: 654 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+654, 'P', 873400704, 0
+);
+
+/* INSERT QUERY NO: 655 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+655, 'P', 460971506, 0
+);
+
+/* INSERT QUERY NO: 656 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+656, 'V', 3333630621, 0
+);
+
+/* INSERT QUERY NO: 657 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+657, 'V', 1547253231, 0
+);
+
+/* INSERT QUERY NO: 658 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+658, 'P', 5956478268, 0
+);
+
+/* INSERT QUERY NO: 659 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+659, 'V', 4545299199, 0
+);
+
+/* INSERT QUERY NO: 660 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+660, 'P', 2245276582, 0
+);
+
+/* INSERT QUERY NO: 661 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+661, 'V', 643822526, 0
+);
+
+/* INSERT QUERY NO: 662 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+662, 'V', 3013457023, 0
+);
+
+/* INSERT QUERY NO: 663 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+663, 'V', 8117368153, 0
+);
+
+/* INSERT QUERY NO: 664 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+664, 'P', 7994093566, 0
+);
+
+/* INSERT QUERY NO: 665 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+665, 'V', 8741334892, 0
+);
+
+/* INSERT QUERY NO: 666 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+666, 'P', 8684898613, 0
+);
+
+/* INSERT QUERY NO: 667 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+667, 'V', 3343118966, 0
+);
+
+/* INSERT QUERY NO: 668 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+668, 'P', 4771568596, 0
+);
+
+/* INSERT QUERY NO: 669 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+669, 'V', 6751148836, 0
+);
+
+/* INSERT QUERY NO: 670 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+670, 'P', 1291652132, 0
+);
+
+/* INSERT QUERY NO: 671 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+671, 'V', 2811074619, 0
+);
+
+/* INSERT QUERY NO: 672 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+672, 'P', 990599825, 0
+);
+
+/* INSERT QUERY NO: 673 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+673, 'V', 1020536543, 0
+);
+
+/* INSERT QUERY NO: 674 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+674, 'P', 4254450168, 0
+);
+
+/* INSERT QUERY NO: 675 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+675, 'P', 4624182340, 0
+);
+
+/* INSERT QUERY NO: 676 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+676, 'P', 9286919476, 0
+);
+
+/* INSERT QUERY NO: 677 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+677, 'V', 7312556493, 0
+);
+
+/* INSERT QUERY NO: 678 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+678, 'V', 3668642079, 0
+);
+
+/* INSERT QUERY NO: 679 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+679, 'V', 5779706085, 0
+);
+
+/* INSERT QUERY NO: 680 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+680, 'P', 2916255192, 0
+);
+
+/* INSERT QUERY NO: 681 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+681, 'V', 6974970978, 0
+);
+
+/* INSERT QUERY NO: 682 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+682, 'P', 8961653768, 0
+);
+
+/* INSERT QUERY NO: 683 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+683, 'V', 2200337779, 0
+);
+
+/* INSERT QUERY NO: 684 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+684, 'P', 3646429232, 0
+);
+
+/* INSERT QUERY NO: 685 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+685, 'V', 8981729743, 0
+);
+
+/* INSERT QUERY NO: 686 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+686, 'P', 6212923159, 0
+);
+
+/* INSERT QUERY NO: 687 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+687, 'P', 6366751919, 0
+);
+
+/* INSERT QUERY NO: 688 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+688, 'V', 5275481527, 0
+);
+
+/* INSERT QUERY NO: 689 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+689, 'V', 9597960206, 0
+);
+
+/* INSERT QUERY NO: 690 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+690, 'P', 8997476041, 0
+);
+
+/* INSERT QUERY NO: 691 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+691, 'P', 945670893, 0
+);
+
+/* INSERT QUERY NO: 692 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+692, 'P', 708470858, 0
+);
+
+/* INSERT QUERY NO: 693 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+693, 'P', 707022428, 0
+);
+
+/* INSERT QUERY NO: 694 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+694, 'V', 7279927459, 0
+);
+
+/* INSERT QUERY NO: 695 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+695, 'V', 7395579062, 0
+);
+
+/* INSERT QUERY NO: 696 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+696, 'P', 2113422689, 0
+);
+
+/* INSERT QUERY NO: 697 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+697, 'P', 8485137736, 0
+);
+
+/* INSERT QUERY NO: 698 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+698, 'V', 7405770282, 0
+);
+
+/* INSERT QUERY NO: 699 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+699, 'V', 7670294930, 0
+);
+
+/* INSERT QUERY NO: 700 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+700, 'P', 6687945467, 0
+);
+
+/* INSERT QUERY NO: 701 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+701, 'P', 9947656705, 0
+);
+
+/* INSERT QUERY NO: 702 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+702, 'P', 5143046343, 0
+);
+
+/* INSERT QUERY NO: 703 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+703, 'V', 7321842495, 0
+);
+
+/* INSERT QUERY NO: 704 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+704, 'V', 4214894634, 0
+);
+
+/* INSERT QUERY NO: 705 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+705, 'V', 4286593207, 0
+);
+
+/* INSERT QUERY NO: 706 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+706, 'P', 2918117250, 0
+);
+
+/* INSERT QUERY NO: 707 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+707, 'P', 8400073355, 0
+);
+
+/* INSERT QUERY NO: 708 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+708, 'V', 26290197, 0
+);
+
+/* INSERT QUERY NO: 709 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+709, 'V', 8507509193, 0
+);
+
+/* INSERT QUERY NO: 710 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+710, 'P', 8298798848, 0
+);
+
+/* INSERT QUERY NO: 711 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+711, 'V', 7221208581, 0
+);
+
+/* INSERT QUERY NO: 712 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+712, 'V', 4192889420, 0
+);
+
+/* INSERT QUERY NO: 713 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+713, 'V', 4297863464, 0
+);
+
+/* INSERT QUERY NO: 714 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+714, 'V', 3210216983, 0
+);
+
+/* INSERT QUERY NO: 715 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+715, 'V', 2217415859, 0
+);
+
+/* INSERT QUERY NO: 716 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+716, 'V', 4784998489, 0
+);
+
+/* INSERT QUERY NO: 717 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+717, 'V', 9018345148, 0
+);
+
+/* INSERT QUERY NO: 718 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+718, 'P', 7150811728, 0
+);
+
+/* INSERT QUERY NO: 719 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+719, 'V', 4494317802, 0
+);
+
+/* INSERT QUERY NO: 720 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+720, 'P', 8339114174, 0
+);
+
+/* INSERT QUERY NO: 721 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+721, 'P', 6801513982, 0
+);
+
+/* INSERT QUERY NO: 722 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+722, 'V', 7348436757, 0
+);
+
+/* INSERT QUERY NO: 723 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+723, 'P', 5842919575, 0
+);
+
+/* INSERT QUERY NO: 724 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+724, 'V', 681990651, 0
+);
+
+/* INSERT QUERY NO: 725 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+725, 'P', 6193764267, 0
+);
+
+/* INSERT QUERY NO: 726 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+726, 'V', 7227362175, 0
+);
+
+/* INSERT QUERY NO: 727 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+727, 'V', 7238745690, 0
+);
+
+/* INSERT QUERY NO: 728 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+728, 'V', 6835279, 0
+);
+
+/* INSERT QUERY NO: 729 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+729, 'P', 3497200158, 0
+);
+
+/* INSERT QUERY NO: 730 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+730, 'V', 2137441608, 0
+);
+
+/* INSERT QUERY NO: 731 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+731, 'V', 8832051060, 0
+);
+
+/* INSERT QUERY NO: 732 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+732, 'V', 1666931438, 0
+);
+
+/* INSERT QUERY NO: 733 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+733, 'V', 2287683658, 0
+);
+
+/* INSERT QUERY NO: 734 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+734, 'V', 6131529639, 0
+);
+
+/* INSERT QUERY NO: 735 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+735, 'P', 1968727620, 0
+);
+
+/* INSERT QUERY NO: 736 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+736, 'V', 2967561533, 0
+);
+
+/* INSERT QUERY NO: 737 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+737, 'V', 3513896158, 0
+);
+
+/* INSERT QUERY NO: 738 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+738, 'P', 7731168514, 0
+);
+
+/* INSERT QUERY NO: 739 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+739, 'P', 8786155695, 0
+);
+
+/* INSERT QUERY NO: 740 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+740, 'V', 1590934245, 0
+);
+
+/* INSERT QUERY NO: 741 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+741, 'V', 4645805940, 0
+);
+
+/* INSERT QUERY NO: 742 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+742, 'P', 3312907349, 0
+);
+
+/* INSERT QUERY NO: 743 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+743, 'P', 5751143345, 0
+);
+
+/* INSERT QUERY NO: 744 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+744, 'V', 8499217583, 0
+);
+
+/* INSERT QUERY NO: 745 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+745, 'V', 6430740846, 0
+);
+
+/* INSERT QUERY NO: 746 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+746, 'P', 3299335510, 0
+);
+
+/* INSERT QUERY NO: 747 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+747, 'V', 7489935245, 0
+);
+
+/* INSERT QUERY NO: 748 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+748, 'P', 8160121865, 0
+);
+
+/* INSERT QUERY NO: 749 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+749, 'V', 7220750226, 0
+);
+
+/* INSERT QUERY NO: 750 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+750, 'V', 9129295939, 0
+);
+
+/* INSERT QUERY NO: 751 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+751, 'V', 268367515, 0
+);
+
+/* INSERT QUERY NO: 752 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+752, 'P', 9820249988, 0
+);
+
+/* INSERT QUERY NO: 753 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+753, 'V', 1537636081, 0
+);
+
+/* INSERT QUERY NO: 754 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+754, 'P', 242348696, 0
+);
+
+/* INSERT QUERY NO: 755 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+755, 'V', 7460310697, 0
+);
+
+/* INSERT QUERY NO: 756 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+756, 'P', 3786795991, 0
+);
+
+/* INSERT QUERY NO: 757 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+757, 'P', 9067311146, 0
+);
+
+/* INSERT QUERY NO: 758 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+758, 'P', 7181093479, 0
+);
+
+/* INSERT QUERY NO: 759 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+759, 'P', 591510235, 0
+);
+
+/* INSERT QUERY NO: 760 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+760, 'P', 3126276938, 0
+);
+
+/* INSERT QUERY NO: 761 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+761, 'V', 2646481586, 0
+);
+
+/* INSERT QUERY NO: 762 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+762, 'P', 5829424223, 0
+);
+
+/* INSERT QUERY NO: 763 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+763, 'P', 8996516481, 0
+);
+
+/* INSERT QUERY NO: 764 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+764, 'P', 2119150168, 0
+);
+
+/* INSERT QUERY NO: 765 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+765, 'P', 4591331210, 0
+);
+
+/* INSERT QUERY NO: 766 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+766, 'V', 1378599888, 0
+);
+
+/* INSERT QUERY NO: 767 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+767, 'V', 67204597, 0
+);
+
+/* INSERT QUERY NO: 768 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+768, 'V', 3382657945, 0
+);
+
+/* INSERT QUERY NO: 769 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+769, 'P', 1935137697, 0
+);
+
+/* INSERT QUERY NO: 770 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+770, 'P', 9470313666, 0
+);
+
+/* INSERT QUERY NO: 771 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+771, 'P', 4815516812, 0
+);
+
+/* INSERT QUERY NO: 772 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+772, 'V', 3743621312, 0
+);
+
+/* INSERT QUERY NO: 773 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+773, 'V', 5704154387, 0
+);
+
+/* INSERT QUERY NO: 774 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+774, 'V', 9928378797, 0
+);
+
+/* INSERT QUERY NO: 775 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+775, 'P', 3045926428, 0
+);
+
+/* INSERT QUERY NO: 776 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+776, 'P', 8507710972, 0
+);
+
+/* INSERT QUERY NO: 777 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+777, 'P', 6967563033, 0
+);
+
+/* INSERT QUERY NO: 778 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+778, 'V', 2051874867, 0
+);
+
+/* INSERT QUERY NO: 779 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+779, 'V', 6951013446, 0
+);
+
+/* INSERT QUERY NO: 780 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+780, 'P', 287568504, 0
+);
+
+/* INSERT QUERY NO: 781 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+781, 'P', 8860608635, 0
+);
+
+/* INSERT QUERY NO: 782 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+782, 'P', 8351121495, 0
+);
+
+/* INSERT QUERY NO: 783 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+783, 'V', 1580932797, 0
+);
+
+/* INSERT QUERY NO: 784 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+784, 'V', 7776805734, 0
+);
+
+/* INSERT QUERY NO: 785 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+785, 'P', 2618938275, 0
+);
+
+/* INSERT QUERY NO: 786 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+786, 'P', 5734119318, 0
+);
+
+/* INSERT QUERY NO: 787 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+787, 'V', 7702067683, 0
+);
+
+/* INSERT QUERY NO: 788 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+788, 'V', 7100036356, 0
+);
+
+/* INSERT QUERY NO: 789 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+789, 'V', 1892335409, 0
+);
+
+/* INSERT QUERY NO: 790 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+790, 'P', 2883568812, 0
+);
+
+/* INSERT QUERY NO: 791 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+791, 'V', 4320105184, 0
+);
+
+/* INSERT QUERY NO: 792 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+792, 'V', 856067342, 0
+);
+
+/* INSERT QUERY NO: 793 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+793, 'V', 9482049403, 0
+);
+
+/* INSERT QUERY NO: 794 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+794, 'P', 6983417747, 0
+);
+
+/* INSERT QUERY NO: 795 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+795, 'P', 6867138004, 0
+);
+
+/* INSERT QUERY NO: 796 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+796, 'P', 5409739418, 0
+);
+
+/* INSERT QUERY NO: 797 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+797, 'V', 406212619, 0
+);
+
+/* INSERT QUERY NO: 798 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+798, 'P', 6803127966, 0
+);
+
+/* INSERT QUERY NO: 799 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+799, 'P', 5770365617, 0
+);
+
+/* INSERT QUERY NO: 800 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+800, 'P', 155035339, 0
+);
+
+/* INSERT QUERY NO: 801 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+801, 'V', 7194507587, 0
+);
+
+/* INSERT QUERY NO: 802 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+802, 'P', 6875614839, 0
+);
+
+/* INSERT QUERY NO: 803 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+803, 'V', 8368479509, 0
+);
+
+/* INSERT QUERY NO: 804 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+804, 'V', 1187577294, 0
+);
+
+/* INSERT QUERY NO: 805 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+805, 'V', 3033142915, 0
+);
+
+/* INSERT QUERY NO: 806 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+806, 'P', 9364925386, 0
+);
+
+/* INSERT QUERY NO: 807 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+807, 'V', 8635302788, 0
+);
+
+/* INSERT QUERY NO: 808 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+808, 'P', 2193466920, 0
+);
+
+/* INSERT QUERY NO: 809 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+809, 'V', 7991063712, 0
+);
+
+/* INSERT QUERY NO: 810 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+810, 'P', 7152283265, 0
+);
+
+/* INSERT QUERY NO: 811 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+811, 'V', 4450033515, 0
+);
+
+/* INSERT QUERY NO: 812 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+812, 'V', 2592437126, 0
+);
+
+/* INSERT QUERY NO: 813 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+813, 'V', 6369582093, 0
+);
+
+/* INSERT QUERY NO: 814 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+814, 'P', 1867929910, 0
+);
+
+/* INSERT QUERY NO: 815 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+815, 'V', 7141090983, 0
+);
+
+/* INSERT QUERY NO: 816 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+816, 'V', 5856787587, 0
+);
+
+/* INSERT QUERY NO: 817 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+817, 'V', 2495562523, 0
+);
+
+/* INSERT QUERY NO: 818 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+818, 'P', 7493459436, 0
+);
+
+/* INSERT QUERY NO: 819 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+819, 'V', 8582216866, 0
+);
+
+/* INSERT QUERY NO: 820 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+820, 'V', 1576600076, 0
+);
+
+/* INSERT QUERY NO: 821 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+821, 'P', 3391840455, 0
+);
+
+/* INSERT QUERY NO: 822 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+822, 'P', 4901099264, 0
+);
+
+/* INSERT QUERY NO: 823 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+823, 'V', 8483017385, 0
+);
+
+/* INSERT QUERY NO: 824 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+824, 'V', 2310201359, 0
+);
+
+/* INSERT QUERY NO: 825 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+825, 'V', 8577700089, 0
+);
+
+/* INSERT QUERY NO: 826 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+826, 'P', 8358837674, 0
+);
+
+/* INSERT QUERY NO: 827 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+827, 'P', 351404597, 0
+);
+
+/* INSERT QUERY NO: 828 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+828, 'V', 1158648871, 0
+);
+
+/* INSERT QUERY NO: 829 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+829, 'P', 1681511908, 0
+);
+
+/* INSERT QUERY NO: 830 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+830, 'V', 192947575, 0
+);
+
+/* INSERT QUERY NO: 831 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+831, 'P', 7544784304, 0
+);
+
+/* INSERT QUERY NO: 832 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+832, 'P', 9863358169, 0
+);
+
+/* INSERT QUERY NO: 833 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+833, 'V', 2266809091, 0
+);
+
+/* INSERT QUERY NO: 834 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+834, 'V', 9503802059, 0
+);
+
+/* INSERT QUERY NO: 835 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+835, 'V', 3638923207, 0
+);
+
+/* INSERT QUERY NO: 836 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+836, 'P', 8926124304, 0
+);
+
+/* INSERT QUERY NO: 837 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+837, 'P', 460106279, 0
+);
+
+/* INSERT QUERY NO: 838 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+838, 'P', 704017784, 0
+);
+
+/* INSERT QUERY NO: 839 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+839, 'V', 3450297651, 0
+);
+
+/* INSERT QUERY NO: 840 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+840, 'P', 4814270224, 0
+);
+
+/* INSERT QUERY NO: 841 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+841, 'V', 8673504368, 0
+);
+
+/* INSERT QUERY NO: 842 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+842, 'V', 4193588289, 0
+);
+
+/* INSERT QUERY NO: 843 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+843, 'V', 2901508677, 0
+);
+
+/* INSERT QUERY NO: 844 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+844, 'P', 6745513048, 0
+);
+
+/* INSERT QUERY NO: 845 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+845, 'V', 8893880806, 0
+);
+
+/* INSERT QUERY NO: 846 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+846, 'V', 9489738638, 0
+);
+
+/* INSERT QUERY NO: 847 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+847, 'P', 1583546987, 0
+);
+
+/* INSERT QUERY NO: 848 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+848, 'V', 6467350952, 0
+);
+
+/* INSERT QUERY NO: 849 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+849, 'P', 3366594217, 0
+);
+
+/* INSERT QUERY NO: 850 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+850, 'V', 4727120275, 0
+);
+
+/* INSERT QUERY NO: 851 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+851, 'P', 5033102362, 0
+);
+
+/* INSERT QUERY NO: 852 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+852, 'V', 9236485685, 0
+);
+
+/* INSERT QUERY NO: 853 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+853, 'P', 7626711815, 0
+);
+
+/* INSERT QUERY NO: 854 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+854, 'V', 5207959018, 0
+);
+
+/* INSERT QUERY NO: 855 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+855, 'V', 6128106269, 0
+);
+
+/* INSERT QUERY NO: 856 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+856, 'P', 5379019382, 0
+);
+
+/* INSERT QUERY NO: 857 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+857, 'P', 8321800041, 0
+);
+
+/* INSERT QUERY NO: 858 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+858, 'V', 701287535, 0
+);
+
+/* INSERT QUERY NO: 859 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+859, 'P', 722676409, 0
+);
+
+/* INSERT QUERY NO: 860 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+860, 'V', 27639304, 0
+);
+
+/* INSERT QUERY NO: 861 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+861, 'P', 2277622001, 0
+);
+
+/* INSERT QUERY NO: 862 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+862, 'P', 7580039052, 0
+);
+
+/* INSERT QUERY NO: 863 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+863, 'V', 9599881869, 0
+);
+
+/* INSERT QUERY NO: 864 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+864, 'V', 8555947855, 0
+);
+
+/* INSERT QUERY NO: 865 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+865, 'V', 6530738541, 0
+);
+
+/* INSERT QUERY NO: 866 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+866, 'V', 4635652351, 0
+);
+
+/* INSERT QUERY NO: 867 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+867, 'V', 3282529376, 0
+);
+
+/* INSERT QUERY NO: 868 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+868, 'P', 1197453202, 0
+);
+
+/* INSERT QUERY NO: 869 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+869, 'V', 5813773606, 0
+);
+
+/* INSERT QUERY NO: 870 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+870, 'P', 608998052, 0
+);
+
+/* INSERT QUERY NO: 871 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+871, 'V', 8534104476, 0
+);
+
+/* INSERT QUERY NO: 872 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+872, 'P', 3275078461, 0
+);
+
+/* INSERT QUERY NO: 873 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+873, 'P', 8296046318, 0
+);
+
+/* INSERT QUERY NO: 874 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+874, 'V', 1048082407, 0
+);
+
+/* INSERT QUERY NO: 875 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+875, 'V', 2624377395, 0
+);
+
+/* INSERT QUERY NO: 876 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+876, 'P', 2156040982, 0
+);
+
+/* INSERT QUERY NO: 877 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+877, 'V', 311369294, 0
+);
+
+/* INSERT QUERY NO: 878 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+878, 'P', 5753823521, 0
+);
+
+/* INSERT QUERY NO: 879 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+879, 'P', 4822679683, 0
+);
+
+/* INSERT QUERY NO: 880 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+880, 'P', 8783925414, 0
+);
+
+/* INSERT QUERY NO: 881 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+881, 'V', 76636836, 0
+);
+
+/* INSERT QUERY NO: 882 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+882, 'V', 2484454821, 0
+);
+
+/* INSERT QUERY NO: 883 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+883, 'P', 2725350166, 0
+);
+
+/* INSERT QUERY NO: 884 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+884, 'V', 7848351351, 0
+);
+
+/* INSERT QUERY NO: 885 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+885, 'V', 6883856854, 0
+);
+
+/* INSERT QUERY NO: 886 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+886, 'P', 1179039521, 0
+);
+
+/* INSERT QUERY NO: 887 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+887, 'V', 3646301023, 0
+);
+
+/* INSERT QUERY NO: 888 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+888, 'V', 809592614, 0
+);
+
+/* INSERT QUERY NO: 889 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+889, 'V', 6634363730, 0
+);
+
+/* INSERT QUERY NO: 890 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+890, 'V', 5105768515, 0
+);
+
+/* INSERT QUERY NO: 891 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+891, 'V', 4417036896, 0
+);
+
+/* INSERT QUERY NO: 892 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+892, 'V', 3423172223, 0
+);
+
+/* INSERT QUERY NO: 893 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+893, 'V', 8743578683, 0
+);
+
+/* INSERT QUERY NO: 894 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+894, 'V', 7738691352, 0
+);
+
+/* INSERT QUERY NO: 895 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+895, 'P', 4710436088, 0
+);
+
+/* INSERT QUERY NO: 896 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+896, 'V', 1853610291, 0
+);
+
+/* INSERT QUERY NO: 897 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+897, 'P', 6004564389, 0
+);
+
+/* INSERT QUERY NO: 898 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+898, 'V', 9123473738, 0
+);
+
+/* INSERT QUERY NO: 899 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+899, 'P', 5811764391, 0
+);
+
+/* INSERT QUERY NO: 900 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+900, 'V', 2474691472, 0
+);
+
+/* INSERT QUERY NO: 901 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+901, 'P', 8492334495, 0
+);
+
+/* INSERT QUERY NO: 902 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+902, 'V', 8512354283, 0
+);
+
+/* INSERT QUERY NO: 903 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+903, 'P', 9296306965, 0
+);
+
+/* INSERT QUERY NO: 904 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+904, 'P', 4496205319, 0
+);
+
+/* INSERT QUERY NO: 905 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+905, 'P', 4197452810, 0
+);
+
+/* INSERT QUERY NO: 906 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+906, 'P', 3485351547, 0
+);
+
+/* INSERT QUERY NO: 907 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+907, 'V', 8205683913, 0
+);
+
+/* INSERT QUERY NO: 908 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+908, 'V', 5459417309, 0
+);
+
+/* INSERT QUERY NO: 909 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+909, 'P', 4747986340, 0
+);
+
+/* INSERT QUERY NO: 910 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+910, 'V', 2875511262, 0
+);
+
+/* INSERT QUERY NO: 911 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+911, 'P', 5657925009, 0
+);
+
+/* INSERT QUERY NO: 912 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+912, 'P', 9102708450, 0
+);
+
+/* INSERT QUERY NO: 913 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+913, 'V', 442129351, 0
+);
+
+/* INSERT QUERY NO: 914 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+914, 'V', 9693651073, 0
+);
+
+/* INSERT QUERY NO: 915 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+915, 'P', 8670038900, 0
+);
+
+/* INSERT QUERY NO: 916 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+916, 'P', 7589153516, 0
+);
+
+/* INSERT QUERY NO: 917 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+917, 'V', 7659573586, 0
+);
+
+/* INSERT QUERY NO: 918 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+918, 'V', 2182012346, 0
+);
+
+/* INSERT QUERY NO: 919 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+919, 'V', 374814473, 0
+);
+
+/* INSERT QUERY NO: 920 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+920, 'V', 4636795881, 0
+);
+
+/* INSERT QUERY NO: 921 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+921, 'V', 3655313640, 0
+);
+
+/* INSERT QUERY NO: 922 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+922, 'P', 3632844895, 0
+);
+
+/* INSERT QUERY NO: 923 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+923, 'P', 8916122562, 0
+);
+
+/* INSERT QUERY NO: 924 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+924, 'V', 7295144625, 0
+);
+
+/* INSERT QUERY NO: 925 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+925, 'V', 6205197758, 0
+);
+
+/* INSERT QUERY NO: 926 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+926, 'P', 9697262845, 0
+);
+
+/* INSERT QUERY NO: 927 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+927, 'V', 5484453143, 0
+);
+
+/* INSERT QUERY NO: 928 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+928, 'P', 849829143, 0
+);
+
+/* INSERT QUERY NO: 929 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+929, 'V', 7421947914, 0
+);
+
+/* INSERT QUERY NO: 930 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+930, 'V', 2741650942, 0
+);
+
+/* INSERT QUERY NO: 931 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+931, 'V', 3203066114, 0
+);
+
+/* INSERT QUERY NO: 932 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+932, 'P', 6308934488, 0
+);
+
+/* INSERT QUERY NO: 933 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+933, 'P', 7684805428, 0
+);
+
+/* INSERT QUERY NO: 934 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+934, 'V', 4411510960, 0
+);
+
+/* INSERT QUERY NO: 935 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+935, 'V', 1952949262, 0
+);
+
+/* INSERT QUERY NO: 936 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+936, 'V', 6186765873, 0
+);
+
+/* INSERT QUERY NO: 937 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+937, 'P', 2923913825, 0
+);
+
+/* INSERT QUERY NO: 938 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+938, 'V', 2584029707, 0
+);
+
+/* INSERT QUERY NO: 939 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+939, 'V', 8440362951, 0
+);
+
+/* INSERT QUERY NO: 940 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+940, 'P', 2100736345, 0
+);
+
+/* INSERT QUERY NO: 941 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+941, 'P', 9468462102, 0
+);
+
+/* INSERT QUERY NO: 942 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+942, 'P', 7787845848, 0
+);
+
+/* INSERT QUERY NO: 943 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+943, 'P', 801499836, 0
+);
+
+/* INSERT QUERY NO: 944 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+944, 'P', 8400727894, 0
+);
+
+/* INSERT QUERY NO: 945 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+945, 'V', 9840989421, 0
+);
+
+/* INSERT QUERY NO: 946 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+946, 'V', 1399874896, 0
+);
+
+/* INSERT QUERY NO: 947 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+947, 'P', 8990452511, 0
+);
+
+/* INSERT QUERY NO: 948 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+948, 'P', 7964022555, 0
+);
+
+/* INSERT QUERY NO: 949 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+949, 'P', 3614795748, 0
+);
+
+/* INSERT QUERY NO: 950 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+950, 'V', 4604634327, 0
+);
+
+/* INSERT QUERY NO: 951 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+951, 'V', 3074903805, 0
+);
+
+/* INSERT QUERY NO: 952 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+952, 'P', 1886539766, 0
+);
+
+/* INSERT QUERY NO: 953 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+953, 'V', 8269887765, 0
+);
+
+/* INSERT QUERY NO: 954 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+954, 'V', 8825122101, 0
+);
+
+/* INSERT QUERY NO: 955 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+955, 'P', 3616875161, 0
+);
+
+/* INSERT QUERY NO: 956 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+956, 'P', 9006452645, 0
+);
+
+/* INSERT QUERY NO: 957 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+957, 'V', 3897706075, 0
+);
+
+/* INSERT QUERY NO: 958 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+958, 'V', 968963188, 0
+);
+
+/* INSERT QUERY NO: 959 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+959, 'P', 8374340096, 0
+);
+
+/* INSERT QUERY NO: 960 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+960, 'P', 4007521069, 0
+);
+
+/* INSERT QUERY NO: 961 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+961, 'V', 2058151445, 0
+);
+
+/* INSERT QUERY NO: 962 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+962, 'P', 1250263824, 0
+);
+
+/* INSERT QUERY NO: 963 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+963, 'V', 7538879668, 0
+);
+
+/* INSERT QUERY NO: 964 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+964, 'P', 318957523, 0
+);
+
+/* INSERT QUERY NO: 965 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+965, 'V', 1417976233, 0
+);
+
+/* INSERT QUERY NO: 966 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+966, 'V', 4028509491, 0
+);
+
+/* INSERT QUERY NO: 967 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+967, 'P', 4230108796, 0
+);
+
+/* INSERT QUERY NO: 968 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+968, 'V', 1600579167, 0
+);
+
+/* INSERT QUERY NO: 969 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+969, 'V', 350584370, 0
+);
+
+/* INSERT QUERY NO: 970 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+970, 'P', 4311642180, 0
+);
+
+/* INSERT QUERY NO: 971 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+971, 'V', 4552717111, 0
+);
+
+/* INSERT QUERY NO: 972 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+972, 'V', 6547136159, 0
+);
+
+/* INSERT QUERY NO: 973 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+973, 'P', 6600222654, 0
+);
+
+/* INSERT QUERY NO: 974 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+974, 'V', 3028452189, 0
+);
+
+/* INSERT QUERY NO: 975 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+975, 'P', 9190995392, 0
+);
+
+/* INSERT QUERY NO: 976 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+976, 'P', 9821148832, 0
+);
+
+/* INSERT QUERY NO: 977 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+977, 'P', 8878274267, 0
+);
+
+/* INSERT QUERY NO: 978 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+978, 'P', 1193779995, 0
+);
+
+/* INSERT QUERY NO: 979 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+979, 'V', 4893217534, 0
+);
+
+/* INSERT QUERY NO: 980 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+980, 'P', 4219393951, 0
+);
+
+/* INSERT QUERY NO: 981 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+981, 'P', 9704957513, 0
+);
+
+/* INSERT QUERY NO: 982 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+982, 'P', 2141264162, 0
+);
+
+/* INSERT QUERY NO: 983 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+983, 'V', 6156150129, 0
+);
+
+/* INSERT QUERY NO: 984 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+984, 'P', 6867403727, 0
+);
+
+/* INSERT QUERY NO: 985 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+985, 'V', 7061855576, 0
+);
+
+/* INSERT QUERY NO: 986 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+986, 'P', 833356321, 0
+);
+
+/* INSERT QUERY NO: 987 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+987, 'P', 8174142266, 0
+);
+
+/* INSERT QUERY NO: 988 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+988, 'P', 5013817366, 0
+);
+
+/* INSERT QUERY NO: 989 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+989, 'V', 3433321604, 0
+);
+
+/* INSERT QUERY NO: 990 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+990, 'P', 2160190101, 0
+);
+
+/* INSERT QUERY NO: 991 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+991, 'P', 5885266247, 0
+);
+
+/* INSERT QUERY NO: 992 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+992, 'P', 8489387680, 0
+);
+
+/* INSERT QUERY NO: 993 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+993, 'P', 944109764, 0
+);
+
+/* INSERT QUERY NO: 994 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+994, 'V', 303546611, 0
+);
+
+/* INSERT QUERY NO: 995 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+995, 'P', 6887645416, 0
+);
+
+/* INSERT QUERY NO: 996 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+996, 'V', 9248944450, 0
+);
+
+/* INSERT QUERY NO: 997 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+997, 'P', 7209348190, 0
+);
+
+/* INSERT QUERY NO: 998 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+998, 'V', 3362795188, 0
+);
+
+/* INSERT QUERY NO: 999 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+999, 'V', 6254757125, 0
+);
+
+/* INSERT QUERY NO: 1000 */
+INSERT INTO Traspasos(numero, contrato, jugador, fff)
+VALUES
+(
+1000, 'V', 4504390736, 0
+);

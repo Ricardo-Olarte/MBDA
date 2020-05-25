@@ -1,0 +1,1749 @@
+﻿/* INSERT QUERY NO: 1 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+72, 934353344, '', 0
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+689, 3137582245, '2160337803', 0
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+156, 3256926452, '', 0
+);
+
+/* INSERT QUERY NO: 4 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+890, 8358198698, '8121547016', 0
+);
+
+/* INSERT QUERY NO: 5 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+832, 3325015913, '2304547109', 0
+);
+
+/* INSERT QUERY NO: 6 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+405, 4786689726, '892001453', 0
+);
+
+/* INSERT QUERY NO: 7 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+445, 6541385106, '6338058104', 0
+);
+
+/* INSERT QUERY NO: 8 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+358, 1656562383, '8056297871', 0
+);
+
+/* INSERT QUERY NO: 9 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+346, 6169727152, '3839693012', 0
+);
+
+/* INSERT QUERY NO: 10 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+12, 494285346, '9482198999', 0
+);
+
+/* INSERT QUERY NO: 11 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+904, 4906485243, '', 0
+);
+
+/* INSERT QUERY NO: 12 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+955, 503409219, '', 0
+);
+
+/* INSERT QUERY NO: 13 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+432, 30189357, '', 0
+);
+
+/* INSERT QUERY NO: 14 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+784, 2044188031, '', 0
+);
+
+/* INSERT QUERY NO: 15 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+382, 9876307649, '1256324515', 0
+);
+
+/* INSERT QUERY NO: 16 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+770, 5120544509, '9610087639', 0
+);
+
+/* INSERT QUERY NO: 17 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+734, 4005008674, '9417290517', 0
+);
+
+/* INSERT QUERY NO: 18 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+469, 748154620, '6340412661', 0
+);
+
+/* INSERT QUERY NO: 19 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+449, 1855030470, '6491837734', 0
+);
+
+/* INSERT QUERY NO: 20 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+700, 3267742072, '4488884717', 0
+);
+
+/* INSERT QUERY NO: 21 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+481, 3605134246, '3745586417', 0
+);
+
+/* INSERT QUERY NO: 22 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+682, 2264540192, '2996355431', 0
+);
+
+/* INSERT QUERY NO: 23 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+752, 5845013399, '6902091242', 0
+);
+
+/* INSERT QUERY NO: 24 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+731, 4221110163, '', 0
+);
+
+/* INSERT QUERY NO: 25 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+40, 3115816693, '9346423854', 0
+);
+
+/* INSERT QUERY NO: 26 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+780, 8028687245, '6572821153', 0
+);
+
+/* INSERT QUERY NO: 27 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+602, 6079415623, '', 0
+);
+
+/* INSERT QUERY NO: 28 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+680, 7746154883, '6021226380', 0
+);
+
+/* INSERT QUERY NO: 29 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+157, 3971105831, '', 0
+);
+
+/* INSERT QUERY NO: 30 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+522, 6220350898, '9460654770', 0
+);
+
+/* INSERT QUERY NO: 31 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+531, 7498314614, '', 0
+);
+
+/* INSERT QUERY NO: 32 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+22, 4127686480, '', 0
+);
+
+/* INSERT QUERY NO: 33 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+606, 9991616969, '3067000137', 0
+);
+
+/* INSERT QUERY NO: 34 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+208, 3583631609, '4900831697', 0
+);
+
+/* INSERT QUERY NO: 35 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+68, 3122257556, '7049439924', 0
+);
+
+/* INSERT QUERY NO: 36 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+827, 9834376782, '8699683510', 0
+);
+
+/* INSERT QUERY NO: 37 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+542, 1040447791, '', 0
+);
+
+/* INSERT QUERY NO: 38 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+848, 679393781, '6147756583', 0
+);
+
+/* INSERT QUERY NO: 39 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+206, 8799388405, '', 0
+);
+
+/* INSERT QUERY NO: 40 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+694, 1847467024, '2833564120', 0
+);
+
+/* INSERT QUERY NO: 41 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+666, 6456411890, '', 0
+);
+
+/* INSERT QUERY NO: 42 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+385, 173353320, '', 0
+);
+
+/* INSERT QUERY NO: 43 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+848, 6721206560, '3053601427', 0
+);
+
+/* INSERT QUERY NO: 44 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+70, 6091443372, '', 0
+);
+
+/* INSERT QUERY NO: 45 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+670, 3229856104, '', 0
+);
+
+/* INSERT QUERY NO: 46 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+831, 881720194, '6389500025', 0
+);
+
+/* INSERT QUERY NO: 47 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+62, 8668286579, '', 0
+);
+
+/* INSERT QUERY NO: 48 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+737, 7890083351, '902591487', 0
+);
+
+/* INSERT QUERY NO: 49 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+534, 7090470466, '', 0
+);
+
+/* INSERT QUERY NO: 50 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+817, 6150592715, '8872901456', 0
+);
+
+/* INSERT QUERY NO: 51 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+160, 1136586504, '8773148679', 0
+);
+
+/* INSERT QUERY NO: 52 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+936, 7827299849, '5167354927', 0
+);
+
+/* INSERT QUERY NO: 53 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+404, 2834748292, '1394183178', 0
+);
+
+/* INSERT QUERY NO: 54 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+160, 1784743518, '', 0
+);
+
+/* INSERT QUERY NO: 55 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+786, 5849673237, '', 0
+);
+
+/* INSERT QUERY NO: 56 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+615, 3537990790, '3546738179', 0
+);
+
+/* INSERT QUERY NO: 57 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+360, 9587995384, '3344907239', 0
+);
+
+/* INSERT QUERY NO: 58 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+722, 9961684842, '3593387042', 0
+);
+
+/* INSERT QUERY NO: 59 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+23, 4401892526, '1547291567', 0
+);
+
+/* INSERT QUERY NO: 60 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+10, 1499442017, '', 0
+);
+
+/* INSERT QUERY NO: 61 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+775, 5714470397, '', 0
+);
+
+/* INSERT QUERY NO: 62 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+992, 7477589320, '', 0
+);
+
+/* INSERT QUERY NO: 63 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+116, 6268716841, '392413736', 0
+);
+
+/* INSERT QUERY NO: 64 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+373, 2078469084, '4753424855', 0
+);
+
+/* INSERT QUERY NO: 65 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+332, 1172357684, '363830758', 0
+);
+
+/* INSERT QUERY NO: 66 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+651, 707979021, '5307430957', 0
+);
+
+/* INSERT QUERY NO: 67 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+203, 5607913996, '9239130217', 0
+);
+
+/* INSERT QUERY NO: 68 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+157, 9622272312, '1389297349', 0
+);
+
+/* INSERT QUERY NO: 69 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+890, 6721933055, '5461397077', 0
+);
+
+/* INSERT QUERY NO: 70 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+930, 759683271, '5835733410', 0
+);
+
+/* INSERT QUERY NO: 71 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+118, 6069142241, '2310045977', 0
+);
+
+/* INSERT QUERY NO: 72 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+576, 8386248432, '', 0
+);
+
+/* INSERT QUERY NO: 73 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+87, 2169475931, '5589689783', 0
+);
+
+/* INSERT QUERY NO: 74 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+499, 1439698724, '', 0
+);
+
+/* INSERT QUERY NO: 75 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+671, 8228611463, '1736957414', 0
+);
+
+/* INSERT QUERY NO: 76 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+644, 7328631708, '', 0
+);
+
+/* INSERT QUERY NO: 77 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+679, 9700038971, '', 0
+);
+
+/* INSERT QUERY NO: 78 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+908, 3393180932, '3572898676', 0
+);
+
+/* INSERT QUERY NO: 79 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+354, 2329280769, '7386706618', 0
+);
+
+/* INSERT QUERY NO: 80 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+337, 7963644846, '1942494734', 0
+);
+
+/* INSERT QUERY NO: 81 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+560, 4990162501, '9081250140', 0
+);
+
+/* INSERT QUERY NO: 82 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+596, 3933877105, '7958791259', 0
+);
+
+/* INSERT QUERY NO: 83 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+219, 3548595162, '5364262774', 0
+);
+
+/* INSERT QUERY NO: 84 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+288, 2320711678, '1998157717', 0
+);
+
+/* INSERT QUERY NO: 85 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+751, 9915051050, '', 0
+);
+
+/* INSERT QUERY NO: 86 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+808, 2602551716, '7558325269', 0
+);
+
+/* INSERT QUERY NO: 87 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+604, 6927619062, '9601330437', 0
+);
+
+/* INSERT QUERY NO: 88 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+564, 2901860397, '427640024', 0
+);
+
+/* INSERT QUERY NO: 89 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+115, 1090834241, '1792861125', 0
+);
+
+/* INSERT QUERY NO: 90 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+586, 4592532198, '2573206505', 0
+);
+
+/* INSERT QUERY NO: 91 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+262, 783392931, '8858489217', 0
+);
+
+/* INSERT QUERY NO: 92 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+52, 9726030943, '5610320674', 0
+);
+
+/* INSERT QUERY NO: 93 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+165, 4715692287, '5908878499', 0
+);
+
+/* INSERT QUERY NO: 94 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+573, 6717053518, '5410975650', 0
+);
+
+/* INSERT QUERY NO: 95 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+710, 1861672977, '', 0
+);
+
+/* INSERT QUERY NO: 96 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+539, 5632551636, '', 0
+);
+
+/* INSERT QUERY NO: 97 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+992, 9663763914, '1773223003', 0
+);
+
+/* INSERT QUERY NO: 98 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+495, 6675175890, '', 0
+);
+
+/* INSERT QUERY NO: 99 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+210, 2030830682, '', 0
+);
+
+/* INSERT QUERY NO: 100 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+557, 4499066530, '2978699108', 0
+);
+
+/* INSERT QUERY NO: 101 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+790, 109699408, '2033501280', 0
+);
+
+/* INSERT QUERY NO: 102 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+685, 2774437547, '5223901142', 0
+);
+
+/* INSERT QUERY NO: 103 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+109, 7606128820, '5496353939', 0
+);
+
+/* INSERT QUERY NO: 104 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+884, 4834919323, '', 0
+);
+
+/* INSERT QUERY NO: 105 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+895, 3812964643, '9879084748', 0
+);
+
+/* INSERT QUERY NO: 106 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+574, 5328280245, '8981814325', 0
+);
+
+/* INSERT QUERY NO: 107 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+572, 8357157920, '8403565569', 0
+);
+
+/* INSERT QUERY NO: 108 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+806, 7677236936, '', 0
+);
+
+/* INSERT QUERY NO: 109 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+563, 8200631958, '', 0
+);
+
+/* INSERT QUERY NO: 110 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+408, 6578597050, '', 0
+);
+
+/* INSERT QUERY NO: 111 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+944, 7184521811, '', 0
+);
+
+/* INSERT QUERY NO: 112 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+476, 3949725970, '', 0
+);
+
+/* INSERT QUERY NO: 113 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+499, 2549828070, '', 0
+);
+
+/* INSERT QUERY NO: 114 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+188, 1299291090, '7107992341', 0
+);
+
+/* INSERT QUERY NO: 115 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+65, 8590088081, '', 0
+);
+
+/* INSERT QUERY NO: 116 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+315, 7755277801, '', 0
+);
+
+/* INSERT QUERY NO: 117 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+704, 3762519099, '9394204415', 0
+);
+
+/* INSERT QUERY NO: 118 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+695, 5632762068, '3177231524', 0
+);
+
+/* INSERT QUERY NO: 119 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+667, 5950353986, '1380318041', 0
+);
+
+/* INSERT QUERY NO: 120 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+893, 4035536601, '2033023478', 0
+);
+
+/* INSERT QUERY NO: 121 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+803, 9658984843, '', 0
+);
+
+/* INSERT QUERY NO: 122 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+369, 7463460169, '6544981699', 0
+);
+
+/* INSERT QUERY NO: 123 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+248, 505908832, '6707119389', 0
+);
+
+/* INSERT QUERY NO: 124 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+206, 2100053779, '4894006162', 0
+);
+
+/* INSERT QUERY NO: 125 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+312, 8370673597, '4973400580', 0
+);
+
+/* INSERT QUERY NO: 126 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+274, 5765363709, '', 0
+);
+
+/* INSERT QUERY NO: 127 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+520, 2406115186, '', 0
+);
+
+/* INSERT QUERY NO: 128 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+460, 3231983398, '3351707215', 0
+);
+
+/* INSERT QUERY NO: 129 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+753, 5366543509, '', 0
+);
+
+/* INSERT QUERY NO: 130 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+659, 4860313399, '4669422073', 0
+);
+
+/* INSERT QUERY NO: 131 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+661, 7649261077, '', 0
+);
+
+/* INSERT QUERY NO: 132 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+505, 6338516277, '4196919324', 0
+);
+
+/* INSERT QUERY NO: 133 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+675, 6654534859, '1456302558', 0
+);
+
+/* INSERT QUERY NO: 134 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+820, 2796030342, '', 0
+);
+
+/* INSERT QUERY NO: 135 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+860, 8760500484, '', 0
+);
+
+/* INSERT QUERY NO: 136 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+8, 7617287720, '7032251188', 0
+);
+
+/* INSERT QUERY NO: 137 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+102, 1492717975, '2259752551', 0
+);
+
+/* INSERT QUERY NO: 138 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+204, 7366231614, '', 0
+);
+
+/* INSERT QUERY NO: 139 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+911, 1627828478, '7996712417', 0
+);
+
+/* INSERT QUERY NO: 140 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+762, 6064520795, '6830468388', 0
+);
+
+/* INSERT QUERY NO: 141 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+360, 4648078640, '', 0
+);
+
+/* INSERT QUERY NO: 142 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+832, 1321620470, '', 0
+);
+
+/* INSERT QUERY NO: 143 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+263, 8321567207, '', 0
+);
+
+/* INSERT QUERY NO: 144 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+51, 8659460723, '', 0
+);
+
+/* INSERT QUERY NO: 145 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+448, 5649044635, '6622195048', 0
+);
+
+/* INSERT QUERY NO: 146 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+609, 6451723940, '', 0
+);
+
+/* INSERT QUERY NO: 147 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+915, 3281629059, '2208252365', 0
+);
+
+/* INSERT QUERY NO: 148 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+966, 4986115502, '', 0
+);
+
+/* INSERT QUERY NO: 149 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+627, 6271752284, '8001353214', 0
+);
+
+/* INSERT QUERY NO: 150 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+999, 4409354760, '9649510656', 0
+);
+
+/* INSERT QUERY NO: 151 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+191, 5404082992, '', 0
+);
+
+/* INSERT QUERY NO: 152 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+559, 5364685365, '8722895027', 0
+);
+
+/* INSERT QUERY NO: 153 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+580, 9564534682, '', 0
+);
+
+/* INSERT QUERY NO: 154 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+162, 5780769443, '', 0
+);
+
+/* INSERT QUERY NO: 155 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+28, 4599002682, '2149055694', 0
+);
+
+/* INSERT QUERY NO: 156 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+149, 9935019136, '3606583826', 0
+);
+
+/* INSERT QUERY NO: 157 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+611, 3813747573, '4778745582', 0
+);
+
+/* INSERT QUERY NO: 158 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+44, 920932061, '', 0
+);
+
+/* INSERT QUERY NO: 159 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+189, 8498364914, '', 0
+);
+
+/* INSERT QUERY NO: 160 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+614, 7058957835, '7813043391', 0
+);
+
+/* INSERT QUERY NO: 161 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+712, 1372074139, '2161466925', 0
+);
+
+/* INSERT QUERY NO: 162 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+929, 3884361899, '', 0
+);
+
+/* INSERT QUERY NO: 163 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+549, 684780038, '7453517737', 0
+);
+
+/* INSERT QUERY NO: 164 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+500, 3069901565, '5802912421', 0
+);
+
+/* INSERT QUERY NO: 165 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+125, 2241737127, '', 0
+);
+
+/* INSERT QUERY NO: 166 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+935, 2365406645, '5992774971', 0
+);
+
+/* INSERT QUERY NO: 167 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+984, 6880342787, '2241711195', 0
+);
+
+/* INSERT QUERY NO: 168 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+242, 9940875460, '', 0
+);
+
+/* INSERT QUERY NO: 169 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+852, 8686883656, '2294714946', 0
+);
+
+/* INSERT QUERY NO: 170 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+152, 5531657714, '', 0
+);
+
+/* INSERT QUERY NO: 171 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+110, 1359854096, '8524366605', 0
+);
+
+/* INSERT QUERY NO: 172 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+302, 2460059043, '5592735227', 0
+);
+
+/* INSERT QUERY NO: 173 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+546, 5227852502, '479069050', 0
+);
+
+/* INSERT QUERY NO: 174 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+821, 7883559753, '', 0
+);
+
+/* INSERT QUERY NO: 175 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+285, 3109041855, '', 0
+);
+
+/* INSERT QUERY NO: 176 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+672, 4554558576, '2162024586', 0
+);
+
+/* INSERT QUERY NO: 177 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+759, 7235814969, '4423629801', 0
+);
+
+/* INSERT QUERY NO: 178 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+953, 474304396, '', 0
+);
+
+/* INSERT QUERY NO: 179 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+549, 5246446387, '', 0
+);
+
+/* INSERT QUERY NO: 180 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+413, 6373652661, '7209233865', 0
+);
+
+/* INSERT QUERY NO: 181 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+942, 9028118012, '', 0
+);
+
+/* INSERT QUERY NO: 182 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+356, 8424390768, '', 0
+);
+
+/* INSERT QUERY NO: 183 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+332, 8125286896, '', 0
+);
+
+/* INSERT QUERY NO: 184 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+751, 1633963357, '', 0
+);
+
+/* INSERT QUERY NO: 185 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+130, 1550364502, '8293408901', 0
+);
+
+/* INSERT QUERY NO: 186 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+751, 4506093844, '5624562608', 0
+);
+
+/* INSERT QUERY NO: 187 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+757, 4159507697, '3895958522', 0
+);
+
+/* INSERT QUERY NO: 188 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+852, 7437796473, '105165492', 0
+);
+
+/* INSERT QUERY NO: 189 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+199, 6472523363, '8523487158', 0
+);
+
+/* INSERT QUERY NO: 190 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+369, 6255338339, '415552672', 0
+);
+
+/* INSERT QUERY NO: 191 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+642, 8628756744, '6194151218', 0
+);
+
+/* INSERT QUERY NO: 192 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+877, 1845969855, '', 0
+);
+
+/* INSERT QUERY NO: 193 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+749, 5865244752, '', 0
+);
+
+/* INSERT QUERY NO: 194 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+525, 38974231, '5284958284', 0
+);
+
+/* INSERT QUERY NO: 195 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+951, 526788097, '', 0
+);
+
+/* INSERT QUERY NO: 196 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+542, 6492580168, '388757639', 0
+);
+
+/* INSERT QUERY NO: 197 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+807, 1198962844, '9213053630', 0
+);
+
+/* INSERT QUERY NO: 198 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+565, 4920481616, '7098928607', 0
+);
+
+/* INSERT QUERY NO: 199 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+362, 2919487191, '575844884', 0
+);
+
+/* INSERT QUERY NO: 200 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+488, 7479552866, '2223432336', 0
+);
+
+/* INSERT QUERY NO: 201 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+217, 1747998753, '', 0
+);
+
+/* INSERT QUERY NO: 202 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+653, 6811168390, '', 0
+);
+
+/* INSERT QUERY NO: 203 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+190, 6327304435, '3521707555', 0
+);
+
+/* INSERT QUERY NO: 204 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+797, 2415843393, '', 0
+);
+
+/* INSERT QUERY NO: 205 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+242, 1901788369, '828580006', 0
+);
+
+/* INSERT QUERY NO: 206 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+280, 8872873762, '2242680021', 0
+);
+
+/* INSERT QUERY NO: 207 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+479, 6732150359, '', 0
+);
+
+/* INSERT QUERY NO: 208 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+926, 2547579324, '', 0
+);
+
+/* INSERT QUERY NO: 209 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+506, 2423133782, '7394839990', 0
+);
+
+/* INSERT QUERY NO: 210 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+748, 5940841678, '', 0
+);
+
+/* INSERT QUERY NO: 211 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+440, 2342823215, '', 0
+);
+
+/* INSERT QUERY NO: 212 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+255, 2051807418, '', 0
+);
+
+/* INSERT QUERY NO: 213 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+14, 4240985498, '4517827968', 0
+);
+
+/* INSERT QUERY NO: 214 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+207, 5992160507, '', 0
+);
+
+/* INSERT QUERY NO: 215 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+922, 4428691459, '4542996271', 0
+);
+
+/* INSERT QUERY NO: 216 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+81, 7719664973, '8265745079', 0
+);
+
+/* INSERT QUERY NO: 217 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+475, 6678726081, '3551145334', 0
+);
+
+/* INSERT QUERY NO: 218 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+467, 7027461943, '', 0
+);
+
+/* INSERT QUERY NO: 219 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+657, 4178461079, '2559455757', 0
+);
+
+/* INSERT QUERY NO: 220 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+483, 6604867005, '', 0
+);
+
+/* INSERT QUERY NO: 221 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+120, 8283310992, '8760925264', 0
+);
+
+/* INSERT QUERY NO: 222 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+838, 8108578426, '', 0
+);
+
+/* INSERT QUERY NO: 223 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+415, 3554153745, '413461963', 0
+);
+
+/* INSERT QUERY NO: 224 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+622, 8247160781, '5944975334', 0
+);
+
+/* INSERT QUERY NO: 225 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+549, 3449145487, '', 0
+);
+
+/* INSERT QUERY NO: 226 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+774, 3221866763, '', 0
+);
+
+/* INSERT QUERY NO: 227 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+371, 834900033, '', 0
+);
+
+/* INSERT QUERY NO: 228 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+414, 4261174324, '7162189385', 0
+);
+
+/* INSERT QUERY NO: 229 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+88, 5177494764, '', 0
+);
+
+/* INSERT QUERY NO: 230 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+733, 7913479175, '5191362934', 0
+);
+
+/* INSERT QUERY NO: 231 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+815, 2308819197, '2158128216', 0
+);
+
+/* INSERT QUERY NO: 232 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+646, 7968272858, '6888722821', 0
+);
+
+/* INSERT QUERY NO: 233 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+592, 6374389379, '6870437785', 0
+);
+
+/* INSERT QUERY NO: 234 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+541, 3594395685, '7353175737', 0
+);
+
+/* INSERT QUERY NO: 235 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+861, 9100290548, '913803227', 0
+);
+
+/* INSERT QUERY NO: 236 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+833, 9523644890, '4683937433', 0
+);
+
+/* INSERT QUERY NO: 237 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+819, 1967180830, '', 0
+);
+
+/* INSERT QUERY NO: 238 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+501, 540200328, '', 0
+);
+
+/* INSERT QUERY NO: 239 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+493, 1144246318, '5624973888', 0
+);
+
+/* INSERT QUERY NO: 240 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+473, 4773708832, '', 0
+);
+
+/* INSERT QUERY NO: 241 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+95, 2056945053, '2385275589', 0
+);
+
+/* INSERT QUERY NO: 242 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+574, 3497870730, '', 0
+);
+
+/* INSERT QUERY NO: 243 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+31, 7346056949, '', 0
+);
+
+/* INSERT QUERY NO: 244 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+198, 3816514898, '6252393592', 0
+);
+
+/* INSERT QUERY NO: 245 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+271, 910280002, '9899019518', 0
+);
+
+/* INSERT QUERY NO: 246 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+549, 52856542, '4563322687', 0
+);
+
+/* INSERT QUERY NO: 247 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+246, 2210693543, '2542119201', 0
+);
+
+/* INSERT QUERY NO: 248 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+921, 6388481671, '3377484175', 0
+);
+
+/* INSERT QUERY NO: 249 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+443, 6549658853, '', 0
+);
+
+/* INSERT QUERY NO: 250 */
+INSERT INTO Compuestas(numero, jugadorCambio, valor, fff)
+VALUES
+(
+516, 2629276171, '4993703104', 0
+);

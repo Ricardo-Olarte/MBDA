@@ -1,17 +1,4 @@
 /*Foraneas*/
-ALTER TABLE Celulares ADD CONSTRAINT FK_Celulares_PersonasNaturales 
-FOREIGN KEY (personaNatural) REFERENCES PersonasNaturales(cedula);
-
-ALTER TABLE Jugadores ADD CONSTRAINT FK_Jugadores_PersonasNaturales 
-FOREIGN KEY (cedula) REFERENCES PersonasNaturales(cedula);
-
-ALTER TABLE JugadoEn ADD CONSTRAINT FK_JugadoEn_Equipos 
-FOREIGN KEY (equipo) REFERENCES Equipos(nombre);
-
-ALTER TABLE JugadoEn ADD CONSTRAINT FK_JugadoEn_Jugador 
-FOREIGN KEY (jugador) REFERENCES Jugadores(cedula);
----
-
 ALTER TABLE Fisioterapeutas ADD CONSTRAINT FK_Fisioterapeutas_PersonasNaturales 
 FOREIGN KEY (cedula) REFERENCES PersonasNaturales(cedula);
 

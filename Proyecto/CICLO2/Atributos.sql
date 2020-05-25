@@ -14,7 +14,7 @@ CHECK (disciplina IN ('LH','LR','LT','LC'));
 ALTER TABLE Fisioterapeutas ADD CONSTRAINT CK_Fisioterapeutas_salario
 CHECK (salario>0);
 
-ALTER TABLE Presidente ADD CONSTRAINT CK_Presidente_vecesElec
+ALTER TABLE Presidentes ADD CONSTRAINT CK_Presidente_vecesElec
 CHECK (vecesElecto>0);
 
 ALTER TABLE Descensos ADD CONSTRAINT CK_Descensos_liga 

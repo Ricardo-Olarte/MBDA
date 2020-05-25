@@ -1,19 +1,4 @@
 /*Primarias*/
-ALTER TABLE PersonasNaturales ADD CONSTRAINT 
-PK_PersonasNaturales PRIMARY KEY (cedula);
-
-ALTER TABLE Celulares ADD CONSTRAINT PK_Celulares 
-PRIMARY KEY (personaNatural,celular);
-
-ALTER TABLE Jugadores ADD CONSTRAINT PK_Jugadores 
-PRIMARY KEY (cedula);
-
-ALTER TABLE Equipos ADD CONSTRAINT PK_Equipos 
-PRIMARY KEY (nombre);
-
-ALTER TABLE JugadoEn ADD CONSTRAINT PK_JugadoEn 
-PRIMARY KEY (equipo,jugador);
-
 ALTER TABLE Fisioterapeutas ADD CONSTRAINT PK_Fisioterapeutas
 PRIMARY KEY (cedula);
 
