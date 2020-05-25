@@ -16,3 +16,9 @@ CHECK (vecesElecto>0);
 
 ALTER TABLE Descensos ADD CONSTRAINT CK_Descensos_liga 
 CHECK (liga IN ('B','C'));
+
+ALTER TABLE Fisioterapeutas ADD CONSTRAINT CK_Fisioterapeutas_salario
+CHECK (salario>0);
+
+ALTER TABLE DirectoresTecnicos ADD CONSTRAINT CK_DirectoresTecnicos_sueldo
+CHECK (sueldo>0);
