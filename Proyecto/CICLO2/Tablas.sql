@@ -25,8 +25,7 @@ cedula NUMBER(10) NOT NULL,
 fechaI DATE NOT NULL,
 fechaF DATE,
 vecesElecto NUMBER(2),
-equipo VARCHAR(50) NOT NULL,
-vecesElecto NUMBER(10) NOT NULL
+equipo VARCHAR(50) NOT NULL
 );
 
 --DirectoresTecnicos--
