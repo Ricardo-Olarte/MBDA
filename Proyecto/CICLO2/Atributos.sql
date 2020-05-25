@@ -1,5 +1,8 @@
 /*---------Atributos---------*/
-ALTER TABLE Traspasos ADD CONSTRAINT CK_Traspasos_valor 
+ALTER TABLE Compuestas ADD CONSTRAINT CK_Compuestas_valor 
+CHECK (valor>0);
+
+ALTER TABLE Simples ADD CONSTRAINT CK_Simples_valor 
 CHECK (valor>0);
 
 ALTER TABLE Traspasos ADD CONSTRAINT CK_Traspasos_contrato

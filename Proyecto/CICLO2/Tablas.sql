@@ -102,17 +102,18 @@ liga VARCHAR(1) NOT NULL
 CREATE TABLE Traspasos(
 numero NUMBER(5) NOT NULL,
 contrato VARCHAR(1) NOT NULL,
-jugador NUMBER(10) NOT NULL,
-valor NUMBER(10)
+jugador NUMBER(10) NOT NULL
 );
 
 --Compuestas--
 CREATE TABLE Compuestas(
 numero NUMBER(5) NOT NULL,
-jugadorCambio NUMBER(10) NOT NULL
+jugadorCambio NUMBER(10) NOT NULL,
+valor NUMBER(10)
 );
 
 --Simples--
 CREATE TABLE Simples(
-numero NUMBER(5) NOT NULL
+numero NUMBER(5) NOT NULL,
+valor NUMBER(10) NOT NULL
 );
