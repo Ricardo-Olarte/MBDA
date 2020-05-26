@@ -63,11 +63,11 @@ fecha DATE NOT NULL
 CREATE TABLE Compuestas(
 numero NUMBER(5) NOT NULL,
 jugadorCambio NUMBER(10) NOT NULL,
-valor NUMBER(10)
+valor NUMBER(20)
 );
 
 --Simples--
 CREATE TABLE Simples(
 numero NUMBER(5) NOT NULL,
-valor NUMBER(10) NOT NULL
+valor NUMBER(20) NOT NULL
 );

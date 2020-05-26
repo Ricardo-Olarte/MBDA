@@ -1,0 +1,15 @@
+drop Trigger Tg_Ad_Tecnico;
+drop Trigger Tg_Mo_Tecnico;
+drop Trigger Tg_El_Tecnico;
+drop Trigger Tg_Ad_Fisioterapeuta;
+drop Trigger Tg_Mo_Fisioterapeuta;
+drop Trigger Tg_El_Fisioterapeuta;
+drop Trigger Tg_Ad_Traspaso;
+drop Trigger Tg_Ad_Traspaso_Simple;
+drop Trigger Tg_Ad_Traspaso_Comp;
+drop Trigger Tg_Mo_Traspaso;
+drop Trigger Tg_Mo_Simples;
+drop Trigger Tg_Mo_Compuestas;
+drop Trigger Tg_El_Traspaso;
+drop Trigger Tg_El_Simples;
+drop Trigger Tg_El_Compuestas;
