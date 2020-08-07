@@ -1,0 +1,99 @@
+
+Grafo de dependencias:
+
+|||||||||||||||	                 |--> apellidos
+|   codigo    | <--- cedula ---->|--> nombres
+|||||||||||||||	                 
+
+------------------------------------
+
+Student (SSN, sName, address, HScode, HSname, HScity, GPA, priority)
+
+	1FN. Todos tienen valores simples
+	2FN. 
+		 Se rompe en:
+			//Esto debido a que desde HScode podemos tener la informacion del HighSchool
+			HighSchool(HScode, HSname, HScity)
+			//Desde el seguro social podremos acceder a la info de los estudiantes
+			Students(SSN, sName, address, GPA, priority)
+			//Tendremos una tabla de GPAs donde tendremos la referencia a el estudiantes y la HighSchool 
+			Gpas (GPA, priority, SSN, HScode)
+	3FN.
+		Hay una dependencia de priority sobre GPA, por lo cual priority seria deribado
+			Gpas (GPA, SSN, HScode)
+	
+	4FNBC
+		HighSchool(<<PK>>HScode, HScode, HScity)
+		Students(<<PK>>SSN, sName,address, GPA)
+		
+		//Al final solo obtendriamos dos tablas cada una con sus respectiva informacion	
+		  sin redundancia, sin problemas de integridad y sin anomalias
+		  y solo tendriamos 2 PKs (SSN, HScode)
+		  
+------------------------------------
+
+ III. Normalizacion
+	  
+	1.
+		PK ---> (IdReto, IdTipo, IdVersion, IdAtleta, IdRestriccion)
+		//Se eligen estas Pks debido a las aclaraciones que nos hacen en el texto, que es que un reto puede ser hecho por varios atletas y por ese mismo alteta varias veces
+		  por eso tendriamos que tener el IdAtleta, la version del reto, el tipo de reto realizado
+		  
+		R1 (<<PK>>IdReto, NombreReto, DescReto, <<PK>>idVersion, <<PK>>IdAtleta, NombreAtleta, ApellidoAtleta, <<PK>>IdTipo, NombreTipo, <<PK>>IdRestriccion, NombreRestriccion, DescRestriccion, FechaLogro)
+		
+
+	2.
+		1FN Todos tienen valores simples
+		2FN.
+			Se rompe en:
+				- Atleta
+					//Debido a que teniendo el Id del atleta podemos acceder a su nombre y apellido
+					R2(<<PK>>IdAtleta, NombreAtleta, ApellidoAtleta)
+				- Tipo
+					//Esto debido a que puede reutilizarce el tipo de reto en retos siguientes
+					R3(<<PK>>IdTipo, NombreTipo)
+				
+				- Restricciones
+					// desde el Id de la restriccion podemos tener acceso a su nombre, y descripcion
+					R4(<<PK>>IdRestriccion, NombreRestricccion, DescRestriccion)
+				
+				- Retos
+					R5(<<PK>>IdReto, NombreReto, DescReto)
+					
+			R6(<<PK>>IdReto, <<PK>>IdVersion, <<PK>>IdAtleta, <<PK>>IdTipo, <<PK>>IdRestriccion, FechaLogro)
+		
+		3FN. Ya se encuentra en 3FN
+			//Esto debido a que entre atributos no son debendientes entre si, y ya se encuentra una reduccion al maximo de los mismos
+		
+		4FNBC
+			
+			//Si tengo el reto tengo el tipo de reto
+			R7(<<PK>>IdReto, IdTipo, NombreReto, DescReto)
+				
+			R8(<<PK>>IdReto, <<PK>>IdVersion, <<PK>>IdAtleta, <<PK>>IdRestriccion, FechaLogro)
+				
+					
+		3.
+			//Se encuentra en el archivo .astah
+			
+
+---------------------------------------------
+	
+	1er concepto:
+		
+		Jugador(<<PK>>cedula, dorsal, posicion,  precio, lesion, salario)
+		
+		//Este se encuentra en formal normal BC debido a que cumple con todos los requerimientos,
+		  no existen atributos que no sean simples, su pk es unica por lo cual ya esta de forma minima y
+		  sus atributos no se hacen referencia entre si
+		
+	2do concepto:
+		
+		PersonasNaturales(<<PK>>cedula, primerNombre, primerApellido, celular, correo, eps, nacionalidad, fechaNacimiento, rh, sangre)
+		
+		//Este atributo no se encuentra en forma normal BC debido a que uno de sus atributos es de la forma(1..*)
+		  por ende este deberia ser cambiado y apartado a una tabla nueva
+				
+				
+				
+				

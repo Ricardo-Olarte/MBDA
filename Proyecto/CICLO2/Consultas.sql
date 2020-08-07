@@ -9,8 +9,8 @@ WHERE Jugadores.cedula = PersonasNaturales.cedula
 --Borussia Dortmund
 SELECT fecha, jugador, equipo, valor
 FROM Traspasos, Compuestas
-WHERE equipo = &Equipo AND Traspasos.numero = Compuestas.numero
+WHERE equipo = &Equipo AND Traspasos.numero = Compuestas.numero;
 
 SELECT fecha, jugador, equipo, valor
 FROM Traspasos, Simples
-WHERE equipo = &Equipo AND Traspasos.numero = Simples.numero
+WHERE equipo = &Equipo AND Traspasos.numero = Simples.numero;

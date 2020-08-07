@@ -90,7 +90,7 @@ CREATE OR REPLACE PACKAGE BODY PC_PERSONASNATURALES IS
             ROLLBACK;
             RAISE_APPLICATION_ERROR(-20019, 'No se puede actualizar el Arbitro.');
     END;
-    
+    --SQLERRM
     PROCEDURE EL_Arbitro(xCedula IN NUMBER)IS
     BEGIN
         DELETE FROM  Arbitros WHERE cedula = xCedula;

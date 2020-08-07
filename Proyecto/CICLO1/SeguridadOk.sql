@@ -1,9 +1,7 @@
 /*-------------------PA_PRESIDENTE-------------------*/
-EXECUTE PA_PRESIDENTE.AD_PersonaNatural('Santiago', 'Calderon', 1019151999, 'satiago.cal@gmaiol.com', 'Famisanar', 'Colombia', TO_DATE('2000-05-13', 'YYYY-MM-DD'), '+', 'O');
+EXECUTE PA_PRESIDENTE.AD_Jugador('Santiago', 'Calderon', 1019151999, 'satiago.cal@gmaiol.com', 'Famisanar', 'Colombia', TO_DATE('2000-05-13', 'YYYY-MM-DD'), '+', 'O', 10, 'DC', 324323);
 /
-EXECUTE PA_PRESIDENTE.AD_Jugador(1019151999, 10, 'DC', 324323);
-/
-EXECUTE PA_PRESIDENTE.MO_PersonaNatural(1019151999, 'santiago.cal@outlook.com', 'Famisanar');
+EXECUTE PA_PRESIDENTE.MO_Jugador(1019151999, 'santiago.cal@outlook.com', 'Famisanar', 10, 'DC', 324323);
 /
 EXECUTE PA_PRESIDENTE.AD_Convocado('Deportivo Pasto', TO_DATE('29-01-2020 16:00','DD-MM-YYYY HH24:MI'), 7933126582, 0, 'EI');
 /
@@ -26,9 +24,7 @@ EXECUTE PA_ORGANIZADOR.AD_Partido(TO_DATE('29-09-2020 22:00','DD-MM-YYYY HH24:MI
 /
 EXECUTE PA_ORGANIZADOR.MO_Partido(TO_DATE('29-09-2020 22:00','DD-MM-YYYY HH24:MI'), '05-01');
 /
-EXECUTE PA_ORGANIZADOR.AD_PersonaNatural('Sergio', 'Calderon', 8362739, 'sergio.cal@gmaiol.com', 'Famisanar', 'Colombia', TO_DATE('1974-05-13', 'YYYY-MM-DD'), '+', 'A');
-/
-EXECUTE PA_ORGANIZADOR.AD_Arbitro(8362739, TO_DATE('1999-09-05', 'YYYY-MM-DD'), null)
+EXECUTE PA_ORGANIZADOR.AD_Arbitro('Sergio', 'Calderon', 8362739, 'sergio.cal@gmaiol.com', 'Famisanar', 'Colombia', TO_DATE('1974-05-13', 'YYYY-MM-DD'), '+', 'A', TO_DATE('1999-09-05', 'YYYY-MM-DD'), null);
 /
 SELECT PA_ORGANIZADOR.CO_Arbitro(3.4) FROM DUAL;
 /

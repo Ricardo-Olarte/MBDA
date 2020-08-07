@@ -1,0 +1,107 @@
+-------------------------
+<Producto codigo="32014" nombre="Limpiadro con caucho y esponja" precioVenta="500000" manoObra="100000">
+	<Componentes>
+		<Componente nombre="anilina" cantidad="1" medida="g" 
+		</Componente>
+		<Componente nombre="agua" cantidad="930" medida="cc" 
+		</Componente>
+	</Componentes>
+</Producto>
+
+
+-------------------------
+Bienes/*  ---> Etiquetas de todos los bienes
+Bienes/Producto/@codigo ---> Los codigos de todos los productos
+Bienes/Producto/@*  ---> Todos los atributos de todos los Productos
+//@precioVenta ---> todas las etiquetas precioVenta
+
+
+-------------------------
+¿Cual es la descripcion de todos los servicios?
+	Bienes/Servicio/Descripcion
+	
+¿Cuales son los componentes de los productos?
+	Bienes/Producto/Componentes/Componente
+	
+¿Cuales son los codigos de los insumos de los servicios?
+	Bienes/Servicio/Insumos/Insumo/@producto
+	
+¿Cuales son los insumos o componentes de los bienes?
+	Bienes/(Producto/Componentes/Componente|Servicio/Insumos/Insumo)
+	
+¿Cuales son todos los nombres?
+	//@nombre
+
+	
+-------------------------	
+Bienes/*[@precioVenta>20000]/@codigo  ---> El codigo de todos los bienes que tenga un precioVenta mayor a 20000
+Bienes/*[@precioCompra]/@codigo ---> El codigo de todos los bienes que tengan un precioCompra
+Bienes/Producto/Componentes/*[3] ---> El 3er Componente de todos los productos
+Bienes/Producto[@precioVenta and @precioCompra]/@codigo ---> El codigo de todos los productos que tengan precioVenta y precioCompra
+Bienes/Servicio[Insumos/Insumo/@producto=\C25369"and Insumos/Insumo/@unidades=1]/@codigo  ---> El codgio de los servicios que tengan un insumo con codigo="C25369" y insumos con unidades="1"
+Bienes/Servicio[Insumos/Insumo[@producto=\C25369"and @unidades=1]]/@codigo ---> El codigo del servico que tenga un insumos con producto="C25369" y unidades=1
+Bienes/Servicio[not(Insumos/Insumo/@unidades=1)]/@codigo ---> El codigo de los servicios donde no existe un insumo con unidades=1
+Bienes/Producto[not(Componentes)]/@codigo ---> El codigo del producto que no tenga componentes
+
+
+-------------------------
+Los productos del servicio de codigo LVEDA:
+	Bienes/Servicio[@codigo="LVEDA"]/Insumos/Insumo/@Producto
+	
+Los codigos de los bienes que tienen recomendaciones
+	Bienes/(Producto| Servicio)[Recomendaciones]/@codigo
+
+Nombre del primer servicio
+	Bienes/Servicio[1]/@nombre
+
+Nombre de los servicios que tienen recomendaciones y cuya mano de obra es menor a 5000
+	Bienes/Servicio[Recomendaciones and @manoObra<5000]/@nombre
+
+El codigo de los productos que no tienen asignado precio de compra
+	Bienes/Producto[not(p@recioCompra)]/@codigo
+
+El nombre de los servicios cuyo precio de venta sea menor que la mano de obra o no se conozca la mano de obra
+	Bienes/Servicio[not(@manoObra) or (@precioVenta<@manoObra)]/@nombre
+	
+El nombre de los productos a los que no se les ha definido ni un componente
+	Bienes/Producto[not(componentes/componente)]/@nombre
+	
+
+-------------------------
+Bienes/*[contains(@nombre,'vidrio')]/@nombre ---> Nombre de los vienes donde su nombre tiene la palabra "vidrio"
+//Recomendaciones/text() ---> Muestra el texto de todas las recomendaciones
+Bienes/*/Insumos/Insumo[last()]/@producto ---> El producto del el ultimo insumo de cualquier bien
+
+
+-------------------------	
+El texto de las descripciones de los productos
+	Bienes/Producto/Descripcion/text()
+	
+Los atributos del ultimo servicio
+	Bienes/Servicio[last()]/@*
+	
+-------------------------
+Bienes/*[@precioVenta >=avg(/Bienes/*/@precioVenta)]/@codigo 
+		---> El codigo de los bienes done el precioVenta es mayor al promedio de los precioVenta de todos los bienes
+
+Bienes/Servicio[Insumos[min(Insumo/@unidades)=max(Insumo/@unidades)]]/@nombre
+		---> El nombre de los servicios donde todos sus insumos tengan las mismas unidades
+		
+-------------------------
+El codigo del producto que tienen mas de tres componentes
+	Bienes/Producto[Componentes[count(Componente)]>3]/@codigo
+	
+El servicio mas costoso
+	Bienes/Servicio[max(/Bienes/Servicio/@precioVenta) = @precioVenta]/@*
+
+
+
+
+
+
+
+
+
+
+
+

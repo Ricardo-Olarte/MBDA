@@ -1,0 +1,39 @@
+1. Encuentre la clave primaria de la tabla anterior (Justifique su elección).
+	La clave primaria de la tabla anterior esta compuesta por:
+		PK --> (NIT, Fecha)
+		solamente se escogen estas dos debido a que la persona contacto de la empresa es cambiante, los productos donados
+		puede de igual manera cambiar; y ademas se nos dice que una empresa puede hacer varias donaciones pero en diferentes fechas
+		con lo cual nuestra manera de controlar esto es por medio de la empresa y la fecha en que realiza la donacion.
+		
+2.
+
+	1FN:
+		Todos los atributos se encuentran en valores simples
+		Donaciones ( <<PK>>Fecha, <<PK>>NIT, RazonSocial, IdSector, Sector, Cedula, Nombres, Cargo, Correo, Codigo, Descripcion, Unidades, Valor, Frecuencia)
+		
+	2FN:
+		NIT --> RazonSocial, IdSector, Sector
+		Cedula --> Nombres, Cargo, Correo
+		Codigo --> Descripcion
+		
+		Donaciones(<<PK>>Fecha, <<PK>><<FK>>NIT, Frecuencia, Unidades, <<FK>>Codigo, <<FK>>Cedula, Valor)
+		Empresa(<<PK>>NIT, RazonSocial, IdSector, Sector)
+		PersonasNaturales(<<PK>>Cedula, Nombres, Cargo, <<U>>Correo)
+		Productos(<<PK>>Codigo, Descripcion)
+		
+	3FN:
+		No hay atributos deribados
+		Donaciones(<<PK>>Fecha, <<PK>>NIT, Frecuencia, Unidades, <<FK>>Codigo, <<FK>>Cedula, Valor)
+		Empresa(<<PK>>NIT, RazonSocial, IdSector, Sector)
+		PersonasNaturales(<<PK>>Cedula, Nombres, Cargo, <<U>>Correo)
+		Productos(<<PK>>Codigo, Descripcion)
+		
+	4FNBC:
+		Empresa determina su PersonasNaturales encargada, asi mismo el producto determina el valor que tiene este
+		
+		Donaciones(<<PK>>Fecha, <<PK>>NIT, Unidades, <<FK>>Codigo)
+		Empresa(<<PK>>NIT, RazonSocial, <<FK>>IdSector, <<FK>>Cedula, Frecuencia)
+		Sector(<<PK>>IdSector, Sector)
+		PersonasNaturales(<<PK>>Cedula, Nombres, Cargo, <<U>>Correo)
+		Productos(<<PK>>Codigo, Descripcion, Valor)
+		
